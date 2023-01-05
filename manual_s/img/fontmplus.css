@@ -1,0 +1,24 @@
+/*
+ * Rounded Mplus 1c (Japanese) https://fonts.google.com/earlyaccess
+ */
+
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/RoundedMplus1c-Medium.eot);
+  src: url(font/RoundedMplus1c-Medium.eot?#iefix) format('embedded-opentype'),
+       url(font/RoundedMplus1c-Medium.woff2) format('woff2'),
+       url(font/RoundedMplus1c-Medium.woff) format('woff'),
+       url(font/RoundedMplus1c-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rounded Mplus 1c';
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/RoundedMplus1c-Bold.eot);
+  src: url(font/RoundedMplus1c-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/RoundedMplus1c-Bold.woff2) format('woff2'),
+       url(font/RoundedMplus1c-Bold.woff) format('woff'),
+       url(font/RoundedMplus1c-Bold.ttf) format('truetype');
+}

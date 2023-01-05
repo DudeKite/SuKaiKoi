@@ -1,0 +1,29 @@
+﻿<root version="1.9.0">
+  <optimizeCharaMaker enabled="true" />
+  <uiScale>
+    <game scale="1" />
+    <neo scale="1" />
+  </uiScale>
+  <deleteConfirmation buttonEnabled="true" keyEnabled="true" />
+  <defaultFemaleChar path="" />
+  <defaultMaleChar path="" />
+  <improveNeoUI enabled="true" />
+  <optimizeNeo enabled="true" />
+  <debug enabled="false" value="RightControl" />
+  <improvedTransformOperations enabled="true" />
+  <autoJointCorrection enabled="true" />
+  <eyesBlink enabled="false" />
+  <cameraSpeedShortcuts enabled="true" />
+  <alternativeCenterToObject enabled="true" />
+  <postProcessing>
+    <depthOfField enabled="false" />
+    <ssao enabled="true" />
+    <bloom enabled="true" />
+    <selfShadow enabled="true" />
+    <vignette enabled="true" />
+    <fog enabled="false" />
+    <sunShafts enabled="false" />
+  </postProcessing>
+  <automaticMemoryClean enabled="true" interval="300" />
+  <vsync enabled="true" />
+</root>

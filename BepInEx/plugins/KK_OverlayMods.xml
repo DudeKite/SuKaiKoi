@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KK_OverlayMods</name>
+    </assembly>
+    <members>
+        <member name="T:KoiClothesOverlayX.ClothesTexData">
+            <summary>
+            A clothes overlay texture holder.
+            </summary>
+        </member>
+        <member name="P:KoiSkinOverlayX.KoiSkinOverlayController.AdditionalTextures">
+            <summary>
+            Additional overlays to be applied over the KSOX overlay (if any).
+            Drawn bottom to top based on index. Use <code>UpdateTexture</code> to refresh.
+            </summary>
+        </member>
+        <member name="M:KoiSkinOverlayX.KoiSkinOverlayMgr.GetOldStyleOverlayTex(KoiSkinOverlayX.TexType,ChaControl)">
+            <summary>
+            Old loading logic from folders
+            </summary>
+        </member>
+        <member name="T:KoiSkinOverlayX.TexType">
+            <summary>
+            Names are important, don't change! - used for filenames and extended data keys
+            </summary>
+        </member>
+        <member name="T:KoiSkinOverlayX.AdditionalTexture">
+            <summary>
+            An overlay texture that can be added to the overlay stack. 
+            Add to <see cref="P:KoiSkinOverlayX.KoiSkinOverlayController.AdditionalTextures"/> after each character reload.
+            Make sure to check if your texture doesn't already exist before adding!
+            </summary>
+        </member>
+        <member name="M:KoiSkinOverlayX.AdditionalTexture.#ctor(UnityEngine.Texture2D,KoiSkinOverlayX.TexType,System.Object)">
+            <summary>
+            Create a new additional overlay texture.
+            </summary>
+            <param name="texture">Overlay texture</param>
+            <param name="overlayType">What part to apply the overlay to</param>
+            <param name="tag">Tag for self use</param>
+        </member>
+        <member name="M:KoiSkinOverlayX.AdditionalTexture.#ctor(UnityEngine.Texture2D,KoiSkinOverlayX.TexType,System.Object,System.Int32)">
+            <summary>
+            Create a new additional overlay texture.
+            </summary>
+            <param name="texture">Overlay texture</param>
+            <param name="overlayType">What part to apply the overlay to</param>
+            <param name="tag">Tag for self use</param>
+            <param name="applyOrder">Order in which the overlay isapplied relative to other additional overlay textures. Lower number is applied earlier. Default is 0.</param>
+        </member>
+        <member name="T:KoiSkinOverlayX.OverlayTexture">
+            <summary>
+            A skin overlay texture holder.
+            </summary>
+        </member>
+        <member name="M:KoiSkinOverlayX.Util.OpenFileInExplorer(System.String)">
+            <summary>
+            Open explorer focused on the specified file or directory
+            </summary>
+        </member>
+        <member name="M:KoiSkinOverlayX.Util.NativeMethods.OpenFolderAndSelectFile(System.String)">
+            <summary>
+            Open explorer focused on item. Reuses already opened explorer windows unlike Process.Start
+            </summary>
+        </member>
+    </members>
+</doc>

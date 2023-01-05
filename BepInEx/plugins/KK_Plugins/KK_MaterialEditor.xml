@@ -1,0 +1,2257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KK_MaterialEditor</name>
+    </assembly>
+    <members>
+        <member name="M:KK_Plugins.MaterialEditor.Hooks.CopyAcsHook">
+            <summary>
+            Transfer accessory hook
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialAPI">
+            <summary>
+            API for safely setting the properties of materials
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.MaterialCopyPostfix">
+            <summary>
+            Postfix added to the name of a material when copied
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.BodyParts">
+            <summary>
+            List of parts that comprise the body, used to distinguish between clothes, accessories, etc. attached to the body.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.GetRendererList(UnityEngine.GameObject)">
+            <summary>
+            Get a list of all the renderers. If gameObject is a ChaControl, only gets renderers of the body and face (i.e. not clothes, accessories, etc.)
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI._GetRendererList(UnityEngine.GameObject,System.Collections.Generic.List{UnityEngine.Renderer})">
+            <summary>
+            Recursively iterates over game objects to create the list. Use GetRendererList intead.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.GetMaterials(UnityEngine.Renderer)">
+            <summary>
+            Safely get a list of materials for the renderer
+            </summary>
+            <param name="renderer">Renderer containing the materials</param>
+            <returns>Array of materials</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.CopyMaterial(UnityEngine.GameObject,System.String)">
+            <summary>
+            Create a copy of the materials with the specified name for the GameObject
+            </summary>
+            <param name="gameObject">GameObject for which to copy materials</param>
+            <param name="materialName">Name of the material</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.RemoveMaterialCopies(UnityEngine.GameObject)">
+            <summary>
+            Remove any material copies added by MaterialEditor for the specified GameObject
+            </summary>
+            <param name="gameObject">GameObject for which to remove materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetFloat(ChaControl,System.String,System.String,System.Single)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetFloat(UnityEngine.GameObject,System.String,System.String,System.Single)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="gameObject">GameObject to search for the material. If this GameObject is a ChaControl, only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetColor(ChaControl,System.String,System.String,System.String)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetColor(ChaControl,System.String,System.String,UnityEngine.Color)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetColor(UnityEngine.GameObject,System.String,System.String,System.String)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="gameObject">GameObject to search for the material</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetColor(UnityEngine.GameObject,System.String,System.String,UnityEngine.Color)">
+            <summary>
+            Set the value of the specified material property
+            </summary>
+            <param name="gameObject">GameObject to search for the material</param>
+            <param name="materialName">Name of the material being set</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the material was found and the value set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererProperty(ChaControl,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String)">
+            <summary>
+            Set the value of the specified renderer property
+            </summary>
+            <param name="chaControl">ChaControl to search for the renderer. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="propertyName">Property of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererProperty(ChaControl,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.Int32)">
+            <summary>
+            Set the value of the specified renderer property
+            </summary>
+            <param name="chaControl">ChaControl to search for the renderer. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="propertyName">Property of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererProperty(UnityEngine.GameObject,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String)">
+            <summary>
+            Set the value of the specified renderer property
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="propertyName">Property of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererProperty(UnityEngine.GameObject,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.Int32)">
+            <summary>
+            Set the value of the specified renderer property
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="propertyName">Property of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererEnabled(ChaControl,System.String,System.Boolean)">
+            <summary>
+            Set a renderer enabled or disabled
+            </summary>
+            <param name="chaControl">ChaControl to search for the renderer. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererEnabled(UnityEngine.GameObject,System.String,System.Boolean)">
+            <summary>
+            Set a renderer enabled or disabled
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererShadowCastingMode(ChaControl,System.String,UnityEngine.Rendering.ShadowCastingMode)">
+            <summary>
+            Set the ShadowCastingMode of a renderer
+            </summary>
+            <param name="chaControl">ChaControl to search for the renderer. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererShadowCastingMode(UnityEngine.GameObject,System.String,UnityEngine.Rendering.ShadowCastingMode)">
+            <summary>
+            Set the ShadowCastingMode of a renderer
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererReceiveShadows(ChaControl,System.String,System.Boolean)">
+            <summary>
+            Set the ReceiveShadows property of a renderer
+            </summary>
+            <param name="chaControl">ChaControl to search for the renderer. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRendererReceiveShadows(UnityEngine.GameObject,System.String,System.Boolean)">
+            <summary>
+            Set the ReceiveShadows property of a renderer
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="rendererName">Name of the renderer being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTexture(ChaControl,System.String,System.String,UnityEngine.Texture2D)">
+            <summary>
+            Set the texture property of a material
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTexture(UnityEngine.GameObject,System.String,System.String,UnityEngine.Texture2D)">
+            <summary>
+            Set the texture property of a material
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTextureOffset(ChaControl,System.String,System.String,System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Set the texture offset property of a material
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTextureOffset(UnityEngine.GameObject,System.String,System.String,System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Set the texture offset property of a material
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTextureScale(ChaControl,System.String,System.String,System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Set the texture scale property of a material
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetTextureScale(UnityEngine.GameObject,System.String,System.String,System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Set the texture scale property of a material
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="propertyName">Property of the material being set</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetShader(ChaControl,System.String,System.String)">
+            <summary>
+            Set the shader of a material. Can only be set to a shader that has been loaded by MaterialEditor
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="shaderName">Name of the shader to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetShader(UnityEngine.GameObject,System.String,System.String)">
+            <summary>
+            Set the shader of a material. Can only be set to a shader that has been loaded by MaterialEditor
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="shaderName">Name of the shader to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRenderQueue(ChaControl,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Set the render queue of a material
+            </summary>
+            <param name="chaControl">ChaControl to search for the material. Only parts comprising the body and face will be searched, not clothes, accessories, etc.</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialAPI.SetRenderQueue(UnityEngine.GameObject,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Set the render queue of a material
+            </summary>
+            <param name="gameObject">GameObject to search for the renderer</param>
+            <param name="materialName">Name of the material being modified</param>
+            <param name="value">Value to be set</param>
+            <returns>True if the value was set, false if it could not be set</returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialAPI.ShaderPropertyType">
+            <summary>
+            Type of the shader property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.ShaderPropertyType.Texture">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.ShaderPropertyType.Color">
+            <summary>
+            Color, Vector4, Vector3, Vector2
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.ShaderPropertyType.Float">
+            <summary>
+            Float, Int, Bool
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties">
+            <summary>
+            Properties of a renderer that can be set
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties.Enabled">
+            <summary>
+            Whether the renderer is enabled
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties.ShadowCastingMode">
+            <summary>
+            ShadowCastingMode of the renderer
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties.ReceiveShadows">
+            <summary>
+            Whether the renderer will recieve shadows cast by other objects
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController">
+            <summary>
+            KKAPI character controller that handles saving and loading character data as well as provides methods to get or set the saved data
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.CurrentCoordinateIndex">
+            <summary>
+            Index of the currently worn coordinate. Always 0 except for in Koikatsu
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.OnCardBeingSaved(KKAPI.GameMode)">
+            <summary>
+            Handles saving data to character cards
+            </summary>
+            <param name="currentGameMode"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.OnReload(KKAPI.GameMode,System.Boolean)">
+            <summary>
+            Handles loading data from character cards
+            </summary>
+            <param name="currentGameMode"></param>
+            <param name="maintainState"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.Update">
+            <summary>
+            Used by SetMaterialTextureFromFile if setTexInUpdate is true, needed for loading files via file dialogue
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.OnCoordinateBeingSaved(ChaFileCoordinate)">
+            <summary>
+            Handles saving data to coordinate cards
+            </summary>
+            <param name="coordinate"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.OnCoordinateBeingLoaded(ChaFileCoordinate,System.Boolean)">
+            <summary>
+            Handles loading data from coordinate cards
+            </summary>
+            <param name="coordinate"></param>
+            <param name="maintainState"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.CorrectTongue">
+            <summary>
+            Corrects the tongue materials since some of them are not properly refreshed on replacing a character
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetAndGetTextureID(System.Byte[])">
+            <summary>
+            Finds the texture bytes in the dictionary of textures and returns its ID. If not found, adds the texture to the dictionary and returns the ID of the added texture.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RefreshClothesMainTex">
+            <summary>
+            Refresh the clothes MainTex, typically called after editing colors in the character maker
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RefreshBodyMainTex">
+            <summary>
+            Refresh the body MainTex, typically called after editing colors in the character maker
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialCopyEdits(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Copy any edits for the specified object
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialPasteEdits(System.Int32,UnityEngine.Material,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Paste any edits for the specified object
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetRendererProperty(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a renderer property to be saved and loaded with the card and optionally also update the renderer.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="value">Value</param>
+            <param name="gameObject">GameObject the renderer belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the renderer</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetRendererPropertyValue(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,UnityEngine.GameObject)">
+            <summary>
+            Get the saved renderer property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="gameObject">GameObject the renderer belongs to</param>
+            <returns>Saved renderer property value</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetRendererPropertyValueOriginal(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,UnityEngine.GameObject)">
+            <summary>
+            Get the original value of the saved renderer property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="gameObject">GameObject the renderer belongs to</param>
+            <returns>Saved renderer property value</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveRendererProperty(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved renderer property value if one is saved and optionally also update the renderer
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="gameObject">GameObject the renderer belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the renderer</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialFloatProperty(System.Int32,UnityEngine.Material,System.String,System.Single,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a float property to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialFloatPropertyValue(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialFloatPropertyValueOriginal(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialFloatProperty(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialColorProperty(System.Int32,UnityEngine.Material,System.String,UnityEngine.Color,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a color property to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialColorPropertyValue(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialColorPropertyValueOriginal(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialColorProperty(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialTextureFromFile(System.Int32,UnityEngine.Material,System.String,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a texture property to be saved and loaded with the card.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="filePath">Path to the .png file on disk</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setTexInUpdate">Whether to wait for the next Update</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialTexture(System.Int32,UnityEngine.Material,System.String,System.Byte[],UnityEngine.GameObject)">
+            <summary>
+            Add a texture property to be saved and loaded with the card.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="data">Byte array containing the texture data</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTexture(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTextureOriginal(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get whether the texture has been changed
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>True if the texture has been modified, false if not</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialTexture(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="displayMessage">Whether to display a message on screen telling the user to save and reload to refresh textures</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String,UnityEngine.Vector2,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a texture offset property to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTextureOffsetOriginal(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialTextureScale(System.Int32,UnityEngine.Material,System.String,UnityEngine.Vector2,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a texture scale property to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTextureScale(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialTextureScaleOriginal(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialTextureScale(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialShader(System.Int32,UnityEngine.Material,System.String,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a shader to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="shaderName">Name of the shader to be saved, must be a shader that has been loaded by MaterialEditor</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialShader(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Get the saved shader name or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved shader name or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialShaderOriginal(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Get the saved shader name's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved shader name's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialShader(System.Int32,UnityEngine.Material,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved shader if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.SetMaterialShaderRenderQueue(System.Int32,UnityEngine.Material,System.Int32,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Add a shader render queue to be saved and loaded with the card and optionally also update the materials.
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="renderQueue">Value</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialShaderRenderQueue(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Get the saved render queue or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved render queue or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetMaterialShaderRenderQueueOriginal(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Get the saved render queue's original value or null if none is saved
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <returns>Saved render queue's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RemoveMaterialShaderRenderQueue(System.Int32,UnityEngine.Material,UnityEngine.GameObject,System.Boolean)">
+            <summary>
+            Remove the saved render queue if one is saved and optionally also update the materials
+            </summary>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory. Ignored for other object types.</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="gameObject">GameObject the material belongs to</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.GetCoordinateIndex(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType)">
+            <summary>
+            Get the coordinate index based on object type, hair and character return 0, clothes and accessories return CurrentCoordinateIndex
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.CoordinateChanging">
+            <summary>
+            Whether the coordinate is being changed this Update. Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.AccessorySelectedSlotChanging">
+            <summary>
+            Whether the selected accessory slot is being changed this Update. Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ClothesChanging">
+            <summary>
+            Whether the clothes are being changed this Update. Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.CharacterLoading">
+            <summary>
+            Whether the character is being changed this Update. Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RefreshingTextures">
+            <summary>
+            Whether the overlay plugin is refreshing textures this Update. Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.MaterialEditorCharaController.CustomClothesOverride">
+            <summary>
+            Override flag set to distinguish between clothes being changed via character maker and clothes changed by changing outfit slots, loading the character, or other methods.
+            Used by methods that happen later in the update. If set, reverts to false on next Update.
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType">
+            <summary>
+            Type of object, used for saving MaterialEditor data.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType.Unknown">
+            <summary>
+            Unknown type, things should never be of this type
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType.Clothing">
+            <summary>
+            Clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType.Accessory">
+            <summary>
+            Accessory
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType.Hair">
+            <summary>
+            Hair
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType.Character">
+            <summary>
+            Parts of a character
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty">
+            <summary>
+            Data storage class for renderer properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.ObjectType">
+            <summary>
+            Type of the object
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.CoordinateIndex">
+            <summary>
+            Coordinate index, always 0 except in Koikatsu
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.Slot">
+            <summary>
+            Slot of the accessory, hair, or clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.RendererName">
+            <summary>
+            Name of the renderer
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.Property">
+            <summary>
+            Property type
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.RendererProperty.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String,System.String)">
+            <summary>
+            Data storage class for renderer properties
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="rendererName">Name of the renderer</param>
+            <param name="property">Property type</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty">
+            <summary>
+            Data storage class for float properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.ObjectType">
+            <summary>
+            Type of the object
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.CoordinateIndex">
+            <summary>
+            Coordinate index, always 0 except in Koikatsu
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.Slot">
+            <summary>
+            Slot of the accessory, hair, or clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialFloatProperty.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Data storage class for float properties
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original value</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty">
+            <summary>
+            Data storage class for color properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.ObjectType">
+            <summary>
+            Type of the object
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.CoordinateIndex">
+            <summary>
+            Coordinate index, always 0 except in Koikatsu
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.Slot">
+            <summary>
+            Slot of the accessory, hair, or clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialColorProperty.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.String,UnityEngine.Color,UnityEngine.Color)">
+            <summary>
+            Data storage class for color properties
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original value</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.ObjectType">
+            <summary>
+            Type of the object
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.CoordinateIndex">
+            <summary>
+            Coordinate index, always 0 except in Koikatsu
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.Slot">
+            <summary>
+            Slot of the accessory, hair, or clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.TexID">
+            <summary>
+            ID of the texture as stored in the texture dictionary
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.Offset">
+            <summary>
+            Texture offset value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.OffsetOriginal">
+            <summary>
+            Texture offset original value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.Scale">
+            <summary>
+            Texture scale value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.ScaleOriginal">
+            <summary>
+            Texture scale original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.String,System.Nullable{System.Int32},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="texID">ID of the texture as stored in the texture dictionary</param>
+            <param name="offset">Texture offset value</param>
+            <param name="offsetOriginal">Texture offset original value</param>
+            <param name="scale">Texture scale value</param>
+            <param name="scaleOriginal">Texture scale original value</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialTextureProperty.NullCheck">
+            <summary>
+            Check if the TexID, Offset, and Scale are all null. Safe to remove this data if true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader">
+            <summary>
+            Data storage class for shader data
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.ObjectType">
+            <summary>
+            Type of the object
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.CoordinateIndex">
+            <summary>
+            Coordinate index, always 0 except in Koikatsu
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.Slot">
+            <summary>
+            Slot of the accessory, hair, or clothing
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.ShaderName">
+            <summary>
+            Name of the shader
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.ShaderNameOriginal">
+            <summary>
+            Name of the original shader
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.RenderQueue">
+            <summary>
+            Render queue
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.RenderQueueOriginal">
+            <summary>
+            Original render queue
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="shaderName">Name of the shader</param>
+            <param name="shaderNameOriginal">Name of the original shader</param>
+            <param name="renderQueue">Render queue</param>
+            <param name="renderQueueOriginal">Original render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="shaderName">Name of the shader</param>
+            <param name="shaderNameOriginal">Name of the original shader</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.#ctor(KK_Plugins.MaterialEditor.MaterialEditorCharaController.ObjectType,System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="objectType">Type of the object</param>
+            <param name="coordinateIndex">Coordinate index, always 0 except in Koikatsu</param>
+            <param name="slot">Slot of the accessory, hair, or clothing</param>
+            <param name="materialName">Name of the material</param>
+            <param name="renderQueue">Render queue</param>
+            <param name="renderQueueOriginal">Original render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorCharaController.MaterialShader.NullCheck">
+            <summary>
+            Check if the shader name and render queue are both null. Safe to delete this data if true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.CopyContainer">
+            <summary>
+            Class containing material data, used to for copy and paste of material edits
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialFloatPropertyList">
+            <summary>
+            List of float property edits
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialColorPropertyList">
+            <summary>
+            List of color property edits
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialTexturePropertyList">
+            <summary>
+            List of texture property edits
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialShaderList">
+            <summary>
+            List of shader edits
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.CopyContainer.IsEmpty">
+            <summary>
+            Whether there are any copied edits
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.ClearAll">
+            <summary>
+            Clear any copied edits
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.CopyContainer.MaterialFloatProperty">
+            <summary>
+            Data storage class for float properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialFloatProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialFloatProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialFloatProperty.#ctor(System.String,System.Single)">
+            <summary>
+            Data storage class for float properties
+            </summary>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.CopyContainer.MaterialColorProperty">
+            <summary>
+            Data storage class for color properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialColorProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialColorProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialColorProperty.#ctor(System.String,UnityEngine.Color)">
+            <summary>
+            Data storage class for color properties
+            </summary>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty.Data">
+            <summary>
+            ID of the texture as stored in the texture dictionary
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty.Offset">
+            <summary>
+            Texture offset value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty.Scale">
+            <summary>
+            Texture scale value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialTextureProperty.#ctor(System.String,System.Byte[],System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+            <param name="property">Name of the property</param>
+            <param name="data">Byte array containing the texture</param>
+            <param name="offset">Texture offset value</param>
+            <param name="scale">Texture scale value</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader">
+            <summary>
+            Data storage class for shader data
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.ShaderName">
+            <summary>
+            Name of the shader
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.RenderQueue">
+            <summary>
+            Render queue
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.#ctor(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="shaderName">Name of the shader</param>
+            <param name="renderQueue">Render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.#ctor(System.String)">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="shaderName">Name of the shader</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.#ctor(System.Nullable{System.Int32})">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="renderQueue">Render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.CopyContainer.MaterialShader.NullCheck">
+            <summary>
+            Check if the shader name and render queue are both null. Safe to delete this data if true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MaterialEditorPlugin">
+            <summary>
+            MaterialEditor plugin base
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorPlugin.GUID">
+            <summary>
+            MaterialEditor plugin GUID
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorPlugin.PluginName">
+            <summary>
+            MaterialEditor plugin name
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorPlugin.Version">
+            <summary>
+            MaterialEditor plugin version
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorPlugin.ExportPath">
+            <summary>
+            Path where textures will be exported
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MaterialEditorPlugin.CopyData">
+            <summary>
+            Saved material edits
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorPlugin.AssetLoadedHook(XUnity.ResourceRedirector.AssetLoadedContext)">
+            <summary>
+            Every time an asset is loaded, swap its shader for the one loaded by MaterialEditor. This reduces the number of instances of a shader once they are cleaned up by garbage collection
+            which reduce RAM usage, etc. Also fixes KK mods in EC by swapping them to the equivalent EC shader.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorPlugin.GetUncensorSelectorParts">
+            <summary>
+            Get the list of additional body parts from UncensorSelector and add them to the body parts list
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MaterialEditorPlugin.GetCharaController(ChaControl)">
+            <summary>
+            Get the KKAPI character controller for MaterialEditor. Provides access to methods for getting and setting material changes.
+            </summary>
+            <param name="chaControl"></param>
+            <returns>KKAPI character controller</returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.Export">
+            <summary>
+            Contains methods for exporting the renderer data in various formats
+            </summary>
+            <summary>
+            Contains methods for exporting the renderer data in various formats
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.Export.ExportObj(UnityEngine.Renderer)">
+            <summary>
+            Exports the mesh of the SkinnedMeshRenderer or MeshRenderer
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.Export.ExportUVMaps(UnityEngine.Renderer)">
+            <summary>
+            Exports the UV map(s) of the SkinnedMeshRenderer or MeshRenderer
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController">
+            <summary>
+            KKAPI scene controller which provides access for getting and setting properties to be saved and loaded with the scene data
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.OnSceneSave">
+            <summary>
+            Saves data
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.OnSceneLoad(KKAPI.Studio.SaveLoad.SceneOperationKind,KKAPI.Utilities.ReadOnlyDictionary{System.Int32,Studio.ObjectCtrlInfo})">
+            <summary>
+            Loads saved data
+            </summary>
+            <param name="operation"></param>
+            <param name="loadedItems"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.OnObjectsCopied(KKAPI.Utilities.ReadOnlyDictionary{System.Int32,Studio.ObjectCtrlInfo})">
+            <summary>
+            Handles copying data when objects are copied
+            </summary>
+            <param name="copiedItems"></param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetAndGetTextureID(System.Byte[])">
+            <summary>
+            Finds the texture bytes in the dictionary of textures and returns its ID. If not found, adds the texture to the dictionary and returns the ID of the added texture.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialCopyEdits(System.Int32,UnityEngine.Material)">
+            <summary>
+            Copy any edits for the specified object
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialPasteEdits(System.Int32,UnityEngine.Material,System.Boolean)">
+            <summary>
+            Paste any edits for the specified object
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetRendererProperty(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String,System.Boolean)">
+            <summary>
+            Add a renderer property to be saved and loaded with the scene and optionally also update the renderer.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="value">Value</param>
+            <param name="setProperty">Whether to also apply the value to the renderer</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetRendererPropertyValue(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties)">
+            <summary>
+            Get the saved renderer property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <returns>Saved renderer property value</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetRendererPropertyValueOriginal(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties)">
+            <summary>
+            Get the saved renderer property's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <returns>Saved renderer property's original value</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveRendererProperty(System.Int32,UnityEngine.Renderer,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.Boolean)">
+            <summary>
+            Remove the saved renderer property value if one is saved and optionally also update the renderer
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="renderer">Renderer being modified</param>
+            <param name="property">Property of the renderer</param>
+            <param name="setProperty">Whether to also apply the value to the renderer</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialFloatProperty(System.Int32,UnityEngine.Material,System.String,System.Single,System.Boolean)">
+            <summary>
+            Add a float property to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialFloatPropertyValue(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialFloatPropertyValueOriginal(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialFloatProperty(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialColorProperty(System.Int32,UnityEngine.Material,System.String,UnityEngine.Color,System.Boolean)">
+            <summary>
+            Add a color property to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialColorPropertyValue(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialColorPropertyValueOriginal(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialColorProperty(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialTextureFromFile(System.Int32,UnityEngine.Material,System.String,System.String,System.Boolean)">
+            <summary>
+            Add a texture property to be saved and loaded with the card.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="filePath">Path to the .png file on disk</param>
+            <param name="setTexInUpdate">Whether to wait for the next Update</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialTexture(System.Int32,UnityEngine.Material,System.String,System.Byte[])">
+            <summary>
+            Add a texture property to be saved and loaded with the card.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="data">Byte array containing the texture data</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTexture(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTextureOriginal(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get whether the texture has been changed
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialTexture(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="displayMessage">Whether to display a message on screen telling the user to save and reload to refresh textures</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String,UnityEngine.Vector2,System.Boolean)">
+            <summary>
+            Add a texture offset property to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTextureOffsetOriginal(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialTextureOffset(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialTextureScale(System.Int32,UnityEngine.Material,System.String,UnityEngine.Vector2,System.Boolean)">
+            <summary>
+            Add a texture scale property to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="value">Value</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTextureScale(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialTextureScaleOriginal(System.Int32,UnityEngine.Material,System.String)">
+            <summary>
+            Get the saved material property's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <returns>Saved material property's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialTextureScale(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Remove the saved material property value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="propertyName">Property of the material without the leading underscore</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialShader(System.Int32,UnityEngine.Material,System.String,System.Boolean)">
+            <summary>
+            Add a shader to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="shaderName">Property of the material without the leading underscore</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialShader(System.Int32,UnityEngine.Material)">
+            <summary>
+            Get the saved shader name or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <returns>Saved shader name or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialShaderOriginal(System.Int32,UnityEngine.Material)">
+            <summary>
+            Get the saved shader name's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <returns>Saved shader name's original value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialShader(System.Int32,UnityEngine.Material,System.Boolean)">
+            <summary>
+            Remove the saved shader if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.SetMaterialShaderRenderQueue(System.Int32,UnityEngine.Material,System.Int32,System.Boolean)">
+            <summary>
+            Add a render queue to be saved and loaded with the scene and optionally also update the materials.
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="renderQueue">Value</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialShaderRenderQueue(System.Int32,UnityEngine.Material)">
+            <summary>
+            Get the saved render queue value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <returns>Saved render queue value or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.GetMaterialShaderRenderQueueOriginal(System.Int32,UnityEngine.Material)">
+            <summary>
+            Get the saved render queue's original value or null if none is saved
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <returns>Saved render queue value's original or null if none is saved</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RemoveMaterialShaderRenderQueue(System.Int32,UnityEngine.Material,System.Boolean)">
+            <summary>
+            Remove the saved render queue value if one is saved and optionally also update the materials
+            </summary>
+            <param name="id">Item ID as found in studio's dicObjectCtrl</param>
+            <param name="material">Material being modified. Also modifies all other materials of the same name.</param>
+            <param name="setProperty">Whether to also apply the value to the materials</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController.RendererProperty">
+            <summary>
+            Data storage class for renderer properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.RendererProperty.ID">
+            <summary>
+            ID of the item
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.RendererProperty.RendererName">
+            <summary>
+            Name of the renderer
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.RendererProperty.Property">
+            <summary>
+            Property type
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.RendererProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.RendererProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.RendererProperty.#ctor(System.Int32,System.String,KK_Plugins.MaterialEditor.MaterialAPI.RendererProperties,System.String,System.String)">
+            <summary>
+            Data storage class for renderer properties
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="rendererName">Name of the renderer</param>
+            <param name="property">Property type</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty">
+            <summary>
+            Data storage class for float properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.ID">
+            <summary>
+            ID of the item
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialFloatProperty.#ctor(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Data storage class for float properties
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty">
+            <summary>
+            Data storage class for color properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.ID">
+            <summary>
+            ID of the item
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.ValueOriginal">
+            <summary>
+            Original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialColorProperty.#ctor(System.Int32,System.String,System.String,UnityEngine.Color,UnityEngine.Color)">
+            <summary>
+            Data storage class for float properties
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="value">Value</param>
+            <param name="valueOriginal">Original</param>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.ID">
+            <summary>
+            ID of the item
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.Property">
+            <summary>
+            Name of the property
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.TexID">
+            <summary>
+            ID of the texture from the texure dicionary
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.Offset">
+            <summary>
+            Texture offset value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.OffsetOriginal">
+            <summary>
+            Texture offset original value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.Scale">
+            <summary>
+            Texture scale value
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.ScaleOriginal">
+            <summary>
+            Texture scale original value
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.#ctor(System.Int32,System.String,System.String,System.Nullable{System.Int32},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Vector2})">
+            <summary>
+            Data storage class for texture properties
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="property">Name of the property</param>
+            <param name="texID">ID of the texture as stored in the texture dictionary</param>
+            <param name="offset">Texture offset value</param>
+            <param name="offsetOriginal">Texture offset original value</param>
+            <param name="scale">Texture scale value</param>
+            <param name="scaleOriginal">Texture scale original value</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialTextureProperty.NullCheck">
+            <summary>
+            Check if the TexID, Offset, and Scale are all null. Safe to remove this data if true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.SceneController.MaterialShader">
+            <summary>
+            Data storage class for shaders
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.ID">
+            <summary>
+            ID of the item
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.MaterialName">
+            <summary>
+            Name of the material
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.ShaderName">
+            <summary>
+            Name of the shader
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.ShaderNameOriginal">
+            <summary>
+            Name of the original shader
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.RenderQueue">
+            <summary>
+            Render queue
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.SceneController.MaterialShader.RenderQueueOriginal">
+            <summary>
+            Original render queue
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialShader.#ctor(System.Int32,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="shaderName">Name of the shader</param>
+            <param name="shaderNameOriginal">Name of the original shader</param>
+            <param name="renderQueue">Render queue</param>
+            <param name="renderQueueOriginal">Original render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialShader.#ctor(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="shaderName">Name of the shader</param>
+            <param name="shaderNameOriginal">Name of the original shader</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialShader.#ctor(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Data storage class for shader data
+            </summary>
+            <param name="id">ID of the item</param>
+            <param name="materialName">Name of the material</param>
+            <param name="renderQueue">Render queue</param>
+            <param name="renderQueueOriginal">Original render queue</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.SceneController.MaterialShader.NullCheck">
+            <summary>
+            Check if the shader name and render queue are both null. Safe to delete this data if true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MEStudio">
+            <summary>
+            Plugin responsible for handling the Studio UI and the KKAPI Studio controller
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEStudio.GUID">
+            <summary>
+            MaterialEditor Studio plugin GUID
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEStudio.PluginName">
+            <summary>
+            MaterialEditor Studio plugin PluginName
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEStudio.Version">
+            <summary>
+            MaterialEditor Studio plugin Version
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MEStudio.GetObjectID(Studio.ObjectCtrlInfo)">
+            <summary>
+            Get the ID for the specified ObjectCtrlInfo
+            </summary>
+            <param name="oci"></param>
+            <returns>ID for the specified ObjectCtrlInfo</returns>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.MEStudio.GetSceneController">
+            <summary>
+            Get the KKAPI scene controller for MaterialEditor. Provides access to methods for getting and setting material properties for studio objects.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.UI">
+            <summary>
+            Code for the MaterialEditor UI
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.UI.InitUI">
+            <summary>
+            Initialize the MaterialEditor UI
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.UI.RefreshUI">
+            <summary>
+            Refresh the MaterialEditor UI
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.UI.RefreshUI(System.String)">
+            <summary>
+            Refresh the MaterialEditor UI using the specified filter text
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.MaterialEditor.UI.Visible">
+            <summary>
+            Get or set the MaterialEditor UI visibility
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.UI.PopulateList(UnityEngine.GameObject,System.Int32,System.String)">
+            <summary>
+            Populate the MaterialEditor UI
+            </summary>
+            <param name="gameObject">GameObject for which to read the renderers and materials</param>
+            <param name="slot">Slot of the clothing (0=tops, 1=bottoms, etc.), the hair (0=back, 1=front, etc.), or of the accessory, or ID of the Studio item. Ignored for other object types.</param>
+            <param name="filter">Comma separated list of text to filter the results</param>
+        </member>
+        <member name="M:KK_Plugins.MaterialEditor.UI.PopulateListCoroutine(UnityEngine.GameObject,System.Int32,System.String)">
+            <summary>
+            Hacky workaround to wait for the dropdown fade to complete before refreshing
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.MaterialEditor.MEMaker">
+            <summary>
+            Plugin responsible for handling events from the character maker
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEMaker.GUID">
+            <summary>
+            MaterialEditor Maker plugin GUID
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEMaker.PluginName">
+            <summary>
+            MaterialEditor Maker plugin name
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.MaterialEditor.MEMaker.Version">
+            <summary>
+            MaterialEditor Maker plugin version
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.CC.Language">
+            <summary>
+            Safely get the language as configured in setup.xml if it exists.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.CC.OpenFileInExplorer(System.String)">
+            <summary>
+            Open explorer focused on the specified file or directory
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.CC.NativeMethods.OpenFolderAndSelectFile(System.String)">
+            <summary>
+            Open explorer focused on item. Reuses already opened explorer windows unlike Process.Start
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.ConfigurationManagerAttributes">
+            <summary>
+            Class that specifies how a setting should be displayed inside the ConfigurationManager settings window.
+            
+            Usage:
+            This class template has to be copied inside the plugin's project and referenced by its code directly.
+            make a new instance, assign any fields that you want to override, and pass it as a tag for your setting.
+            
+            If a field is null (default), it will be ignored and won't change how the setting is displayed.
+            If a field is non-null (you assigned a value to it), it will override default behavior.
+            </summary>
+            
+            <example> 
+            Here's an example of overriding order of settings and marking one of the settings as advanced:
+            <code>
+            // Override IsAdvanced and Order
+            Config.AddSetting("X", "1", 1, new ConfigDescription("", null, new ConfigurationManagerAttributes { IsAdvanced = true, Order = 3 }));
+            // Override only Order, IsAdvanced stays as the default value assigned by ConfigManager
+            Config.AddSetting("X", "2", 2, new ConfigDescription("", null, new ConfigurationManagerAttributes { Order = 1 }));
+            Config.AddSetting("X", "3", 3, new ConfigDescription("", null, new ConfigurationManagerAttributes { Order = 2 }));
+            </code>
+            </example>
+            
+            <remarks> 
+            You can read more and see examples in the readme at https://github.com/BepInEx/BepInEx.ConfigurationManager
+            You can optionally remove fields that you won't use from this class, it's the same as leaving them null.
+            </remarks>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.ShowRangeAsPercent">
+            <summary>
+            Should the setting be shown as a percentage (only use with value range settings).
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.CustomDrawer">
+            <summary>
+            Custom setting editor (OnGUI code that replaces the default editor provided by ConfigurationManager).
+            See below for a deeper explanation. Using a custom drawer will cause many of the other fields to do nothing.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.Browsable">
+            <summary>
+            Show this setting in the settings screen at all? If false, don't show.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.Category">
+            <summary>
+            Category the setting is under. Null to be directly under the plugin.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.DefaultValue">
+            <summary>
+            If set, a "Default" button will be shown next to the setting to allow resetting to default.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.HideDefaultButton">
+            <summary>
+            Force the "Reset" button to not be displayed, even if a valid DefaultValue is available. 
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.Description">
+            <summary>
+            Optional description shown when hovering over the setting.
+            Not recommended, provide the description when creating the setting instead.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.DispName">
+            <summary>
+            Name of the setting.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.Order">
+            <summary>
+            Order of the setting on the settings list relative to other settings in a category.
+            0 by default, higher number is higher on the list.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.ReadOnly">
+            <summary>
+            Only show the value, don't allow editing it.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.IsAdvanced">
+            <summary>
+            If true, don't show the setting by default. User has to turn on showing advanced settings or search for it.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.ObjToStr">
+            <summary>
+            Custom converter from setting type to string for the built-in editor textboxes.
+            </summary>
+        </member>
+        <member name="F:KK_Plugins.ConfigurationManagerAttributes.StrToObj">
+            <summary>
+            Custom converter from string to setting type for the built-in editor textboxes.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.Extensions.ToColor(System.String)">
+            <summary>
+            Convert string to Color
+            </summary>
+        </member>
+        <member name="T:KK_Plugins.TextureContainer">
+            <summary>
+            A class for containing texture data, stored as a byte array. Access the texture with the Texture property and use Dispose to safely destroy it and prevent memory leaks.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.TextureContainer.#ctor(System.Byte[])">
+            <summary>
+            Load a byte array containing texture data.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:KK_Plugins.TextureContainer.#ctor(System.String)">
+            <summary>
+            Load the texture at the specified file path.
+            </summary>
+            <param name="filePath">Path of the file to load</param>
+        </member>
+        <member name="P:KK_Plugins.TextureContainer.Data">
+            <summary>
+            Byte array containing the texture data.
+            </summary>
+        </member>
+        <member name="P:KK_Plugins.TextureContainer.Texture">
+            <summary>
+            Texture data. Created from the Data byte array when accessed.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.TextureContainer.Dispose">
+            <summary>
+            Dispose of the texture data. Does not dispose of the byte array. Texture data will be recreated when accessing the Texture property, if needed.
+            </summary>
+        </member>
+        <member name="M:KK_Plugins.TextureContainer.LoadTextureBytes(System.String)">
+            <summary>
+            Read the specified file and return a byte array.
+            </summary>
+            <param name="filePath">Path of the file to load</param>
+            <returns>Byte array with texture data</returns>
+        </member>
+        <member name="M:KK_Plugins.TextureContainer.TextureFromBytes(System.Byte[],UnityEngine.TextureFormat,System.Boolean)">
+            <summary>
+            Convert a byte array to Texture2D.
+            </summary>
+            <param name="texBytes">Byte array containing the image</param>
+            <param name="format">TextureFormat</param>
+            <param name="mipmaps">Whether to generate mipmaps</param>
+            <returns></returns>
+        </member>
+        <member name="M:UILib.Extensions.OptionIndex(UnityEngine.UI.Dropdown,System.String)">
+            <summary>
+            Return the index of the option matching the specified text or -1 if not found
+            </summary>
+        </member>
+        <member name="M:UILib.Extensions.OptionText(UnityEngine.UI.Dropdown,System.Int32)">
+            <summary>
+            Returns the text of the item at the specified index or null if option doesn't exist
+            </summary>
+        </member>
+        <member name="M:UILib.Extensions.Set(UnityEngine.UI.Toggle,System.Boolean,System.Boolean)">
+            <summary>
+            Set the value of a Toggle
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+            <param name="sendCallback">Whether to trigger events</param>
+        </member>
+        <member name="M:UILib.Extensions.Set(UnityEngine.UI.Slider,System.Single,System.Boolean)">
+            <summary>
+            Set the value of a Slider
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+            <param name="sendCallback">Whether to trigger events</param>
+        </member>
+        <member name="M:UILib.Extensions.Set(UnityEngine.UI.Scrollbar,System.Single,System.Boolean)">
+            <summary>
+            Set the value of a Scrollbar
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+            <param name="sendCallback">Whether to trigger events</param>
+        </member>
+        <member name="M:UILib.Extensions.Set(UnityEngine.UI.Dropdown,System.Int32)">
+            <summary>
+            Set the value of a Dropdown
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:UILib.Extensions.Set(UnityEngine.UI.InputField,System.String,System.Boolean)">
+            <summary>
+            Set the value of an InputField
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+            <param name="sendCallback">Whether to trigger events</param>
+        </member>
+    </members>
+</doc>

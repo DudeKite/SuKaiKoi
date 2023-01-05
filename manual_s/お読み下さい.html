@@ -1,0 +1,1718 @@
+<!-- saved from url=(0017)http://localhost/ -->
+<!DOCTYPE html PUBLIC "" "">
+<HTML lang="ja-JP">
+<head>
+<META content="IE=11.0000" http-equiv="X-UA-Compatible">
+<META charset="utf-8">
+<title>CHARA STUDIO　プレイマニュアル</title>
+<script src="img/jquery.min.js"></script>
+<script src="img/script.js"></script>
+<link href="img/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div id="header" align="center">
+		<!-- ------------------------------------------------------------------------------------------------------- -->
+		<ul id="menu">
+			<li>
+				<a href="#page0">はじめに</a>
+				<div class="subMenu">
+					<a href="#page0">・はじめに</a>
+					<a href="#page1">・利用規約</a>
+					<a href="#page2">・本プログラムについて</a>
+					<a href="#ope">・基本操作</a>
+				</div>
+			</li>
+			<li>
+				<a href="#spec">セットアップ</a>
+				<div class="subMenu">
+					<a href="#spec">・動作環境</a>
+					<a href="#inst">・インストール</a>
+					<a href="#uninst">・アンインストール</a>
+					<a href="#startup">・初期設定</a>
+					<a href="#data">・ユーザーフォルダ</a>
+				</div>
+			</li>
+			<li>
+				<a href="#ope">基本操作</a>
+				<div class="subMenu">
+					<a href="#ope">・基本操作</a>
+					<a href="#data">・ユーザーフォルダ</a>
+					<a href="#keyboard">・ｷｰﾎﾞｰﾄﾞｼｮｰﾄｶｯﾄ</a>
+				</div>
+
+			</li>
+			<li>
+				<a href="#gameScene">ゲーム画面</a>
+				<div class="subMenu">
+					<a href="#gameScene">・ゲーム画面</a>
+					<a href="#gmenu">・メニュー</a>
+					<a href="#gmenu_add">・add</a>
+					<a href="#gmenu_sound">・sound</a>
+					<a href="#gmenu_system">・system</a>
+					<a href="#workspace">・ワークスペース</a>
+					<a href="#colorpanel">・カラーパネル</a>
+					<a href="#movepanel">・ムーブパネル</a>
+					<a href="#optionpanel">・オプションパネル</a>
+
+				</div>
+			</li>
+			<li id="gcon">
+				<a href="#ope">操作方法</a>
+				<div class="subMenu" id="subSw">
+					<a href="#ope">・基本操作方法</a>
+					<a href="#gmenu_add">・データ読み込み</a>
+					<a href="#gmenu_cload">・キャラ読み込み</a>
+					<a href="#gmenu_cctrl">・キャラ操作</a>
+					<a href="#gmenu_csta">・キャラの状態 </a>
+					<a href="#gmenu_ckine">・キネマ</a>
+					<a href="#gmenu_ckine_fk">・ＦＫ</a>
+					<a href="#gmenu_ckine_ik">・ＩＫ</a>
+					<a href="#gmenu_canim">・アニメ、ポーズ変更</a>
+					<a href="#gmenu_cvoice">・ボイス設定</a>
+					<a href="#gmenu_ccloth">・衣装変更</a>
+					<a href="#gmenu_iload">・アイテム読み込み</a>
+					<a href="#gmenu_mload">・マップ読み込み</a>
+					<a href="#gmenu_lload">・マップライト読み込み</a>
+					<a href="#gmenu_sound">・BGM設定</a>
+					<a href="#gmenu_config">・コンフィグ</a>
+					<a href="#gmenu_option">・オプション設定</a>
+					<a href="#gmenu_camlight">・キャラライト設定</a>
+					<a href="#gmenu_effect">・画面効果設定</a>
+					<a href="#gmenu_save">・セーブ</a>
+					<a href="#gmenu_load">・ロード</a>
+					<a href="#gmenu_reset">・シーンの初期化</a>
+					<a href="#gmenu_reset">・スタジオの終了</a>
+					<a href="#workspace">・ワークスペース操作</a>
+					<a href="#item_cam">・アイテムカメラ</a>
+					<a href="#ws_mselect">・複数選択</a>
+					<a href="#ws_mcopy">・位置情報コピー</a>
+					<a href="#ws_mparent">・親子付け</a>
+					<a href="#ws_mparentkey">・親子付け(ｷｰﾎﾞｰﾄﾞ)</a>
+					<a href="#route">・ルート移動</a>
+					<a href="#colorpanel">・色操作</a>
+					<a href="#hscene">・Ｈシーンの作り方</a>
+
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+
+	
+
+	<div id="hyou1"><img src="img/ptitle.png" alt=""></div>
+<div id="content">
+<hr id="page0">
+	<h4>　はじめに</h4>
+<div id="page0Cont" class="ContBG">
+	　この度はWindows 7 / 8.1 / 10 専用ソフト「コイカツ！」をお買い上げいただきまして誠にありがとうございます。<br>
+	　ご使用前に「CHARA STUDIO プレイマニュアル」をよくお読みいただき、正しくお楽しみ下さい。<br>
+
+
+</div><!--page0-->
+
+
+<hr id="page1">
+	<h4>　利用規約</h4>
+<div id="caution" class="ContBG">
+　ゲームをプレイする前に必ずお読み下さい。<br>
+	<div class="supsub">　！免責事項！</div>
+　●本ソフトウェアを使用する事で発生したトラブルや損失、損害に対して、当社は一切責任を負いません。また、動作保証は致しません。<br>
+　　 ハードディスク中にあるデータ及びプログラムなどはバックアップをし、良識的な行動に努めて下さい。<br>
+
+	<br>
+　●この作品はすべてフィクションです。<br>
+　　 作品内に登場する人物・団体名・地名・商品名・事件及び時代背景・職業は全て架空のものであり、実際のものとは一切関係ありません。<br>
+　　 また、このゲームは作品内容及び演出上18歳未満の方の購入・プレイが禁止されています。<br>
+　　 登場人物は全て18歳以上です。<br>
+	<br>
+
+	<div class="supsub">　！禁止事項！</div>
+　●このプログラム、データ及びマニュアルの一部または全部を無断で複製や改造する行為は、法律によって禁止されています。<br>
+　　 また、インターネットでのファイル共有やアップロード、レンタル業務、中古品の取り扱い、及びそれに類する行為での使用は一切認めておりません。<br>
+	<br>
+　●動画配信、並びにスクリーンショット等の二次利用は禁止とさせて頂きます。<br>
+<br>
+　●本作品には暴力的、残酷的なシーン、犯罪にあたる行為等、過激な表現が含まれております。絶対に真似をしないで下さい。<br>
+　　 作品内での行動は同意の上の演技でありフィクションです。　この作品の内容と同じ事を現実に行うと法律によって処罰される場合があります。<br>
+	<br>
+
+	<div class="supsub">　！注意！</div>
+
+　●モニターに近づき過ぎないように注意して下さい。<br>
+	<br>
+　●長時間プレイする場合は、健康のため1～2時間ごとに10～15分程度の小休止をして下さい。<br>
+	<br>
+	<div class="supsub">　！警告！</div>
+
+　●疲れているときのプレイや連続した長時間のプレイは健康上好ましくありませんので避けて下さい。<br>
+　　 以前テレビを見ていて、または強い刺激を受けたときに一時的に筋肉の痙攣や意識の喪失などを経験した方は、ゲームを始める前に医師と相談して下さい。<br>
+　　 ゲームのプレイ中にそのような症状が起きた場合は、直ちにゲームを止め、医師の診断を受けて下さい。<br>
+	<br>
+　※ 各商品名は一般に各社の登録商標または商標ですが、C及びTMは省略しております。
+</div><!--page0-->
+
+
+
+<hr id="page2">
+	<h4>　本プログラムについて</h4>
+<div id="caution" class="ContBG">
+	<b style="color:#ff229f">
+		　※本ソフトウェアをプレイするに「コイカツ！」がインストールされている必要があります。予めご了承下さい。<br>
+	</b>
+
+	　・本プログラムはキャラクターやアイテム等を自由に配置し、表情やポーズ、アニメーションを組み合わせて思い通りのシーンを演出するジオラマ系キャラビューアーソフトです。<br>
+	　※ゲームにＨシーンを追加するシーンエディタではございません。<br>
+</div><!--page0-->
+
+
+
+<hr id="spec">
+
+	<h4>　動作環境</h4>
+
+<ul class="ContBG">
+<li>
+	　・「コイカツ！」がインストールされた状態で、ＨＤＤ空き容量が5GB必要となります。それ以外は基本的に「コイカツ！」とほぼ同環境となります。<br>
+	　　詳しくは 「 <a href="../manual/お読み下さい.html">コイカツ！ プレイマニュアル</a> 」 をご覧下さい。<br>
+	　　※CHARA STUDIO は1280 x 720以上のディスプレイ解像度が必要となります。<br>
+	　　※表示する人数やアイテムの数によっては動作が重くなる可能性があります。
+</li>
+</ul>
+
+
+<hr id="inst">
+	
+	<h4>　インストール方法</h4>
+<ul id="instCont" class="ContBG">
+<li>
+
+	　①フォルダ内の「FileCopy.exe」を右クリック→管理者として実行 で起動して下さい。<br>
+	<br>
+	　②「FileCopy」ウインドウの 「 開始 」 ボタンを選択し、 「 完了 」 と表示されたら「 終了 」を選択して下さい。<br>
+	<br>
+	　③ゲームを起動して「<a href="#startup">初期設定</a>」画面が変化していればインストール完了です。<br>
+	<br>
+	　　※一度インストールを行えば、再度インストールを行う必要はございません。<br>
+	　　※ゲームのインストールには環境によって異なりますが1時間前後かかる場合がございます。<br>
+	　　　　画面のメーターが進まない、応答なしの等の表記が出ても裏で作業が続いていますので、エラーが出ない限りはお待ち下さい。
+</li>
+</ul>
+	
+	
+<hr id="uninst">
+	<h4>　アンインストール方法</h4>
+<div id="uninstCont" class="ContBG">
+	　※本ソフトウェアは「コイカツ！」に追加する形でインストールを行うため、単独で削除することができません。<br>
+	　　　アンインストールを行う場合は、「コイカツ！」をアンインストール後に手動で削除して頂く必要があります。<br>
+	<br>
+	　　・Windowsの「コントロールパネル」より「プログラムのアンインストール」から「ILLUSION コイカツ！」をアンインストールして下さい。<br>
+<br>
+	　　・アンインストール後にインストール先を開き、残っているファイルを削除して下さい。　※標準では　C:\illusion　にインストールされています。
+</div>
+
+
+
+
+
+	<hr id="ope">
+	<h4>　基本操作</h4>
+	<ul class="ContBG">
+		<li class="supsub">　Windows基本操作</li>
+		<li class="ope_win">
+			本プログラムでは以下のWindows基本操作を使用します。<br>
+			<br>
+			<b>　①左クリック</b> ：　マウスの左ボタンを押して下さい。　　<b>②左ボタンドラッグ</b> ：　マウスの左ボタンを押したままマウスを動かして下さい。<br>
+			<br>
+			　本マニュアルでは「～を選択して下さい」という表現がございます。こちらの記載があった場合は「～」の部分にマウスカーソルを移動させて、マウスの左ボタンをクリックして下さい。<br>
+			　（例：「決定ボタンを選択して下さい」とありましたら、「決定ボタン」にマウスカーソルを移動させてマウスの左ボタンをクリックして下さい。）<br>
+			<br>	
+			<b>
+				　※場合によってはファイルのコピー・移動・削除等の操作を行う必要がある場合があります。　こちらがわからないという場合は、お手数ではございますがお使いのパソコンメーカーにお問い合わせ下さい。
+			</b><br>
+			<br>
+			<b>　日本語入力</b> ：　入力欄で日本語入力をする場合は、入力欄をクリックしてキーボードの「Alt」キーを押しながら「半角／全角」キーを押してから文字を入力して下さい。<br>
+			　　※一度この操作を行うとゲームを再起動するか、再び同じ操作をするまで日本語入力になります。<br>
+			<br>
+		</li>
+		<li class="supsub">　カメラ操作</li>
+		<li>
+			　メニューやボタンがない場所で図の操作を行うとカメラの操作を行う事ができます。<br>
+			<img src="img/camera.png"><br>
+			<br>
+		</li>
+		<li class="supsub">　操作軸</li>
+		<li style="width:100%;">
+			キャラやアイテムの移動・回転・拡縮を操作軸で行うことができます。　各項目をマウス左ボタンドラッグで操作する事ができます。<br>
+			操作軸は「Moveパネル」か「キーボードショートカット」にて切り替えることができます。<br>
+			<br>
+		</li>
+		<li><img src="img/mobj_m.png"></li>
+		<li class="opesub">
+			<b>① 移動ボックス</b>対象を移動させます。<br>
+			<b>② Z方向移動</b>対象をZ軸方向に移動させます。<br>
+			<b>③ X方向移動</b>対象をX軸方向に移動させます。<br>
+			<b>④ Y方向移動</b>対象をY軸方向に移動させます。<br>
+		</li>
+
+		<li><img src="img/mobj_r.png"></li>
+		<li class="opesub">
+			<b>⑤Z軸回転円</b>対象をZ軸回転（時計回転）させます。<br>
+			<b>⑥X軸回転円</b>対象をX軸回転（縦回転）させます。<br>
+			<b>⑦Y軸回転円</b>対象をY軸回転（横回転）させます。<br>
+			<br><br><br><br>
+		</li>
+
+
+		<li><br><img src="img/mobj_s.png"><br><br></li>
+		<li class="opesub">
+		<br>
+			<b>⑧拡縮ボックス</b>対象をXYZ均等に拡縮します。<br>
+			<b>⑨Z方向拡縮</b>対象をZ軸方向に拡縮します。<br>
+			<b>⑩X方向拡縮</b>対象をX軸方向に拡縮します。<br>
+			<b>⑪Y方向拡縮</b>対象をY軸方向に拡縮すます。<br>
+
+		</li>
+		<li><br><img src="img/mobj_ope.png"></li>
+		<li style="width:440px;">		</li>
+
+		<li class="supsub">　チェックボックス</li>
+		<li>
+			<img src="img/checkbox.png"> チェックボックスは選択するとＯＮ／ＯＦＦの切り替えを行うことができます。
+		</li>
+
+	</ul>
+
+
+
+<hr id="startup">
+<h4>　初期設定</h4>
+<div class="w100a">　デスクトップにあります「コイカツ！」を起動しますと「初期設定」が表示されます。</div>
+<ul id="startupCont" class="ContBG">
+	<li class="CTextA"><img src="img/startup.png"></li>
+	<li class="CTextB">
+		<b>① 画面サイズ　</b>
+		　表示する画像解像度を指定します。<br>
+		<br>
+		
+		<b>② 全画面表示</b>
+		　チェックを入れると「全画面」、外すと「ウインドウ」で起動します。<br>
+		　	※「全画面」で正常に表示されない場合は「ウインドウ」に設定して下さい。<br>
+		<br>
+		<b>③ 簡易設定</b>
+		<div class="b_sub7">・ﾊﾟﾌｫｰﾏﾝｽ</div>　パソコンに負担をかけない設定です。<br>
+		<div class="b_sub7">・ノーマル</div>　速度・品質の中間の設定です。<br>
+		<div class="b_sub7">・クォリティ</div>　高スペック対応の設定です。<br>
+		<br>
+		<b>④ ディスプレイ</b>
+		　ディスプレイを複数使用している場合に表示するディスプレイを選びます　※１つの場合は関係ありません。<br>
+		<br>
+		<b>⑤ システム情報</b>
+		　使用しているパソコン環境を表示します。<br>
+		<br>
+		
+		<b>⑥ インストール先を開く</b>
+		　ゲームがインストールされているフォルダを開きます。<br>
+		<br>
+		
+		<b>⑦ 終了</b>
+		　ゲームを終了します。<br>
+		<br>
+		
+		<b>⑧ 起動メニュー</b>
+		<div class="b_sub7">・ゲーム開始</div>　ゲーム本編を開始します。 <br>
+		<div class="b_sub7">・スタジオ開始</div>　CHARA STUDIOを開始します。 <br>
+		<div class="b_sub7">・マニュアル</div>　左隣項目のマニュアルを表示します。<br>
+		<br>
+		
+		<b>⑨ コイカツキャラメイクのキャラフォルダを開く</b>
+		　コイカツ！製品版のキャラデータが保存されているフォルダを開きます。<br>
+		<br>
+				
+		<b>⑩ コイカツキャラメイク体験版のキャラフォルダを開く</b>
+		　コイカツ！体験版のキャラデータが保存されているフォルダを開きます。<br>
+		<br>
+
+
+
+
+
+	</li>
+</ul>
+
+<hr id="data">
+	<h4>　ユーザーフォルダの説明</h4>
+	<ul  id="dataFolder" class="ContBG">
+		<li style="width:100%;">
+			「コイカツ！」のインストール先を開くと[ UserData ]フォルダがあります。各種保存したデータはこのフォルダの中にあります。<br>
+			※標準のインストール先は　<b style="color: #ff417f;">C:\illusion\koikatu</b>　となります。<br>
+			<br>
+			※外部読み込みに使用する「 wav形式の音楽ファイル 」や「 png形式の画像、透過処理 」等のファイル操作につきましてはお使いのパソコンメーカーにお問い合わせ下さい。<br>
+			※大きい画像や音楽ファイルを読み込むと動作が重くなる可能性がありますのでご注意下さい。<br>
+			<b style="color: #ff417f;">※「 ｆｒａｍｅ 」「 ｂｇ 」「 ｐａｔｔｅｒｎ 」「 ｐａｔｔｅｒｎ_ｔｈｕｍｂ 」の画像はシーンデータに保存されません。　シーンを読み込んだ際に各フォルダに画像がない場合は読み込まれませんのでご注意下さい。</b><br>
+			<br>
+		</li>
+		<li class="CTextB">
+			<b>ｃａｐ</b>
+			　「 <a href="#keyboard">スクリーンショット機能</a> 」で撮影した画像が保存されます。<br>
+			<br>
+			
+			<b>ａｕｄｉｏ</b>
+			　「 <a href="#gmenu_sound">Ｓｏｕｎｄ：外部読込</a> 」で使用するwavファイルを入れるフォルダです。<br>
+			　使用できるwav形式のファイルは8bitと16bitのみのものとなります。<br>
+			<br>
+			
+			<b>ｓｔｕｄｉｏ</b>
+			　スタジオの各種データが保存されます。<br>
+			<div class="b_sub7">[　ｐｏｓｅ　]</div> 「 <a href="#gmenu_ckine_fk">ＦＫ</a> / <a href="#gmenu_ckine_ik">ＩＫ</a> 」で保存したポーズデータが格納されてます。<br>
+			<div class="b_sub7">[　ｓｃｅｎｅ　]</div> 「 <a href="#gmenu_save">セーブ</a> 」で保存したシーンデータが格納されてます。<br>
+			<div class="b_sub7">[　ｖｏｉｃｅｌｉｓｔ　]</div> 「<a href="#gmenu_cvoice">ボイス機能</a> 」で保存したセリフリストが保存されます。
+			　
+
+
+			<br>
+
+		</li>
+
+		<li class="CTextB" style="margin-left: 50px;">
+			<b>ｆｒａｍｅ</b>
+			　「 <a href="#gmenu_add">フレーム</a> 」で読み込める画像を入れるフォルダです。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １６：９比率の画像を推奨します。<br>
+			　※透過処理をしていない場合、ビュー画面が見えなくなりますのでご注意下さい。<br>
+
+			<br>
+			
+			<b>ｂｇ</b>
+			　「 <a href="#gmenu_add">背景</a> 」や「 <a href="gmenu_iload">アイテム：画像板</a> 」で読み込める画像を入れるフォルダです。<br>
+			　※「背景」に使用する場合、マップ読み込みにて背景透明なマップか、「なし」を選択して下さい。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １６：９比率の画像を推奨します。<br>
+			<br>
+			
+			<b>ｐａｔｔｅｒｎ</b>
+			　アイテムの「 <a href="gmenu_iload">柄</a> 」に使用する画像を入れるフォルダです。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １：１比率の画像を推奨します。<br>
+			　<br>
+			
+			<b>ｐａｔｔｅｒｎ＿ｔｈｕｍｂ</b>
+			　アイテムの「 <a href="gmenu_iload">柄</a> 」を選択する画面に使用する画像を入れるフォルダです。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １：１比率の画像を推奨します。<br>
+			<br>
+		</li>
+	</ul>
+
+
+	<hr id="gameScene">
+	<h4>　ゲーム画面</h4>
+<ul class="ContBG">
+	<li class="CTextA"><img src="img/gameScene.png"></li>
+	<li class="CTextB">
+		<b>① メニュー</b>
+		　各種読み込み、システム操作、セーブ・ロード等、主な操作を行います。 <a href="#gmenu"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		
+		<b>② ビュー</b>
+		　各操作を行った結果が表示されます。<br>
+		　<a href="#ope">マウスでのカメラ操作</a>や、<a href="#keyboard">ショートカット</a>での操作を行う事ができます。<br>
+		<br>
+		
+		<b>③ カメラ登録</b>
+		　カメラ情報（位置・向き・バンク・パース）を10箇所保存・読み込みを行うことができます。<br>
+		　「数字ボタン」の上の「SAVE」を選択すると、その「数字ボタン」に現在のカメラ情報を保存します。<br>
+		　「数字ボタン」を選択するとその「数字ボタン」に保存されているカメラ情報を読み込みます。<br>
+		　※保存したカメラ情報はシーン自体に保存されます。<br>
+		<br>
+		
+		<b>④ カメラ切り替え</b>
+		　「 <a href="#item_cam">アイテムカメラ</a> 」を読み込んでいる場合、ここから切り替えることが出来ます。<br>
+		<br>
+
+		<b>⑤ パネル管理</b>
+		　各パネルの表示・非表示の切り替えを行うことができます。<br>
+		<br>
+		
+		<b>⑥ ワークスペース</b>
+		　現在読み込んでいるキャラ・アイテムの管理を行うことができます。 <a href="#workspace"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		　※ウインドウ名部分を左ボタンドラッグで移動できます。<br>
+		<br>
+		
+		<b>⑦ カラーパネル</b>
+		　選択されている項目の色を変更することが出来ます。 <a href="#colorpanel"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+
+		<b>⑧ 操作軸</b>
+		　「ワークスペース」で選択している項目の移動・回転・拡縮を行うことができます。 <a href="#ope"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		
+		<b>⑨ ムーブパネル</b>
+		　移動・回転・拡縮の数値入力制御、操作軸の切り替えを行うことができます。 <a href="#movepanel"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		<b>⑩ オプションパネル</b>
+		　注視点や軸の表示切り替え、カメラ固定、アンドゥ・リドゥの操作を行うことができます。 <a href="#optionpanel"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+
+	</li>
+
+</ul>
+
+
+	<hr id="gmenu">
+	<h4>　メニュー</h4>
+<ul class="ContBG w300">
+	<li class="CTextA"><img src="img/menu.png"></li>
+	<li class="CTextB">
+		<b>① add</b>
+		　キャラ、アイテム、マップ等の主要コンテンツの読み込みに使用します。<br>
+		<br>
+		<b>② anim</b>
+		　<a href="#workspace">ワークスペース</a>で選択している <a href="#gmenu_cctrl">キャラの操作</a>　、　<a href="#gmenu_icolor">アイテムの色や柄変更</a>　に使用します。<br>
+		<br>
+		<b>③ sound</b>
+		　BGM　、　外部音　の選択・再生に使用します。<a href="#gmenu_sound"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		<b>④ system</b>
+		　<a href="#gmenu_config">コンフィグ</a>　、　<a href="#gmenu_option">オプション</a>　、　<a href="#gmenu_camlight">キャラライト</a>　、　<a href="#gmenu_effect">画面効果</a>　の変更、　<a href="#gmenu_save">セーブ・ロード</a>　、<a href="##gmenu_reset">シーンの初期化</a>　、　<a href="##gmenu_reset">CHARA STUDIOの終了</a>　を行うことができます。<br>
+		　※キャラライトと画面効果の設定はシーン自体に保存されます。			<br>
+		<br>
+	</li>
+	
+	
+</ul>
+
+	<br id="gmenu_add">
+	<div class="w100"><b>● add</b>　：　キャラ、アイテム、マップ等の主要コンテンツの読み込みに使用します。<br></div>
+	<ul class="ContBG w300">
+
+		<li class="CTextA"><img src="img/menu_add.png"></li>
+		<li class="CTextB">
+			<b>女キャラ、男キャラ</b>
+			　キャラメイクで作成したキャラを読み込みます。<a href="#gmenu_cload"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			<b>アイテム</b>
+			　アイテムを読み込みます。<a href="#gmenu_iload"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			<b>マップ</b>
+			　マップを読み込みます。<a href="#gmenu_mload"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			<b>マップライト</b>
+			　マップと一部アイテムに影響を及ぼすライトを読み込みます。<a href="#gmenu_lload"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			　※最大2つまで追加可能となります。 マップライトが適用されないアイテムとキャラには <a href="#gmenu_camlight">キャラライト</a>を操作して下さい。<br>
+			　
+			　<br>
+			<b>背景</b>
+			　「 <a href="#data">bg</a> 」フォルダに入れている画像を背景として読み込むことが出来ます。<br>
+			　※<a href="#gmenu_mload">マップ読み込み</a>にて背景透明なマップか、「なし」を選択して下さい。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １６：９比率の画像を推奨します。<br>
+			　※大きい画像を読み込むと動作が重くなる可能性がありますのでご注意下さい。<br>
+			<br>
+			<b>フレーム</b>
+			　「 <a href="#data">frame</a> 」フォルダに入れている画像を画面最前面に表示させることが出来ます。<br>
+			　※読み込むことが可能な画像形式は 「 png 」のみとなります。 １６：９比率の画像を推奨します。<br>
+			　※透過処理をしていない場合、ビュー画面が見えなくなりますのでご注意下さい。<br>
+			　※大きい画像を読み込むと動作が重くなる可能性がありますのでご注意下さい。<br>
+			<br>
+		</li>
+	</ul>
+
+
+
+<br id="gmenu_cload">
+	<div class="w100"><b>●キャラの読み込み</b>　：　ゲーム本編のキャラメイクで作成したキャラを読み込むことができます。<br></div>
+	<ul class="ContBG">
+		<li class="CTextA"><img src="img/chara_load.png"></li>
+		<li class="CTextB">
+			<b>① add</b>
+			　選択すると種類リストが表示されます。<br>
+			<br>
+			<b>② 種類リスト</b>
+			　種類リストから「女キャラ」を選択します。　※男キャラを読みたい場合はここで「男キャラ」を選択して下さい。<br>
+			<br>
+			<b>③ キャラリスト</b>
+			　ゲーム本編のキャラメイクで作成・保存されたキャラの一覧です。読み込みたいキャラを選択します。<br>
+			<div class="b_sub5">　　名前 </div> 選択すると、一覧を名前順に並び替えます。<br>
+			<div class="b_sub5">　　日付 </div> 選択すると、一覧を日付順に並び替えます。<br>
+			<br>
+			<b>④ キャラ画像</b>
+			　キャラリストでカーソルを合わせたキャラの画像です。<br>
+			　※選択しているキャラの画像ではございませんのでご注意下さい。<br>
+			<br>
+			<b>⑤ 読み込み</b>
+			　選択するとキャラリストで選択しているキャラを読み込みます。<br>
+			<br>
+			<b>⑥ キャラ変更</b>
+			　<a href="#workspace">ワークスペース</a>でキャラを選択している場合、キャラリストで選択しているキャラと入れ替えます。<br>
+			　※同じ性別のキャラのみ入れ替えることができます。<br>
+			　※髪の <a href="#gmenu_ckine_fk">FK</a> は引き継がれません。<br>
+			<br>
+		</li>
+
+	</ul>
+
+
+<br id="gmenu_cctrl">
+	<div class="w100"><b>●キャラの操作</b>　：　キャラの状態やポーズの変更を行うことができます。<br></div>
+	<ul class="ContBG w420" >
+		<li class="CTextA"><img src="img/chara_ctrl.png"><br><br id="gmenu_csta"></li>
+		<li class="CTextB">
+			<b>① キャラ選択</b>
+			　<a href="#workspace">ワークスペース</a>から操作したいキャラを選択します。<br>
+			<br>
+			<b>② anim</b>
+			　キャラを選択した状態で「anim」を選択すると種類リストが表示されます。<br>
+			<br>
+			<b>③ 種類リスト</b>
+			<div class="b_sub6">・状態</div> 服の脱着、汁、涙、頬赤、乳首、肌艶の操作を行うことができます。<a href="#gmenu_csta"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub6">・キネマ</div> IK・FKによるポーズの操作、視線、首、目・口・手の操作を行うことができます。<a href="#gmenu_ckine"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub6">・アニメ</div> ポーズやアニメーションの選択、速度変更を行うことができます。<a href="#gmenu_canim"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub6">・ボイス</div> 喋らせるボイスを選択することができます。<a href="#gmenu_cvoice"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub6">・衣装</div> コーディネートカードでキャラの着せ替えを行うことができます。<a href="#gmenu_ccloth"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub6">・関節補正</div> 関節補正のON/OFF切り替えを行うことができます。<a href="#gmenu_cjoint"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+
+			<br>
+
+		</li>
+		
+		<li class="supsub">　■状態 ： <a href="#workspace">ワークスペース</a>で選択しているキャラの状態を変更することができます。　※男女で表示される項目が異なります。</li>
+		<li class="CTextA" style="width: 240px;"><img src="img/anim_sta.png"><br><br id="gmenu_ckine"></li>
+		<li class="CTextB" style="width: 80%;">
+			<b>・服装</b>
+			<div class="b_sub7">├ タイプ</div> キャラメイクで設定したコーディネートタイプを切り替えます。<br>
+			<div class="b_sub7">├ 靴</div> 内履き、外履きの切替を行います。<br>
+			<div class="b_sub7">└ 一括</div> 服の脱着を一括で行います。<br>
+			<br>
+			
+			<b>・服装詳細</b>
+			<div class="b_sub7">└ ﾄｯﾌﾟｽ～靴</div> 選択部位の脱着を行います。<br>
+			<br>
+			
+			<b>・アクセサリー</b>
+			<div class="b_sub7">└ ｽﾛ01～20</div> 選択部位の脱着を行います。<br>
+			<br>
+			
+			<b>・ 汁</b>
+			<div class="b_sub7">└ 顔～お尻</div> 選択した部位に汁を表示します。<br>
+			<br>
+			<b>・その他</b>
+			<div class="b_sub7">├ 涙 Lv</div> 涙の表示設定を行うことができます。<br>
+			<div class="b_sub7">├ 頬赤</div> スライダーで頬赤の濃さを調整する事ができます。<br>
+			<div class="b_sub7">├ 乳首</div> スライダーで乳首の勃起具合を調整することができます。<br>
+			<div class="b_sub7">├ 男根</div> 男根表示を切り替えます。　※女性キャラでも男根を表示させることが出来ます。<br>
+			<div class="b_sub7">└ 男根サイズ</div> スライダーで男根の大きさを調整することができます。<br>
+				<br>
+
+				<br>
+			</li>
+			<li class="CTextA" style="width: 164px;"><img src="img/anim_sta_b.png"></li>
+		<li class="CTextB" style="width: 67%;">
+		<br>
+			<div class="b_sub7">・涙 Lv</div> 涙の表示設定を行うことができます。<br>
+			<div class="b_sub7">・頬赤</div> スライダーで頬赤の濃さを調整する事ができます。<br>
+			<div class="b_sub7">・単色化</div> チェックを入れると男キャラを「カラー」で選択している色のシルエットで表示します。 ※髪・衣服等は非表示となります。<br>
+			<div class="b_sub7">・カラー</div> <a href="#colorpanel">カラーパネル</a>で単色化した際の色を設定することができます。<br>
+			<div class="b_sub7">・男根</div> 男根表示を切り替えます。<br>
+			<div class="b_sub7">・男根サイズ</div> スライダーで男根の大きさを調整することができます。<br>
+
+			</li>
+
+
+		<li class="supsub">　■キネマ ： <a href="#workspace">ワークスペース</a>で選択しているキャラのポーズ、視線、表情、手の操作を行うことができます。</li>
+		<li class="CTextA"><img src="img/anim_kine.png"></li>
+		<li class="CTextB">
+			<b>① ＦＫ</b>
+			　各部位を回転させてポーズの作成・編集を行うことができます。 <a href="#gmenu_ckine_fk"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			<b>② ＩＫ</b>
+			　各部位を移動させてポーズの作成・編集を行うことができます。 <a href="#gmenu_ckine_ik"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+
+			<b>③ 視線</b>
+			　視線の向きを設定します。<br>
+			<div class="b_sub5">・ 正面</div> 正面を向きます。<br>
+			<div class="b_sub5">・ カメラ</div> カメラの方を向き追随する様になります。<br>
+			<div class="b_sub5">・ そらす</div> カメラからそらす様になります。<br>
+			<div class="b_sub5">・ 固定</div> 現在の状態に固定します。  ※カメラ／そらす／操作 で初期の状態から変更した場合に有効です。<br>
+			<div class="b_sub5">・ 操作</div> 「視線操作ターゲット」の方を見ます。※「視線操作ターゲット」が表示されます。<br>
+			<div class="b_sub5">・ サイズ</div> 「視線操作ターゲット」のサイズ調整を行うことができます。<br>
+			<br>
+
+			<b>④ 首操作</b>
+			　首の向きを設定します。　※<a href="#gmenu_ckine_fk">ＦＫ操作</a>で首をＯＮにしている場合、<a href="#gmenu_ckine_fk">ＦＫ操作</a>の設定が優先されるため使用できません。<br>
+			<div class="b_sub5">・ 正面</div> 正面を向きます。<br>
+			<div class="b_sub5">・ カメラ</div> カメラの方を向き追随する様になります。<br>
+			<div class="b_sub5">・ そらす</div> カメラからそらす様になります。<br>
+			<div class="b_sub5">・  固定</div> 現在の状態に固定します。  ※カメラ／そらす で初期の状態から変更した場合に有効です。<br>
+			<br>
+			
+			<b>⑤ 眉・目・口</b>
+			　表情の設定します。<br>
+			<div class="b_sub5">・ 種類</div> パターンをボタン(◀／▶)で変更します。<br>
+			<div class="b_sub5">・ 開き</div> スライダーで開き具合を調整することができます。 ※種類によっては使用できない場合があります。<br>
+			<div class="b_sub5">・ 瞬き</div> チェックで瞬きのＯＮ／ＯＦＦが切り替えられます。<br>
+			<div class="b_sub5">・ 口パク</div> 「ＯＮ」にすると「 <a href="#gmenu_cvoice">ボイス</a> 」を設定した際にセリフに合わせて口パクを行います。<br>
+			<br>
+			
+			<b>⑥ 手</b>
+			　手の形を設定します。<br>
+			<div class="b_sub7">・ 右手/左手</div> パターンをボタン(◀／▶)で変更します。　※<a href="#gmenu_ckine_fk">ＦＫ操作</a>で右手/左手をＯＮにしている場合、<a href="#gmenu_ckine_fk">ＦＫ操作</a>の設定が優先されます。<br>
+			<br>
+			<b>⑦ ポーズ保存</b>
+			　「 <a href="#gmenu_ckine_fk">ＦＫ</a> / <a href="#gmenu_ckine_ik">ＩＫ</a> 」で作成したポーズの保存・読み込みを行うことができます。<br>
+			<div class="b_sub5">・Name</div>保存に使用する名前の入力欄です。<br>
+			<div class="b_sub5">・Save</div>現在のポーズの情報を「 Name 」の名前で保存します。 ※名前を入力しないと保存できません。<br>
+			<div class="b_sub5">・Load</div>「 保存リスト」で選択している情報を読み込みます。 ※現在のポーズが上書きされます。<br>
+			<div class="b_sub5">・保存ﾘｽﾄ</div> 保存したポーズの一覧です。<br>
+			<div class="b_sub5">・Delete</div>選択すると「 保存リスト 」で選択している情報を削除します。<br>
+			<br>
+ 
+			<br id="gmenu_ckine_fk">
+		</li>
+
+
+
+		<li class="supsub">　■ＦＫ ： <a href="#workspace">ワークスペース</a>で選択しているキャラの各部位を回転させてポーズの作成・編集を行うことができます。</li>
+		<li class="CTextA" style="width: 160px"><img src="img/fk.png"><br><br id="gmenu_ckine_fkflow"></li>
+		<li class="CTextB" style="width: 85%">
+			<div class="b_sub8">・機能</div>　ＯＮにするとＦＫ操作が有効になります。 ※<a href="#gmenu_ckine_ik">ＩＫ</a>の機能はＯＦＦになります。<br>
+			<div class="b_sub8">・アニメ位置</div>　選択すると、ＦＫ操作を有効にする前にしていたアニメ・ポーズを元にポーズ編集を行うことができます。<br>
+			<div class="b_sub8">・IKにﾎﾟｰｽﾞを～</div>　現在のポーズ似合わせて<a href="#gmenu_ckine_ikflow">ＩＫ操作ターゲット</a> を移動させます。　※ＩＫ操作に切り替えたい場合、先にこのボタンを選択して下さい。<br>
+			<div class="b_sub8">・表示</div>　ＯＮにした部位のＦＫ操作を行うことができます。　※髪・胸・スカートは女キャラのみ操作可能です。この３項目を有効にすると計算による揺れが無くなります。<br>
+			<div class="b_sub8">・サイズ</div>　ＦＫ操作ターゲット、操作軸のサイズ調整を行うことができます。<br>
+			<div class="b_sub8">・初期化</div>　選択した項目のFKを初期化します。 ※髪、スカートのみ使用可能です。<br>
+			<div class="b_sub8">・個別参照</div>　元となっているポーズの情報を部分的に読み込むことができます。<br>
+
+			<br>
+		</li>
+		<li class="supsub">　■ＦＫ操作手順  <b style="font-size:13px;color:#fff;">※操作軸の回転操作を使用します。詳しくは <a href="#ope">基本操作</a>を御覧下さい。</b></li>
+		<li><img src="img/fk_flow.png"><br><br id="gmenu_ckine_ik"></li>
+
+
+
+		<li class="supsub">　■ＩＫ ： <a href="#workspace">ワークスペース</a>で選択しているキャラの各部位を移動させてポーズの作成・編集を行うことができます。</li>
+		<li class="CTextA" style="width: 160px"><img src="img/ik.png"><br><br id="gmenu_ckine_ikflow"></li>
+		<li class="CTextB" style="width: 85%">
+			<div class="b_sub8">・機能</div>　ＯＮにするとＩＫ操作が有効になります。 ※<a href="#gmenu_ckine_fk">ＦＫ</a>の機能はＯＦＦになります。<br>
+			<div class="b_sub8">・アニメ位置</div>　選択すると、ＩＫ操作を有効にする前にしていたアニメ・ポーズを元にポーズ編集を行うことができます。<br>
+			<div class="b_sub8">・FKにﾎﾟｰｽﾞを～</div>　現在のポーズ似合わせて<a href="#gmenu_ckine_fkflow">ＦＫ操作ターゲット</a> を移動させます。　※ＦＫ操作に切り替えたい場合、先にこのボタンを選択して下さい。<br>
+			<div class="b_sub8">・表示</div>　ＯＮにした部位のＩＫ操作を行うことができます。<br>
+			<div class="b_sub8">・サイズ</div>　ＩＫ操作ターゲット、操作軸のサイズ調整を行うことができます。<br>
+			<div class="b_sub8">・個別参照</div>　元となっているポーズの情報を部分的に読み込むことができます。
+
+			<br>
+		</li>
+
+
+		
+
+
+		<li class="supsub">　■ＩＫ操作手順　<b style="font-size:13px;color:#fff;">※操作軸の移動操作を使用します。詳しくは <a href="#ope">基本操作</a>を御覧下さい。 ※手首・足首は回転操作も行うことができます。</b></li>
+		<li>
+			<img src="img/ik_flow.png"><br>
+			※青いＩＫ操作ターゲットを操作すると肘・膝の向きを変える事ができます。<br><br id="gmenu_canim">
+		</li>
+
+
+
+
+
+
+		<li class="supsub">　■アニメ ： <a href="#workspace">ワークスペース</a>で選択しているキャラにアニメーションを行わせたりポーズをとらせることができます。 ※一部アイテムの制御にも使用します。</li>	
+		<li class="CTextA" style="width: 510px">
+			<img src="img/anim_anim.png"><br>
+			　※Ｈモーションの合わせ方は <a href="#hscene">こちら</a> をご覧下さい。
+		</li>
+		<li class="CTextB" style="width:57%">
+			<b>① アニメカテゴリ</b>
+			　選択すると「 ② 種類 」が切り替わります。<br>
+			<br>
+			
+			<b>② 種類</b>
+			　ポーズ、行為の一覧です。選択すると「 ③ モーション 」が切り替わります。<br>
+			<br>
+			
+			<b>③ モーション</b>
+			　選べるモーションの一覧です。選択するとキャラがアニメーションを行います。<br>
+			<br>
+			
+			<b>④ アニメコントローラー</b>
+			　アニメーションの制御を行ないます。<br>
+			<div class="b_sub7">・速度</div> アニメの速度をスライダーで調整します。　※左側が遅く、右側が速くなります。0にすると停止します。<br>
+			<div class="b_sub7">・パターン</div>　アニメのパターンを変更する事ができます。<br>
+			<div class="b_sub7">・補助１</div>　身長が影響するアニメの位置調整が行えます。<br>
+			<div class="b_sub7">・補助２</div>　胸を使用するアニメの位置調整が行えます。<br>
+			<div class="b_sub7">・付属アイテム</div>　バイブやカメラ等、アニメに含まれるオプションの表示を切り替えることができます。<br>
+			<div class="b_sub7">・強制ループ</div>　「ON」にするとアニメをループさせます。 <br>
+			<div class="b_sub7">・Re</div>　選択すると、アニメを最初から再生します。<br>
+			<div class="b_sub7">・ReALL</div>　選択すると、読み込んでいる全ての項目のアニメを最初から再生します。<br>
+			<div class="b_sub7">・copy</div>　選択すると、現在のキャラが行っているアニメ種類をコピーします。<br>
+			<div class="b_sub7">・paste</div>　選択すると、現在のキャラに「 copy 」でコピーしたアニメ種類を貼り付けます。<br>
+			　　　　　　　　　　　　　　※「 アニメ速度 」や「 パターン 」の情報は貼付けされません。<br>
+			<br id="gmenu_cvoice">
+		</li>
+
+
+
+		<li class="supsub">　■ボイス ： <a href="#workspace">ワークスペース</a>で選択しているキャラに喋らせるセリフを選択することができます。</li>	
+		<li class="CTextA" style="width: 510px;">
+			<img src="img/anim_voice.png"><br>
+			セリフと口の動きを合わせたい場合は「<a href="#gmenu_ckine">キネマ</a>」→「<a href="#gmenu_ckine">眉・目・口</a>」の「口パク」を「ON」に<br>
+			設定して下さい。<br>
+			<br>
+			※「ボイス登録」で保存したデータの保存先は <a href="#data">こちら</a> をご覧下さい。
+		</li>
+		
+		<li class="CTextB" style="width:57%">
+			<b>① キャラ</b>
+			　性格の一覧です。選択すると「 ②種類 」が切り替わります。<br>
+			<br>
+			<b>② 種類</b>
+			　選択すると「 ③セリフ 」を切り替えます。<br>
+			<br>
+			<b>③ セリフ</b>
+			　選べるセリフの一覧です。　※セリフの右にある「<img src="img/anim_voice_add.png">」を選択すると「 ④再生リスト 」にセリフを追加します。<br>
+			<br>
+			<b>④ 再生リスト</b>　再生制御を行うことができます。<br>
+			<div class="b_sub7"><img src="img/anim_voice_play.png"> 再生</div>　選択すると「 登録リスト 」のセリフを最初から再生します。<br>
+			<div class="b_sub7"><img src="img/anim_voice_stop.png"> 停止</div>　選択するとセリフを停止します。<br>
+			<div class="b_sub7"><img src="img/anim_voice_re.png"> リピート</div>　「 登録リスト 」の再生が終わると最初から再生します。※選択すると設定を切り替えることができます。<br>
+			<div class="b_sub7"><img src="img/anim_voice_no.png"> ﾉｰﾘﾋﾟｰﾄ</div>　「 登録リスト 」の再生が終わってもリピートをしません。<br>
+			<div class="b_sub7"><img src="img/anim_voice_one.png"> １リピート</div>　現在再生しているセリフのみをリピートします。<br>
+			<div class="b_sub7"><img src="img/anim_voice_playall.png"> 一斉再生</div>　選択すると<a href="#workspace">ワークスペース</a>で選択しているキャラのセリフを一斉に再生します。<br>
+			<div class="b_sub7"><img src="img/anim_voice_stop.png"> 一斉停止</div>　選択すると<a href="#workspace">ワークスペース</a>で選択しているキャラのセリフを停止します。<br>
+			<div class="b_sub7">・ 登録リスト</div>　再生するセリフの一覧です。　※セリフの右にある「<img src="img/anim_voice_del.png">」を選択すると一覧から削除します。<br>
+			<div class="b_sub7">・ リスト全消去</div>　選択すると「 登録リスト 」のセリフをすべて削除します。<br>
+			<div class="b_sub7"><img src="img/anim_voice_save.png">登録</div>　選択すると「 ⑤ ボイス登録 」の表示を切り替えます。<br>
+			<br>
+			<b>⑤ボイス登録</b>　「 登録リスト 」の保存・読み込み・追加を行うことができます。<br>
+			<div class="b_sub7">・Name</div>　保存に使用する名前の入力欄です。<br>
+			<div class="b_sub7">・Save</div>　「 登録リスト」の情報を「 Name 」の名前で保存します。 ※名前を入力しないと保存できません。<br>
+			<div class="b_sub7">・Load</div>　「 保存リスト」で選択している情報を読み込みます。 ※「 登録リスト」が上書きされます。<br>
+			<div class="b_sub7">・Import</div>　「 保存リスト」で選択している情報を「 登録リスト」に追加で読み込みます。<br>
+			<div class="b_sub7">・保存リスト</div>　保存した「 登録リスト」の一覧です。<br>
+			<div class="b_sub7">・Delete</div>　選択すると「 保存リスト」で選択している情報を削除します。<br>
+			<div class="b_sub7"><img src="img/anim_voice_del.png"> 閉じる</div>　選択すると「 ⑤ボイス登録」を非表示にします。<br>
+			<br id="gmenu_ccloth">
+		</li>
+
+
+		<li class="supsub">　■衣装 ： キャラメイクで作成したコーディネートカードを<a href="#workspace">ワークスペース</a>で選択しているキャラ読み込むことができます。</li>
+		<li class="CTextA" style="width: 510px;"><img src="img/anim_cloth.png"><br><br id="gmenu_cjoint"></li>
+		<li class="CTextB" style="width:57%">
+			<b>① 衣装リスト</b>　ゲーム本編のキャラメイクで作成・保存されたコーディネートカードの一覧です。<br>
+			<div class="b_sub5">名前 </div> 選択すると、一覧を名前順に並び替えます。<br>
+			<div class="b_sub5">日付 </div> 選択すると、一覧を日付順に並び替えます。<br>
+			<br>
+			
+			<b>② 衣装画像</b>　衣装リストでカーソルを合わせた衣装の画像です ※選択している衣装の画像ではございませんのでご注意下さい。<br>
+			<br>
+			
+			<b>③ 衣装切替</b>　選択すると<a href="#workspace">ワークスペース</a>で選択しているキャラの衣装を「 ①衣装リスト」で選択している衣装に変更します。
+
+		</li>
+
+		<li class="supsub">　■関節補正 ： <a href="#gmenu_ckine_fk">ＦＫ</a>や<a href="#gmenu_ckine_ik">ＩＫ</a>で元のポーズから離れたポーズをとらせると破綻してしまう関節にある程度補正を入れる事ができます。</li>
+		<li>
+		　<img src="img/anim_joint.png"><br>
+		　※極端なポーズをとらせると、補正しきれない場合もあります。
+		</li>
+
+	</ul>
+
+
+
+<br id="gmenu_iload">
+	<div class="w100"><b>●アイテムの読み込み</b>　：　ゲーム内に様々なアイテムを読み込むことができます。</div>
+	<ul class="ContBG">
+		<li class="CTextA"><img src="img/item_load.png"><br><br id="gmenu_icolor"></li>
+
+
+		<li class="CTextB">
+			<b>① add</b>
+			　選択すると種類リストが表示されます。<br>
+			<br>
+			
+			<b>② 種類リスト</b>
+			　種類の一覧から「アイテム」を選択します。<br>
+			<br>
+			
+			<b>③ アイテム区分１</b>
+			　読み込みたい項目を選択すると「アイテム区分２」が表示されます。<br>
+			<br>
+			
+			<b>④ アイテム区分２</b>
+			　読み込みたい項目を選択すると「アイテムリスト」が表示されます。<br>
+			<br>
+			
+			<b>⑤ アイテムリスト</b>
+			　読み込みたいアイテムを選択すると、ゲーム内に読み込まれます。<br>
+			　※<div style="color:red">赤字</div> は１色、<div style="color:#1f93ff">青字</div> は２色、<div style="color:#16a802">緑字</div> は３色、<div style="color:#ffa800">黄字</div> は４色の色変えが可能なアイテムです。<br>
+			　<br>
+			
+
+
+		</li>
+
+		<li class="supsub">　■アイテム設定 ： 一部アイテムは色・柄等の変更を行うことができます。</li>
+		<li class="CTextA"><img src="img/item_color.png"></li>
+
+		<li class="CTextB">
+			<b>①</b>
+			　<a href="#workspace">ワークスペース</a>からアイテムを選択します。<br>
+			<br>
+			
+			<b>②</b>
+			　変更可能なアイテムを選択した状態で「anim」を選択すると「アイテム設定」が表示されます。<br>
+			<br>
+			
+			<b>③</b>
+			　各種設定の変更を行うことができます。<br>
+			　表示される項目は選択したアイテムによって異なります。<br>
+			<br>
+			<div class="b_sub9">・カラー1～4</div>　選択すると <a href="#colorpanel">カラーパネル</a> で色の変更を行うことができます。<br>
+			　　　　　　　　　　　　　　※「 カラー４ 」は透明度の変更が可能です。<br>
+			<div class="b_sub9">・ラインの色、太さ</div>　輪郭線の<a href="#colorpanel">色変更</a> や太さの変更を行うことができます。<br>
+			<div class="b_sub9">・ＦＫ</div>　<a href="#gmenu_ckine_fk">ＦＫ操作</a>が可能なアイテムはここでＯＮ／ＯＦＦの切り替えを行うことができます。<br>
+			<div class="b_sub9">・ライトの影響度</div>　ライトから受ける影響を設定することが出来ます。<br>
+			<div class="b_sub9">・柄、色</div>　柄の種類選択、<a href="#colorpanel">色変更</a> を行うことができます。<br>
+			　　　　　　　　　　　　　　　※「 <a href="#data">pattern</a> 」フォルダに入れている画像も読み込むことが出来ます。<a href="#data"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<div class="b_sub9">・繰り返す</div>　ONにすると柄を繰り返し表示します。<br>
+			<div class="b_sub9">・横、縦移動</div>　柄を移動させることが出来ます。<br>
+			<div class="b_sub9">・横、縦スケール</div>　柄の大きさを変更することが出来ます。<br>
+			<div class="b_sub9">・回転</div>　柄を回転させることが出来ます。<br>
+			<div class="b_sub9">・影</div>　アイテムに表示される影の<a href="#colorpanel">色変更</a> を行うことができます。<br>
+			<div class="b_sub9">・アルファ</div>　アイテムの透明度を変更することが出来ます。<br>
+			<div class="b_sub9">・画像</div>　ベース ＞ 画像板に使用します。「 <a href="#data">bg</a> 」フォルダの画像を読み込むことが出来ます。<a href="#data"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			　　※一部項目はスライダーで調整することができます。<br>
+			　　※数字が表示されている項目は、直接数値を入力することで調整ができます。<br>
+			　　※「ｄｅｆ」選択すると標準の値に戻します。<br>
+
+
+
+
+		</li>
+	</ul>
+
+
+
+<br id="gmenu_mload">
+	<div class="w100a">　●マップの読み込み</div>
+	<ul class="ContBG w300">
+		<li class="CTextA"><img src="img/map.png"><br><br></li>
+		<li class="CTextB">
+			<b>① add</b>　選択すると種類リストが表示されます。<br>
+			<br>
+			<b>② 種類リスト</b>　種類の一覧から「マップ」を選択します。<br>
+			<br>
+			<b>③ マップリスト</b>　読み込みたいマップを選択すると読み込みます。
+
+		</li>
+	</ul>
+
+
+
+
+
+	<br id="gmenu_lload">
+	<div class="w100"><b>●マップライトの読み込み</b>　：　マップや一部アイテムに影響を与える光源を、最大2つまで追加することができます。</div>
+	<ul class="ContBG">
+		<li class="CTextA" style="width: 300px;"><img src="img/light.png"></li>
+		<li class="CTextB" style="width: 75%;">
+			<b>① add</b>
+			　選択すると種類リストが表示されます。<br>
+			<br>
+			<b>② 種類リスト</b>
+			　種類の一覧から「マップライト」を選択します。<br>
+			<br>
+			<b>③ ライトリスト</b>
+			　追加したいライトを選択すると光源が追加されます。<br>
+			<div class="b_sub7">・全体光</div>　シーン全体に影響を与えるライトとなります。<br>
+			<div class="b_sub7">・ポイントライト</div>　電球のように光源から一定の範囲を照らすライトとなります。<br>
+			<div class="b_sub7">・スポットライト</div>　向いている方向だけを照らすライトとなります。<br>
+			　※拡縮の操作は行うことは出来ません。<br>
+			　※既に2つ追加されている場合は反応しません。<br>
+			　※ライトの強さによっては一部輪郭線に影響を与える可能性があります。<br>
+			<br>
+
+		</li>
+		<li><img src="img/light_list.png" alt=""><br><br id="gmenu_ldi"></li>
+
+		<li class="supsub">　■ライト操作 ： 全体光</li>
+		<li class="CTextA"><img src="img/light_d.png"><br><br id="gmenu_lpo"></li>
+		<li class="CTextB">
+			<b>①</b>
+			　<a href="#workspace">ワークスペース</a>からライトを選択します。<br>
+			<br>
+			<b>②</b>
+			　「anim」を選択するとライトの設定画面が表示されます。<br>
+			<br>
+			<b>③</b>
+			　設定の変更を行うことができます。<br>
+			<div class="b_sub9">・カラー</div> 選択すると<a href="#colorpanel">カラーパネル</a> でライト色の変更を行うことができます。<br>
+			<div class="b_sub9">・ライトのON/OFF</div> ライトのON/OFFの切り替えを行うことができます。<br>
+			<div class="b_sub9">・ターゲットの表示</div> <a href="#ope">操作軸</a>の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・セルフシャドウ</div> ライトによって発生する影の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・強さ</div> ライトの強さ調整を行うことができます。<br>
+			<br>
+			※全体光は移動を行っても影響はありません。
+		</li>
+
+		<li class="supsub">　■ライト操作 ： ポイントライト</li>
+		<li class="CTextA"><img src="img/light_p.png"><br><br id="gmenu_lsp"></li>
+		<li class="CTextB">
+			<b>①</b>
+			　<a href="#workspace">ワークスペース</a>からライトを選択します。<br>
+			<br>
+			<b>②</b>
+			　「anim」を選択するとライトの設定画面が表示されます。<br>
+			<br>
+			<b>③</b>
+			　設定の変更を行うことができます。<br>
+			<div class="b_sub9">・カラー</div> 選択すると<a href="#colorpanel">カラーパネル</a> でライト色の変更を行うことができます。<br>
+			<div class="b_sub9">・ライトのON/OFF</div> ライトのON/OFFの切り替えを行うことができます。<br>
+			<div class="b_sub9">・ターゲットの表示</div> <a href="#ope">操作軸</a>の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・セルフシャドウ</div> ライトによって発生する影の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・強さ</div> ライトの強さ調整を行うことができます。<br>
+			<div class="b_sub9">・範囲</div> ライトの影響を与える範囲を調整することができます。<br>
+
+
+		</li>
+
+		<li class="supsub">　■ライト操作 ： スポットライト</li>
+		<li class="CTextA"><img src="img/light_s.png"></li>
+		<li class="CTextB">
+			<b>①</b>
+			　<a href="#workspace">ワークスペース</a>からライトを選択します。<br>
+			<br>
+			<b>②</b>
+			　「anim」を選択するとライトの設定画面が表示されます。<br>
+			<br>
+			<b>③</b>
+			　設定の変更を行うことができます。<br>
+			<div class="b_sub9">・カラー</div> 選択すると<a href="#colorpanel">カラーパネル</a> でライト色の変更を行うことができます。<br>
+			<div class="b_sub9">・ライトのON/OFF</div> ライトのON/OFFの切り替えを行うことができます。<br>
+			<div class="b_sub9">・ターゲットの表示</div> <a href="#ope">操作軸</a>の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・セルフシャドウ</div> ライトによって発生する影の表示切り替えを行うことができます。<br>
+			<div class="b_sub9">・強さ</div> ライトの強さ調整を行うことができます。<br>
+			<div class="b_sub9">・範囲</div> ライトの影響を与える範囲を調整することができます。<br>
+			<div class="b_sub9">・スポット角度</div> 照らす角度を最大１８０度まで調整することができます。<br>
+		</li>
+	</ul>
+
+
+
+
+
+
+	<hr id="gmenu_sound">
+<h4>　sound</h4>
+	<div class="w100a">　ＢＧＭ・外部読込の再生設定を行うことができます。</div>
+	<ul class="ContBG w300">
+		<li class="CTextA"><img src="img/sound.png"><br><br></li>
+		<li class="CTextB">
+			<b>① sound</b>
+			　選択すると種類リストが表示されます。<br>
+			<br>
+			<b>② 種類リスト</b>
+			　再生したい項目を選択するとプレイヤーが表示されます。<br>
+			<div class="b_sub6">・ＢＧＭ</div>　インストールされているデータからBGMを選択することができます。　※「外部読込」と同時には再生できません。<br>
+			<div class="b_sub6">・外部読込</div>　<a href="#data">audio</a>フォルダ内にあるwav形式のファイルをゲーム内で再生することができます。<br>
+			　　　　　　　　　　　　　※「ＢＧＭ」と同時には再生できません。使用できるwav形式のファイルは8bitと16bitのみのものとなります。<br>
+			　　　　　　　　　　　　　※wav形式のファイルに関する御質問にはお答えすることができません。<br>
+			<br>
+			<b>③ プレイヤー</b>　選択・再生・停止を行う画面です。操作方法はＢＧＭ・外部読込共通となります。<br>
+			<div class="b_sub6">・リスト</div>　選択できる音楽の一覧です。<br>
+			<div class="b_sub6"><img src="img/anim_voice_play.png"> 再生</div>　リストで選択している音楽を再生します。<br>
+			<div class="b_sub6"><img src="img/anim_voice_stop.png"> 停止</div>　再生している音楽を停止します。<br>
+			<br>
+		</li>
+	</ul>
+
+
+
+
+	<hr id="gmenu_system">
+	<h4>　system</h4>
+	<div class="w100a">　設定の変更、セーブ等システム操作を行うことが出来ます。</div>
+	<ul class="ContBG w300">
+		<li class="CTextA"><img src="img/system.png"></li>
+		<li class="CTextB">
+			<b>・コンフィグ</b>
+			　表示や音量に関する設定を変更することができます。 <a href="#gmenu_config"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			
+			<b>・オプション</b>
+			　操作に関する項目を変更することができます。 <a href="#gmenu_option"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+
+
+			<b>・ロゴ</b>
+			　<a href="#kyoboard">スクリーンショット</a>を撮影した際に表示されるロゴの種類を変更することができます。<br>
+			<br>
+			
+			<b>・キャラライト</b>
+			　キャラや一部アイテムに適用される光源の色・強さ・向きを変更することができます。 <a href="#gmenu_camlight"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+
+			<b>・画面効果</b>
+			　画面に表示されている効果のON／OFF、調整を行うことができます。 <a href="#gmenu_effect"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			
+			<b>・セーブ／ロード</b>
+			　作成したシーンの保存・読み込みを行うことができます。 <a href="#gmenu_save"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			
+			<b>・初期化／終了</b>
+			　シーンの初期化、ゲームの終了を行うことが出来ます。 <a href="#gmenu_reset"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+			<br>
+			
+		</li>
+	</ul>
+	
+	
+	
+	
+	
+	
+<br id="gmenu_config">
+	<div class="w100"><b>●コンフィグ</b>　：　表示や音量に関する設定を変更することができます。</div>
+	<ul class="ContBG w420">
+		<li class="CTextA"><img src="img/system_config.png"><br><br></li>
+		<li class="CTextB">
+			<b>① コンフィグ</b>　「コンフィグ」を選択すると設定項目を表示します。<br>
+			<br>
+			<b>② 設定項目</b>　表示や音量に関する設定を変更することができます。<br>
+			<div class="b_sub8">・背景色</div>　シーンの背景色を設定することができます。選択すると<a href="#colorpanel">カラーパネル</a>で色の変更を行うことができます。<br>
+			<div class="b_sub8">・マップ遮蔽処理</div>　ＯＮにすると注視点とカメラの間にマップの一部が入る場合、その一部を非表示にします。<br>
+			　　　　　　　　　　　　　　　　※非表示にできない部分もあります。<br>
+			<div class="b_sub8">・オーディオ設定</div>　各音量の調整が行えます。<br>
+			　　　　　　　　　　　　　　　　※チェックボックスで表示、音のＯＮ／ＯＦＦの切り替えを行うことができます。<br>
+			　　　　　　　　　　　　　　　　※音量をスライダーで調整することができます。※左側が小さい、右側が大きい　となります。<br>
+			<br>
+		</li>
+	</ul>
+
+
+
+<br id="gmenu_option">
+	<div class="w100"><b>●オプション</b>　：　操作に関する項目を変更することができます。</div>
+	<ul class="ContBG w420">
+		<li class="CTextA"><img src="img/system_option.png"><br><br></li>
+		<li class="CTextB">
+
+			<b>① オプション</b>　「オプション」を選択すると設定項目を表示します。<br>
+			<br>
+			<b>② 設定項目</b>　操作に関する設定を行うことができます。<br>
+			　　※速度や大きさをスライダーで調整することができます。※左側が遅い・小さい、右側が速く・大きい　となります。<br>
+			<div class="b_sub_t">・カメラ設定</div>
+			<div class="b_sub9">　├カメラ速度X軸</div>　カメラをＸ軸回転（縦回転）させた時の速度が調整できます。<br>
+			<div class="b_sub9">　├カメラ速度Y軸</div>　カメラをＹ軸回転（横回転）させた時の速度が調整できます。<br>
+			<div class="b_sub9">　└カメラ移動速度</div>　移動させた時の速度が調整できます。<br>
+			<div class="b_sub_t">・操作軸の設定</div>
+			<div class="b_sub9">　├速度</div>　<a href="#ope">操作軸</a>の移動操作を行った際の速度が調整できます。<br>
+			<div class="b_sub9">　└大きさ</div>　<a href="#ope">操作軸</a>の大きさを調整できます。<br>
+			<div class="b_sub_t">・ｵﾌﾞｼﾞｪｸﾄの追加位置</div>
+			<div class="b_sub9">　├原点</div>　キャラ・アイテムを読み込んだ際の初期位置が原点となります。<br>
+			<div class="b_sub9">　└ 注視点</div>　キャラ・アイテムを読み込んだ際の初期位置が<a href="#optionpanel">注視点</a>となります。<br>
+			<div class="b_sub_t">・ｵﾌﾞｼﾞｪｸﾄの表示タイプ</div>
+			<div class="b_sub9">　├全表示</div>　全ての<a href="#ope">操作軸</a>を表示します。<br>
+			<div class="b_sub9">　└ 選択表示</div>　<a href="#workspace">ワークスペース</a>で選択しているキャラ・アイテムの<a href="#ope">操作軸</a>のみを表示します。<br>
+			<div class="b_sub_t">・ｵﾌﾞｼﾞｪｸﾄ追加時の自動表示</div>
+			<div class="b_sub9">　├する</div>　キャラ・アイテムを読み込んだ際に、読み込みメニューを再表示にします。<br>
+			<div class="b_sub9">　└ しない</div>　キャラ・アイテムを読み込んだ際に、読み込みメニューを非表示にします。<br>
+			<div class="b_sub_t">・ｵﾌﾞｼﾞｪｸﾄ追加時の自動選択</div>
+			<div class="b_sub9">　├する</div>　キャラ・アイテムを読み込んだ際に、読み込んだ項目を<a href="#workspace">ワークスペース</a>で選択した状態にします。<br>
+			<div class="b_sub9">　└ しない</div>　キャラ・アイテムを読み込んでも、<a href="#workspace">ワークスペース</a>での選択状況は変化しません。<br>
+			<div class="b_sub9">・スナップ移動幅</div>　キーボードのVキーを押しながら移動操作を行うと、一回の移動で設定した数値分だけ移動します。<br>
+			<br>
+		</li>
+	</ul>
+
+
+<br id="gmenu_camlight">
+	<div class="w100"><b>●キャラライト</b>　：　キャラや一部アイテムに適用される光源の色・強さ・向きを変更することができます。</div>
+	<ul class="ContBG w420">
+		<li class="CTextA"><img src="img/system_light.png"><br><br></li>
+
+		<li class="CTextB">
+
+			<b>① キャラライト</b>　「キャラライト」を選択すると「 ライトコントローラー 」を表示します。<br>
+			<br>
+			<b>② コントローラー</b>　光源の調整を行うことができます。<br>
+			<div class="b_sub7">・カラー </div>　選択すると<a href="#colorpanel">カラーパネル</a>でライトの色変更を行うことができます。<br>
+			<div class="b_sub7">・ｾﾙﾌｼｬﾄﾞｳ</div>　ライトによって発生する影の表示切り替えを行うことができます。<br>
+			<div class="b_sub7">・強さ</div>　ライトの強さを設定します。<br>
+			<div class="b_sub7">・ライト縦</div>　ライトの縦方向を設定します。<br>
+			<div class="b_sub7">・ライト横</div>　ライトの横方向を設定します。<br>
+			　　※強さや向きをスライダーで調整することができます。<br>
+			　　※直接数値を入力することで調整ができます。<br>
+			　　※「ｄｅｆ」選択すると標準の値に戻します。<br>
+			<br>
+		</li>
+	</ul>
+
+<br id="gmenu_effect">
+	<div class="w100"><b>●画面効果</b>　：　画面に表示されている効果のON／OFF、調整を行うことができます。<br></div>
+	<ul class="ContBG w420">
+		<li class="CTextA"><img src="img/effect.png"><br><br></li>
+		<li class="CTextB">
+			<b>① 画面効果</b>　「画面効果」を選択すると効果一覧を表示します。<br>
+			<br>
+			<b>② 効果一覧</b>　効果のON／OFF、調整を行うことができます。<br>
+			<div class="b_sub6">描画 </div>　選択するとON／OFFの切り替えを行うことができます。<br>
+			<div class="b_sub6">スライダー</div>　強さや範囲をスライダーで調整することができます。<br>
+			<div class="b_sub6">カラー</div>　選択すると<a href="#colorpanel">カラーパネル</a>で色の変更を行うことができます。<br>
+			<br>
+			<b>・カラーの調整</b>
+			　「色味」で世界の雰囲気を変更することができます。<br>
+			<br>
+			<b>・ｱﾝﾋﾞｴﾝﾄｵｸﾙｰｼﾞｮﾝ</b>
+			　陰影の表現を変更します。<br>
+			<br>
+			
+			<b>・被写界深度</b>
+			　注視点から離れたものが、ぼかされて表示されるようになります。<br>
+			<br>
+			
+			<b>・フォッグ</b>
+			　霧表現を設定します。<br>
+			　※マップが表示されていると、マップに設定されている設定が優先される場合があります。<br>
+			　　 「描画」以外の項目は「マップ：なし」時にご利用下さい。<br>
+			<br>
+
+			<b>・ブルーム</b>
+			　光によるぼかし具合の設定を変更することができます。<br>
+			<br>
+
+			<b>・サンシャフト</b>
+			　光の木漏れ日表現を設定します。<br>
+			　<a href="#workspace">ワークスペース</a>でアイテムを選択している状態で「光源」の「None」を選択すると、選択しているアイテムをサンシャフトの光源位置に<br>
+			　する事ができます。<br>
+			　※マップが表示されていると、マップに設定されている光源が優先されます。<br>
+			　※キャラかフォルダを選択した状態で再度選択すると解除されます。<br>
+			<br>
+			
+			<b>・セルフシャドウ</b>
+			　影の表現を有効にします。<br>
+			<br>
+			
+			<b>・その他</b>
+			　キャラやアイテムの表現を設定します。　※アイテムによっては影響しない場合もあります。<br>
+			<br>
+			※設定した項目はシーン自体に保存されます。 
+
+		</li>
+	</ul>
+
+<br id="gmenu_save">
+	<div class="w100"><b>●シーンのセーブ・ロード</b>　：　作成したシーンの保存・読み込みを行うことができます。<br></div>
+	<ul class="ContBG w420">
+		<li class="supsub">　セーブ・ロード</li>
+		<li class="CTextA"><img src="img/scene_save.png"><br><br id="gmenu_load"></li>
+		<li class="CTextB">
+			<b>① セーブ</b>　「セーブ」を選択すると現在の状態を保存します。データは日付と時間をファイル名として自動で作成されます。<br>
+			　　※データの保存先は <a href="#data">こちら</a> をご覧下さい。<br>
+			<br>
+			<b>② ロード</b>　保存してあるシーンデータを読み込むことができます。選択すると <a href="#gmenu_load">ロード画面</a> を表示します。
+
+		</li>
+	<li class="supsub">　ロード画面</li>
+		<li class="CTextA" style="width:520px;"><img src="img/scene_load.png"></li>
+		<li class="CTextB" style="width:55%;">
+			<b>① シーンデータ一覧</b>
+			　保存されているシーンデータの一覧です。選択すると該当するロード確認画面を開きます。<br>
+			<br>
+			<b>② [0]～[X]</b>
+			　選択するとシーンデータ一覧の切り替えを行います。<br>
+			<br>
+			<b>③　Ｘ</b>
+			　選択するとロード画面を閉じます。<br>
+			<br>
+			<br><br><br><br><br>
+			<b>④ Load</b>
+			　選択されたシーンデータを読み込みます。　※現在のシーンは破棄されますのでご注意下さい。 <br>
+			<br>
+			<b>⑤ Import</b>
+			　選択されたシーンデータのキャラとアイテムを現在のシーンに追加します。<br>
+			<br>
+			<b>⑥ Cancel</b>
+			　選択されたシーンデータを読み込まず、ロード確認画面を閉じます。<br>
+			<br>
+			<b>⑦ Delete</b>
+			　選択されたシーンデータを削除します。　※パソコン自体からデータを削除しますのでご注意下さい。<br>
+		<br>
+
+	</li>
+	</ul>
+
+
+
+<br id="gmenu_reset">
+	<div class="w100a">　●シーンの初期化、スタジオの終了</div>
+	<ul class="ContBG w420">
+		<li class="CTextA"><img src="img/gmenu_reset.png"><br><br id="gmenu_load"></li>
+		<li class="CTextB">
+			<b>① 初期化</b>　選択するとシーンの初期化を行います。※現在のシーンは破棄されますのでご注意下さい。<br>
+			<br>
+			<b>② 終了</b>　選択するとスタジオを終了します。※現在のシーンは破棄されますのでご注意下さい。<br>
+
+		</li>
+	</ul>
+
+
+<hr id="workspace">
+	<h4>　ワークスペース</h4>
+	<div class="w100a">　読み込んでいるキャラ・アイテムの選択、削除、<a href="#ws_mparent">親子付け</a>を行うことができます。　※ウインドウ名部分を左ボタンドラッグで移動できます。</div>
+<ul class="ContBG">
+	<li class="CTextA"><img src="img/workspace.png"><br><br></li>
+	<li class="CTextB">
+		<b>① リスト</b>
+		　現在読み込んでいるキャラとアイテムの一覧です。<br>
+		　　※<img src="img/ws_list.png">のある項目は、<img src="img/ws_list.png">部分を選択することで表示の切り替えを行うことができます。<br>
+		<br>
+		
+		<b>② 機能ボタン</b>
+		
+		
+		<div class="b_sub8"><img src="img/ws_oc.png"> obj copy</div>　リストで選択しているキャラもしくはアイテムの複製を作成します。<br>
+		　　　　　　　　　　　　　　※<a href="#ws_mparent">親子付け</a>されているものも同じ構成で複製されます。<br>
+		　　　　　　　　　　　　　　※キーボードの「 Ctrl 」キーを押しながら「 Ｄ 」キーを押すと同じ操作を行うことができます。<br>
+		<br>
+		<div class="b_sub8"><img src="img/ws_mc.png"> move copy</div>　<a href="#ws_mselect">複数選択</a>を行っている場合に使用することができます。<br>
+		　　　　　　　　　　　　　　サブ選択されている項目に、メイン選択されている項目の位置情報をコピーします。<a href="#ws_mcopy"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		<div class="b_sub8"><img src="img/ws_par.png"> parent</div>　<a href="#ws_mselect">複数選択</a>を行っている場合に使用することができます。<br>
+		　　　　　　　　　　　　　　選択している項目同士を<a href="#ws_mparent">親子付け</a>します。<a href="#ws_mparent"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		
+		<div class="b_sub8"><img src="img/ws_rel.png"> releas</div>　<a href="#ws_mparent">親子付け</a>をしている項目の「子」を選択している場合に使用することができます。<br>
+		　　　　　　　　　　　　　　選択している項目の<a href="#ws_mparent">親子付け</a>を解除します。<br>
+		<br>
+		
+		<div class="b_sub8"><img src="img/ws_del.png"> 削除</div>　リストで選択している項目を削除します。　※削除すると戻すことができませんのでご注意下さい。<br>
+		<br>
+		
+		<div class="b_sub8"><img src="img/ws_cf.png"> ﾌｫﾙﾀﾞｰ作成</div>　透明なアイテム「フォルダー」を作成します。 通常のアイテム同様に<a href="#ws_mparent">親子付け</a>することができます。<br>
+		　　　　　　　　　　　　　　※名前部分が黄色で表示されます。また好きな名前を入力することができます。 <a href="#ws_folder"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+
+		<div class="b_sub8"><img src="img/ws_cam.png"> camera</div>　限定的なカメラ機能を持ったアイテムを作成します。<br>
+		　　　　　　　　　　　　　　※名前部分が青色で表示されます。また好きな名前を入力することができます。 <a href="#item_cam"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+
+		<div class="b_sub8"><img src="img/ws_route.png"> route</div>　キャラやアイテムの移動経路を設定することが出来ます。 <a href="#route"><img src="img/more.png" alt="詳細" title="詳細はこちらをご覧下さい。"></a><br>
+		<br>
+		<b>③ 非表示ボタン</b>
+		　ワークスペースを非表示にします。<br>
+		<br id="ws_folder">
+
+	</li>
+	
+	
+	<li class="supsub">　■フォルダーの名前変更</li>
+			
+	<li class="CTextA"><img src="img/ws_folder.png"><br>	<br id="item_cam"></li>
+	<li class="CTextB">
+		<b>①</b>　<a href="#workspace">ワークスペース</a>から「フォルダー」を選択します。<br>
+		<br>
+		<b>②</b>　「anim」を選択すると「フォルダ名」が表示されます。<br>
+		<br>
+		<b>③</b>　入力した名前に変更されます。
+
+	</li>
+
+		
+	<li class="supsub">　■アイテムカメラ：「 アイテムカメラ 」を有効にすると、「 アイテムカメラ 」の「 レンズ面 」を視点としてビューを切り替えます。</li>
+	<li class="CTextA"><img src="img/item_cam.png"><br></li>
+	<li class="CTextB">
+		<b>①</b>　「 アイテムカメラ 」を作成します。<br>
+		<br>
+		<b>②</b>　「 <a href="#workspace">ワークスペース</a> 」のリストから「 カメラ 」を選択します。<br>
+		<br>
+		<b>③</b>　アイテムカメラを「<a href="#ope">操作軸</a>」や「<a href="#movepanel">ムーブパネル</a>」を使用して移動・回転させます。<br>
+		<br>
+
+		<b>④</b>　「 anim 」を選択すると「 カメラ設定 」が表示されます。<br>
+		<br>
+		<b>⑤</b>　「 動作 」を「 ON 」にすると「 アイテムカメラ 」の視点にビューを切り替えます。<br>
+		　動作中になると「 <a href="#workspace">ワークスペース</a> 」のリスト名が赤色で表示されます。<br>
+		　※「 アイテムカメラ 」が動作中は通常の「移動・回転・拡縮・バンク・パース」操作は行えません。<br>
+		　※「 アイテムカメラ 」が動作中は「 <a href="#gameScene">カメラ登録</a> 」が利用できません。<br>
+		　※「 <a href="#gameScene">カメラ切り替え</a> 」から直接切り替えることが出来ます。<br>
+		<br>
+		
+
+	</li>
+	
+	
+	
+</ul>
+
+
+
+<br id="ws_mselect">
+	<div class="w100"><b>●複数選択</b>　：　キャラやアイテムを複数選択してまとめて操作することができます。</div>
+	<ul class="ContBG">
+		<li>
+			　<a href="#workspace">ワークスペース</a>でメインとなる項目を選択した後にキーボードの「 Ctrl 」キーを押しながら別の項目を選択すると、サブとして選択することができます。<br>
+			　サブとして選択された項目はメインの<a href="#ope">操作軸</a>の操作で同時に操作することができます。<br>
+			　※キャラの場合、名前を選択して下さい。部位をメイン・サブにしても同時には動きません。<br>
+			　※回転操作を行った場合、それぞれの起点を中心にその場で回転します。メインを中心に回転させたい場合は<a href="#ws_mparent">親子付け</a>を行い、「親」を回転させて下さい。<br>
+			　※再度「複数選択」をすると解除されます。<br>
+			<br>
+			　以下「うさぎの人形」をメイン選択にする例となります。<br>
+			<img src="img/ope_mobj_pm.png"><br>
+			<br>
+		</li>
+		
+		<li class="supsub">　●範囲選択</li>
+		<li>
+			　<a href="#workspace">ワークスペース</a>でメインとなる項目を選択した後にキーボードの「 Shift 」キーを押しながら別の項目を選択すると、間にある項目をサブとしてまとめて選択することができます。<br>
+			<img src="img/ope_mobj_opm.png"><br>
+		</li>
+</ul>
+
+
+<br id="ws_mcopy">
+	<div class="w100"><b>●位置情報のコピー</b>　：　選択したキャラかアイテムの位置と向き情報を、他のキャラやアイテムにまとめてコピーすることができます。</div>
+	<ul class="ContBG">
+		<li>
+			　<a href="#ws_mselect">複数選択</a>でメインとサブを選択した後「move copy」を選択するとメインの位置と向き情報をサブにコピーします。<br>
+			　※<a href="#keyboard">キーボードショートカット</a>を使用する場合、メインを選択後、「ctrl」キーと「x」キーを押しながらサブとなる項目を選択をすると位置情報のコピーを行います。<br>
+			<br>
+			　以下キャラ「ちゃぶ台１」の位置情報を他のキャラとアイテムにコピーする例となります。<br>
+			<img src="img/ope_movecopy.png">
+		</li>
+	</ul>
+
+<br id="ws_mparent">
+	<div class="w100"><b>●親子付け</b>　：　「親子付け」を行うと「親」となるキャラやアイテムを動かした際に「子」として設定したキャラやアイテムが「親」に合わせて自動で移動します。</div>
+	<ul class="ContBG w420">
+		<li style="width:100%;">
+　　　例：「タバコ」を口に咥えるように配置し、「口」に「親子付け」を行うと、キャラを移動させたり踊らせても「タバコ」は咥えたままになります。<br>
+　　　※キャラを親にする場合、「部位」と書かれた項目のみ可能です。<br>
+　　　※「親」となるキャラやアイテムを削除すると、「子」として設定したアイテムも削除されますのでご注意下さい。<br>
+			<br>
+		</li>	
+		<li class="supsub">　以下<a href="#workspace">parentボタン</a>を使用して「うさぎの着ぐるみ頭」をキャラの「頭中心」に親子付けする例となります。　※⑨⑩は親子付け解除方法となります。</li>
+			
+		<li class="CTextA"><img src="img/parent_ws.png"><br><br id="ws_mparentkey"></li>
+
+		<li class="CTextB">
+			<b>①</b>　<a href="#workspace">ワークスペース</a>から「うさぎの着ぐるみ頭」を選択します。<br>
+			<br>
+			<b>②</b>　「<a href="#ope">操作軸</a>」や「<a href="#movepanel">ムーブパネル</a>」を使用して移動させます。<br>
+			<br><br><br><br><br><br><br><br>
+			<b>③</b>　キャラ名の隣りにある「 ▶ 」を選択すると、グループ一覧を表示します。　※「▼」を選択すると閉じます。<br>
+			<br>
+			<b>④</b>　グループの「 ▶ 」を選択すると、部位一覧を表示します。　※「▼」を選択すると閉じます。<br>
+			<br>
+			<b>⑤</b>　「親」となる「部位：頭中心」を選択します。<br>
+			<br>
+			<b>⑥</b>　キーボードの「 Ctrl 」キーを押しながら「うさぎの着ぐるみ頭」を選択します。<br>
+			<br>
+			<b>⑦</b>　「<a href="#workspace">parent</a>」ボタンを選択します。<br><br>
+			<b>⑧</b>
+			　「部位：頭中心」に「うさぎの着ぐるみ頭」が格納され、ポーズを変えても「部位：頭中心」の動きに合わせて「うさぎの着ぐるみ頭」が自動で<br>
+			　動きます。<br>
+			　　※アイテム同士の親子付けを行った場合、「親」のアイテムに「子」のアイテムが格納されます。<br>
+			<br><br><br><br><br><br><br>
+			<b>⑨</b>
+			「部位：頭中心」格納されている「うさぎの着ぐるみ頭」を選択します。<br>
+			<br>
+			<b>⑩</b>
+			「<a href="#workspace">releas</a>」ボタンを選択すると親子付けが解除されます。<br>
+
+		</li>
+	<li class="supsub">　以下<a href="#keyboard">キーボードショートカット</a>を使用して「うさぎの着ぐるみ頭」をキャラの「頭」に親子付けする例となります。　※⑧は親子付け解除方法となります。</li>
+		<li class="CTextA"><img src="img/parent_key.png"></li>
+		<li class="CTextB">
+			<b>①</b>　<a href="#workspace">ワークスペース</a>から「うさぎの着ぐるみ頭」を選択します。<br>
+			<br>
+			<b>②</b>　「<a href="#ope">操作軸</a>」や「<a href="#movepanel">ムーブパネル</a>」を使用して移動させます。<br>
+			<br><br><br><br><br><br><br><br>
+			<b>③</b>　キャラ名の隣りにある「 ▶ 」を選択すると、グループ一覧を表示します。　※「▼」を選択すると閉じます。<br>
+			<br>
+			<b>④</b>　グループの「 ▶ 」を選択すると、部位一覧を表示します。　※「▼」を選択すると閉じます。<br>
+			<br>
+			<b>⑤</b>　「子」となる「うさぎの着ぐるみ頭」を選択します。<br>
+			<br>
+			<b>⑥</b>　キーボードの「 P 」キーを押しながら「部位：頭中心」を選択します。<br>
+			<br><br>
+			<b>⑦</b>
+			　「部位：頭中心」に「うさぎの着ぐるみ頭」が格納され、ポーズを変えても「部位：頭中心」の動きに合わせて「うさぎの着ぐるみ頭」が自動で<br>
+			　動きます。<br>　　※アイテム同士の親子付けを行った場合、「親」のアイテムに「子」のアイテムが格納されます。<br>
+			<br><br><br><br><br><br><br><br><br>
+
+			<b>⑧</b>
+			　キーボードの「 O (アルファベットのオー) 」キーを押しながら「部位：頭中心」格納されている「うさぎの着ぐるみ頭」を選択すると親子付け<br>
+			　が解除されます。<br>
+
+		</li>
+</ul>
+
+
+
+
+
+<br id="route">
+	<div class="w100"><b>●ルート移動</b>　：　キャラやアイテムのルート（移動経路）を設定することが出来ます。ルートを設定すると親子付けしたキャラやアイテムがルートを基準として移動します。</div>
+	<ul class="ContBG w510">
+		<li class="supsub">　ルート移動画面説明</li>
+			
+		<li class="CTextA"><img src="img/route0.png"><br></li>
+
+		<li class="CTextB">
+			<b>①：ルート作成ボタン</b>
+			　「 ルート 」を作成します。<br>
+			　「 <a href="#workspace">ワークスペース</a> 」に「子接続先」と「スタート」が親子付けされた「ルート」フォルダが作成されます。<br>
+			<br>
+			<b>②：作成されたルート</b>
+			　作成時点では「子接続先」と「スタート」のみですが「ポイント」を追加すると「スタート」の下に作成されていきます。<br>
+			　※「子接続先」「スタート」「ポイント」の親子付けは解除できません<br>
+			<br>
+			<div class="b_sub6">・子接続先</div>　<a href="#ws_mparent">親子付け</a>を行う場合、こちらを親として選択します。※「スタート」「ポイント」は親に設定できません。<br>
+			<div class="b_sub6">・スタート</div>　移動の開始地点です。※ビュー上では「Ｓ」と表示されます。<br>
+			　　　　　　　　　 ※個別の移動はできませんので、移動させる際は「ルート」をまとめて移動させる事となります。<br>
+			<div class="b_sub6">・ポイント</div>　スタートからの移動先です。表示されている番号の順番で移動します。<br>
+			　　　　　　　　　 ※「ポイント」は最大10個まで追加可能です。「ライン」は自動で作成されます。<br>
+
+			<br>
+			<b>③：ルート設定</b>
+			　「 ワークスペース 」で選択している「 ルート 」全体の設定を行う事が出来ます。<br>
+			<div class="b_sub6">・名前</div>　「 ルート 」の名前を変更することが出来ます。><br>
+			<div class="b_sub6">・追加</div>　「 ルート 」にポイントを追加します。※「ポイント」は最大10個まで追加可能です。<br>
+			<div class="b_sub6">・向き補正</div>　「 ルート 」を再生する際に向きの補正を設定することが出来ます。<br>
+			<div class="b_sub6">　├ なし</div>　向きの補正をしません。<br>
+			<div class="b_sub6">　├ ＸＹ</div>　再生した際に次のポイントを向くようになり、角度の補正も入ります。<br>
+			<div class="b_sub6">　└ Ｙ</div>　再生した際に次のポイントを向くようになます。<br>
+			　　　　　　　　　※「 ＸＹ 」「 Ｙ 」の設定を使用する際には、対象のキャラやアイテムの回転を初期化することを推奨します。<br>
+			<div class="b_sub_t">・ループ</div>
+			<div class="b_sub6">　├ ＯＮ</div>　「 スタート 」と最後の「 ポイント 」をラインで繋ぎ、移動がループします。<br>
+			<div class="b_sub6">　└ ＯＦＦ</div>　最後の「 ポイント 」位置まで移動すると、その地点で止まります。<br>
+			<div class="b_sub6">・ライン描画</div>　「 ライン 」の表示ＯＮ／ＯＦＦを切り替えます。※「 OFF 」にしても移動は行われます。<br>
+			<div class="b_sub6">・ラインの色</div>　「 ライン 」の色を変更する事が出来ます。<br>
+
+			<br>
+			<b>④：ルートポイント設定</b>
+			　「 ワークスペース 」で「 スタート 」もしくは「 ポイント 」を選択しているときに表示されます。<br>
+			　選択している項目から次の「 ポイント 」までの動作を設定することが出来ます。<br>
+			<div class="b_sub4">・速度</div>　「0.1～30.0」の間で移動速度を調整します。数値が小さいほど遅く、数値が大きいほど速くなります。<br>
+			<div class="b_sub4">・挙動</div>　移動の際の挙動を選択します。<br>
+			<div class="b_sub4">・形状</div>　「 ライン 」の形状を設定することが出来ます。<br>
+			<div class="b_sub4">├ 直線</div>　次のポイントまで直線で「 ライン 」を作成します。<br>
+			<div class="b_sub4">└ 曲線</div>　「 ライン 」上に「 操作ターゲット 」が表示され、選択すると「 操作軸 」に変化します。<br>
+			　　　　　　　　操作軸を移動させると、操作軸を頂点とした曲線に「 ライン 」が変化します。<br>
+			<div class="b_sub4">・連結</div>　現在選択している「 ポイント 」の一つ前の「 ポイント 」が「 形状：曲線 」を選択している場合に有効となります。<br>
+			　　　　　　　　「 ポイント 」同士を繋ぐ「 ライン 」をなめらかな曲線に補正します。<br>
+			<br>
+			<b>⑤：ルートコントローラー</b>
+			　「 ワークスペース 」にある「 ルート 」が「 ルートリスト 」に表示されます。<br>
+			　各「 ルート 」の再生制御を行うことが出来ます。<br>
+			　※再生中の「 ルート 」は設定変更が行えません。　※「 停止 」させた場合、初期位置に戻ります。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_play.png" alt="">再生</div>　停止中の「 ルート 」の右隣に表示されます。選択すると「 ルート 」を再生します。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_stop.png" alt="">停止</div>　再生中の「 ルート 」の右隣に表示されます。選択すると「 ルート 」を停止します。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_stopend.png" alt="">停止(終)</div>　「 ループ：OFF 」に設定されている「 ルート 」が最後の「 ポイント 」位置まで移動すると表示されます。<br>
+			　　　　　　　　　　　　 選択すると「 ルート 」を再生します。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_playall.png" alt="">全再生</div>　停止中の「 ルート 」を全て再生します。※再生中の「 ルート 」には影響を与えません。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_replay.png" alt="">同期再生</div>　再生中・停止中関わらず、全ての「 ルート 」を最初から再生します。<br>
+			<div class="b_sub7"><img src="img/route_ctrl_stopall.png" alt="">全停止</div>　選択すると全ての「 ルート 」を停止します。<br>
+			<br><br>
+		</li>
+
+		<li class="supsub">　ルート移動設定例　※階段を登り廊下を曲がるシーンの作成例となります。</li>
+			
+		<li class="CTextA"><img src="img/route1.png"><br></li>
+
+		<li class="CTextB">
+			<b>①</b>　<a href="#workspace">ワークスペース</a>の「route」を選択します。<br>
+			<br>
+			<b>②</b>　「 ルート 」が作成されますので「 ルート 」を選択します。<br>
+			<br>
+			<b>③</b>　「<a href="#ope">操作軸</a>」や「<a href="#movepanel">ムーブパネル</a>」で移動させてスタート地点を決めます。<br>
+			<br><br><br><br><br><br>
+			<b>④</b>　「anim」を選択するとルート移動用のメニューが表示されます。<br>
+			<br>
+			<b>⑤</b>　「 ルート設定 」の「 追加：add 」を選択します。<br>
+			<br>
+			<b>⑥</b>　「 ワークスペース 」の「 ルート 」→「 スタート 」の下に新たな「 ポイント 」が追加されますのでこちらを選択します。<br>
+			<br>
+			<b>⑦</b>　「 ポイント 」を移動させます。<br>
+			<br>
+			<br>
+			<b>⑧</b>　⑤～⑦を繰り返してルートを作成します。<br>
+			<br><br><br><br><br><br><br><br><br><br><br>
+			<b>⑨</b>
+			　曲がり角のためにルートを曲線にします。<br>
+			　例では曲がり角が「 ポイント２ 」から入る形となりますので「 ワークスペース 」→「 ルート 」→「 ポイント２」を選択します。<br>
+						<br>
+			<b>⑩</b>
+			　「 ルートポイント設定 」から「 形状：曲線 」を選択します。<br>
+			<br>
+			<b>⑪</b>　「 ライン 」上に「 操作ターゲット 」が表示されますので選択します。<br>
+			<br><br><br><br><br>
+			<b>⑫</b>　「 操作ターゲット 」が「 操作軸 」に変化しますので移動さると、「 操作軸 」を頂点とした曲線に変化します。
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			
+			<b>⑬</b>
+			　※準備として「 <a href="#gmenu_cload">キャラの読み込み</a> 」→「 <a href="#gmenu_canim">アニメ変更</a> 」を行います。<br>
+			　「 ルート 」の「 子接続先 」を選択します。<br>
+			<br>
+
+			<b>⑭</b>　キーボードの「 Ctrl 」キーを押しながら「 キャラ 」を選択します。<br>
+			<br>
+
+
+			<b>⑮</b>　「parent」ボタンを選択して「 <a href="#ws_mparent">親子付け</a> 」を行います。<br>
+			<br><br><br><br>
+			<b>⑯</b>　このままでは後ろ向きに進むため、「 ルート設定 」から「 向き補正：Ｙ 」を選択します。<br>
+			<br>
+			<b>⑰</b>　「 ルートコントローラー 」の「 再生 」を選択すると、設定したルートを基準としてキャラが移動します。<br>
+			<br>
+			<br>
+			
+		</li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr id="colorpanel">
+	<h4>　カラーパネル</h4>
+	<ul class="ContBG">
+		<li><img src="img/colorpanel.png"></li>
+		<li class="CTextB">
+			　「カラーパネル」の「ピッカー」「スライダー」「プリセット」のいずれかから色を選択します。<br>
+			　　※色の選択は「左ボタンクリック」もしくは「左ボタンドラッグ」で行います。<br>
+			　　※「スライダー」の数値部分は選択後にキーボードのテンキーで数値入力が可能です。<br>
+			　　※透明度の設定は選択している物によって可否があります。<br>
+			　　　 透明度の項目がない場合、申し訳ございませんが透明度の操作に対応していないものとなります。<br>
+		</li>
+	</ul>
+
+
+<hr id="movepanel">
+	<h4>　ムーブパネル</h4>
+		<div class="w100a">　<a href="#workspace">ワークスペース</a>で選択しているキャラ・アイテムの移動・回転・拡縮を数値入力で操作、<a href="#ope">操作軸</a>の表示切り替えを行う事ができます。</div>
+	<ul class="ContBG">
+		<li class="CTextA"><img src="img/movepanel.png"></li>
+		<li class="CTextB">
+			<b>①</b>　選択しているキャラ・アイテムの移動・回転・拡縮を数値入力で操作する事ができます。<br>
+			<br>
+			<b>②</b>　操作軸を「移動」に切り替えます。<br>
+			<br>
+			<b>③</b>　操作軸を「回転」に切り替えます。<br>
+			<br>
+			<b>④</b>　操作軸を「拡縮」に切り替えます。<br>
+
+		</li>
+	</ul>
+
+
+
+<hr id="optionpanel">
+	<h4>　オプションパネル</h4>
+	<ul class="ContBG">
+		<li class="CTextA"><img src="img/optionpanel.png"></li>
+
+		<li class="CTextB">
+			<b>①</b>
+			　「マップコントローラー」のＯＮ／ＯＦＦを切り替えます。<br>
+			　※数値入力、マウス左ボタンドラッグでマップの移動・回転操作を行うことが出来ます。<br>
+			<br>
+			
+			<b>②</b>　注視点（カメラの基準点）の表示を切り替えます。<br>
+			<br>
+			
+			<b>③</b>　<a href="#ope">操作軸</a>の表示を切り替えます。<br>
+			<br>
+			
+			<b>④</b>
+			　カメラロック機能のＯＮ／ＯＦＦを切り替えます。<br>
+			　※ＯＮにするとキーボードの「Alt」キーを押しながらカメラ操作を行わない限り、カメラ操作を受け付けなくなります。<br>
+			　※デフォルトではＯＦＦになっています。<br>
+			<br>
+			<b>⑤</b>
+			　移動・回転・拡縮の履歴を取得しているので、操作の取り消し・やり直しを行うことができます。<br>
+			<div class="b_sub7">Undo（アンドゥ）</div>直前の操作を取り消します。<br>
+			<div class="b_sub7">Redo（リドゥ）　</div>アンドゥで取り消した操作をやり直します。<br>
+			　※<a href="#gmenu_load">シーンのロード</a>、<a href="#gmenu_cload">キャラの読み込み</a>、<a href="#gmenu_iload">アイテムの読み込み</a>、<a href="#workspace">キャラ・アイテムの削除</a>を行うと履歴が削除されます。<br>
+
+
+		</li>
+	</ul>
+
+
+
+<hr id="hscene">
+	<h4>　Ｈシーンの作り方</h4>
+	<ul class="ContBG">
+		<li>
+			■「正常位」を行っているシーンの手順例となります。<br>
+			<img src="img/hscene.png"><br>
+			
+		</li>
+		<li style="width:33%;">
+			　<a href="#gmenu_cload">キャラの読み込み</a>、<a href="#gmenu_cctrl">キャラ操作</a>で<br>
+			　女に「アニメ」→「女H挿入」→「正常位」→「強ループ」、<br>
+			　男に「アニメ」→「男H挿入」→「正常位」→「強ループ」を選択します。
+		</li>
+		<li style="width:34%;">
+			　　女キャラをメインに選択して<a href="#ws_mcopy">位置情報コピー</a>で位置を合わせます。
+		</li>
+		<li style="width:33%;">
+			　タイミングがずれているので、アニメの同期をさせるため男女の<br>
+			　キャラを<a href="#ws_mselect">複数選択</a>し、<a href="#gmenu_canim">アニメコントローラー</a>の「Re」を選択します。<br>
+		</li>
+		<li><br>　<img src="img/hscene_sub.png"></li>
+	</ul>
+
+
+
+<hr id="keyboard">
+	<h4>　キーボードショートカットキー</h4>
+
+	<ul class="ContBG">
+		<li><img src="img/keyboard.jpg" alt=""></li>
+
+		<li>
+			<br>
+			　※「<a href="#ws_mparentkey">親子付け</a>」　、「<a href="#ws_mcopy">位置コピペ（位置情報のコピー）</a>」はそれぞれ使用方法をご覧下さい。<br>
+			　※「 alt + マウス操作 」のカメラ移動は <a href="#optionpanel">カメラロック機能</a>がＯＮの時にご利用下さい。 <br>
+			　※スクリーンショットの保存先は <a href="#data">ユーザーフォルダの説明</a> を御覧下さい。 <br>
+		</li>
+	</ul>
+
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<div id="footer">
+	<ul>
+		<li id="gtop"><img src="img/top.png" alt=""></li>
+		<li id="cl">Copyright (C) ILLUSION All rights reserved</li>
+	</ul>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<root version="2.12.0">
+  <mainWindowSize value="1" />
+  <mainWindowShortcut value="H" />
+  <advancedModeWindowSize x="650" y="370" />
+  <femaleShortcuts />
+  <maleShortcuts />
+  <itemShortcuts />
+  <boneAliases />
+  <blendShapeAliases />
+  <crotchCorrectionByDefault value="false" />
+  <anklesCorrectionByDefault value="false" />
+</root>
