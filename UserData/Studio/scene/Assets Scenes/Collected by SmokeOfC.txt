@@ -1,0 +1,3 @@
+Collected by saving single assets from other scenes, and collecting single asset scenes, from both the Koikatsu Discord and the official uploader in order to allow simple importing for reuse in new scenes.
+
+~~SmokeOfC
