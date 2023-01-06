@@ -1,0 +1,1090 @@
+Initialize engine version: 5.6.2f1 (a2913c821e27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8171 MB
+    Driver:   27.20.12033.1007
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\AmplifyColor.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\AmplifyColor.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\AmplifyOcclusion.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\AmplifyOcclusion.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween43.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween43.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween46.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween46.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween50.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\DOTween50.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.OdinInspector.Attributes.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.OdinInspector.Attributes.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Serialization.Config.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Serialization.Config.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Serialization.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Serialization.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Utilities.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Sirenix.Utilities.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll into Unity Child Domain
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Vectrosity.dll (this message is harmless)
+Loading F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\Vectrosity.dll into Unity Child Domain
+- Completed reload, in  0.020 seconds
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\System.Xml.Linq.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 1.194000 ms
+[Message:   BepInEx] BepInEx 5.3.0.0 - Koikatu
+[Info   :   BepInEx] Running under Unity v5.6.2.10654012
+[Info   :   BepInEx] CLR runtime version: 2.0.50727.1433
+[Info   :   BepInEx] Supports SRE: True
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher methods from BepInEx.BepIn4Patcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :   BepInEx] Loaded 1 patcher methods from DemystifyExceptions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :   BepInEx] Loaded 1 patcher methods from KK_SFW_Patcher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :   BepInEx] 4 patcher plugin(s) loaded
+[Info   :   BepInEx] Patching [UnityEngine] with [BepInEx.Chainloader]
+[Info   :BepInEx4Loader] Starting BepInEx4 Migrator!
+[Info   :BepInEx4Loader] Shimming ChaseMe
+[Info   :BepInEx4Loader] Shimming KKImageSeriesRecorder
+[Info   :BepInEx4Loader] Shimming KK_Ahegao
+[Info   :BepInEx4Loader] Shimming KK_BecomeTrap
+[Info   :BepInEx4Loader] Shimming KK_ClothesLoadOption
+[Info   :BepInEx4Loader] Shimming RandomNameProvider
+[Info   :BepInEx4Loader] Shimming UnlockHPositions
+[Info   :BepInEx4Loader] Initializing BepInEx 4
+[Info   :   BepInEx] Patching [UnityEngine] with [SFWmod.SfwPatcher]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 153 plugins to load
+[Warning:   BepInEx] Skipping [CharaStateX 1.0.2.148] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [DefaultParamEditor 1.1.0.148] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Item Layer Edit 1.0.0.148] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [KKPE 2.12.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [AdvIKPlugin 1.1.1] because of process filters (StudioNEOV2, CharaStudio)
+[Warning:   BepInEx] Skipping [KK_QuickAccessBox 2.2.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Auto Close Loading Scene Window 19.11.8.0] because of process filters (CharaStudio, StudioNEOV2)
+[Warning:   BepInEx] Skipping [Light Manager 1.0.0.148] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [NodesConstraints 1.2.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [RendererEditor 1.6.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [StudioAddonLite 1.0.0.148] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Timeline 1.1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [KK_StudioPOV 1.1.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio MultiSelect Chara 0.9.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Scene Navigation 0.8.6] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Character List Optimizations 14.3.1] because of process filters (Koikatsu Party, Koikatsu Party VR)
+[Warning:   BepInEx] Skipping [Camera Target Fix 14.3.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Invalid Scene Protection 14.3.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Pose Load Fix 14.3.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Optimizations 14.3.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Unlimited Map Lights 14.3.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Chara Light Linked To Camera 20.3.30.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Chara Only Load Body 20.1.20.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Menu Scrolling Text 20.9.10.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Reflect FK Fix 19.11.1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Simple Color On Girls 20.8.5.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Text Plugin 20.4.27.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Animation Controller 2.2] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Animation Overdrive 1.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [FK and IK 1.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Material Editor Studio 2.1.4] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Pose Quick Load 1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Custom Masking 1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Image Embed 1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Object Move Hotkeys 1.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [Studio Scene Loaded Sound 1.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [StudioSceneSettings 1.2.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [KKVMDPlayExtSavePlugin 0.3.0] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [KK_VMDPlayEyeTextureCachePlugin 1.2.1] because of process filters (CharaStudio)
+[Warning:   BepInEx] Skipping [KK_VMDPlayPlugin 0.3.0] because of process filters (CharaStudio)
+[Info   :   BepInEx] Loading [Rim Remover 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\RimRemover.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Enable Full Screen Toggle 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.EnableFullScreenToggle.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Enable Resize 1.5]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.EnableResize.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Input Hotkey Block 1.3]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.InputHotkeyBlock.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Mute In Background 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.MuteInBackground.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Optimize IMGUI GC allocations 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.OptimizeIMGUI.dll (this message is harmless)
+Non platform assembly: data-0000000013A94F30 (this message is harmless)
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/data-0000000013A94F30.dll
+[Info   :   BepInEx] Loading [Runtime Unity Editor 2.2.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\RuntimeUnityEditor\RuntimeUnityEditor.Bepin5.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\RuntimeUnityEditor\RuntimeUnityEditor.Core.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Cheat Tools 2.8]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_CheatTools.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Extended Save 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\ExtensibleSaveFormat.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\core\BepInEx.Harmony.dll (this message is harmless)
+Non platform assembly: data-0000000013C63060 (this message is harmless)
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/data-0000000013C63060.dll
+[Info   :   BepInEx] Loading [XUnity Resource Redirector 1.1.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.ResourceRedirector\XUnity.ResourceRedirector.BepIn-5x.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.ResourceRedirector\XUnity.ResourceRedirector.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\core\XUnity.Common.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Sideloader 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\Sideloader.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\ICSharpCode.SharpZipLib.dll (this message is harmless)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name LoadFromFileAsync_Internal and parameters (System.String, System.UInt32, System.UInt64)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadFromFileAsync through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name LoadFromFile_Internal and parameters (System.String, System.UInt32, System.UInt64)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadFromFile through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name LoadFromMemoryAsync_Internal and parameters (System.Byte[], System.UInt32)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadFromMemoryAsync through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name LoadFromMemory_Internal and parameters (System.Byte[], System.UInt32)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadFromMemory through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name returnMainAsset and parameters (UnityEngine.AssetBundle)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.get_mainAsset through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundle and name returnMainAsset and parameters (UnityEngine.AssetBundle)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.Load through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAsync through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAll through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAsset_Internal through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAssetAsync_Internal through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAssetWithSubAssets_Internal through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundle.LoadAssetWithSubAssetsAsync_Internal through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundleRequest.get_asset through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundleRequest.get_allAssets through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.Resources.Load through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.Resources.LoadAll through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.Resources and name GetBuiltinResource and parameters (System.String, System.Type)
+[Warning:XUnity.Common] Could not hook 'Resources_GetBuiltinResource_Hook'. Likely due differences between different versions of the engine or text framework.
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundleCreateRequest.get_assetBundle through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundleCreateRequest and name SetEnableCompatibilityChecks and parameters (System.Boolean)
+[Debug  :XUnity.Common] Hooked UnityEngine.AssetBundleCreateRequest.DisableCompatibilityChecks through forced MonoMod hooks. (native)
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.AssetBundleCreateRequest and name SetEnableCompatibilityChecks and parameters (System.Boolean)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.get_isDone through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.get_progress through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.get_priority through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.set_priority through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.get_allowSceneActivation through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.set_allowSceneActivation through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.AsyncOperation.Finalize through forced MonoMod hooks. (managed)
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetBundleLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetBundleLoading:
+[Debug  :XUnity.ResourceRedirector] [-1000] <>c.<EnableRedirectMissingAssetBundlesToEmptyAssetBundle>b__37_0
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AsyncAssetBundleLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AsyncAssetBundleLoading:
+[Debug  :XUnity.ResourceRedirector] [-1000] <>c.<EnableRedirectMissingAssetBundlesToEmptyAssetBundle>b__37_1
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetBundleLoaded.
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetBundleLoaded:
+[Debug  :XUnity.ResourceRedirector] [-2000] <>c__DisplayClass38_0.<EnableRandomizeCabIfConflict>b__2
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AsyncAssetLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AsyncAssetLoading:
+[Debug  :XUnity.ResourceRedirector] [0] Sideloader.RedirectHook
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoading:
+[Debug  :XUnity.ResourceRedirector] [0] Sideloader.RedirectHook
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetBundleLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetBundleLoading:
+[Debug  :XUnity.ResourceRedirector] [0] Sideloader.AssetBundleLoadingHook
+[Debug  :XUnity.ResourceRedirector] [-1000] <>c.<EnableRedirectMissingAssetBundlesToEmptyAssetBundle>b__37_0
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AsyncAssetBundleLoading.
+[Debug  :XUnity.ResourceRedirector] New callback order for AsyncAssetBundleLoading:
+[Debug  :XUnity.ResourceRedirector] [0] Sideloader.AssetBundleLoadingHook
+[Debug  :XUnity.ResourceRedirector] [-1000] <>c.<EnableRedirectMissingAssetBundlesToEmptyAssetBundle>b__37_1
+[Info   :Sideloader] Found 1101 zipmods in directory: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\mods
+[Info   :Sideloader] Successfully loaded 1101 mods out of 1101 archives in 20634ms
+[Info   :   BepInEx] Loading [MoreAccessories 1.1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\MoreAccessories.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Modding API 1.13.3]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KKAPI.dll (this message is harmless)
+[Debug  :Modding API] Game version 5.1 running under en-US culture
+[Debug  :Modding API] Installed DLC: 01 02 03 04 05 06 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 50 51 52 53 54 55 56 100
+[Debug  :Modding API] Processor: AMD Ryzen 5 2600 Six-Core Processor  (12 threads @ 3843MHz); RAM: 16313MB (51% used); OS: Windows 10  (10.0.0) 64bit
+[Warning:   Harmony] System.Void KKAPI.Maker.Hooks.LoadButtonOverride(UnityEngine.UI.Selectable, System.Boolean&) - MethodType.Getter and MethodType.Setter should be used instead adding get_ and set_ to property names
+[Debug  :Modding API] Hooking System.Boolean ChaFile.LoadFile(System.IO.BinaryReader, System.Boolean, System.Boolean)
+[Info   :   BepInEx] Loading [Clothing State Menu 3.0.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_ClothingStateMenu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Color Filter Remover 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\ColorCorrector.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Configuration Manager 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\ConfigurationManager.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Input Length Unlocker 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\InputUnlocker.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Screenshot Manager 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\Screencap.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Slider Unlocker 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\SliderUnlocker.dll (this message is harmless)
+[Info   :   BepInEx] Loading [BGM Loader 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\BGMLoader.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Message Center 1.1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\BepInEx.MessageCenter.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK Uniform Uniforms 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_UniformUniforms.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Character Export 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_CharacterExport.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Character Maker Loaded Sound 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_CharaMakerLoadedSound.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Clothing Unlocker 2.0.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_ClothingUnlocker.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Colliders 1.1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_Colliders.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Demosaic 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_Demosaic.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Eye Shaking 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_EyeShaking.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Fade Adjuster 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_FadeAdjuster.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Free H Random 1.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_FreeHRandom.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Hair Accessory Customizer 1.1.5]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_HairAccessoryCustomizer.dll (this message is harmless)
+[Info   :   BepInEx] Loading [H Character Adjustment 2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_HCharaAdjustment.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Invisible Body 1.3.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_InvisibleBody.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Item Blacklist 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_ItemBlacklist.dll (this message is harmless)
+[Info   :   BepInEx] Loading [List Override 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_ListOverride.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Maker Defaults 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_MakerDefaults.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Male Juice 1.2.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_MaleJuice.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Material Editor 2.1.4]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_MaterialEditor.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Material Editor Maker 2.1.4]
+[Info   :   BepInEx] Loading [Pose Folders 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_PoseFolders.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Pushup 1.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_Pushup.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Random Character Generator 2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_RandomCharacterGenerator.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Reload Character List On Change 1.5.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_ReloadCharaListOnChange.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Subtitles 2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_Subtitles.dll (this message is harmless)
+[Info   :   BepInEx] Loading [XUnity Auto Translator 4.12.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\XUnity.AutoTranslator.Plugin.BepIn-5x.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\XUnity.AutoTranslator.Plugin.Core.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\ExIni.dll (this message is harmless)
+OnLevelWasLoaded was found on AutoTranslationPlugin
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.GUIStyle and name Internal_Draw and parameters (UnityEngine.Rect, UnityEngine.GUIContent, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.Text.set_text through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.Text.OnEnable through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TextMeshProUGUI.OnEnable through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TextMeshPro.OnEnable through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.set_text through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetText through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetText through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetText through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetCharArray through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetCharArray through Harmony hooks.
+[Debug  :XUnity.Common] Hooked TMPro.TMP_Text.SetCharArray through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.Events.UnityEventBase.Invoke through Harmony hooks.
+[Warning:   Harmony] AccessTools.Method: Could not find method for type UnityEngine.Events.UnityEventBase and name PrepareInvoke and parameters ()
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.MaskableGraphic.OnEnable through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.Image.set_sprite through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.Image.set_overrideSprite through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.Image.set_material through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.UI.RawImage.set_texture through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.Cursor.SetCursor through Harmony hooks.
+[Debug  :XUnity.Common] Hooked UnityEngine.Material.set_mainTexture through Harmony hooks.
+Non platform assembly: data-000000001D68A040 (this message is harmless)
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/data-000000001D68A040.dll
+[Debug  :XUnity.Common] Hooked UnityEngine.Sprite.get_texture through Harmony hooks.
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BaiduTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BaiduTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BingTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BingTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BingTranslateLegitimate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\BingTranslateLegitimate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\CustomTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\CustomTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\ezTransXP.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\ezTransXP.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslateCompat.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslateCompat.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslateLegitimate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\GoogleTranslateLegitimate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\LecPowerTranslator15.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\LecPowerTranslator15.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\PapagoTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\PapagoTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\WatsonTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\WatsonTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\YandexTranslate.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\XUnity.AutoTranslator\Translators\YandexTranslate.dll (this message is harmless)
+[Debug  :XUnity.AutoTranslator] Disabling certificate checks for endpoints because of configuration.
+[Debug  :XUnity.AutoTranslator] Probing whether OnLevelWasLoaded or SceneManager is supported in this version of Unity. Any warnings related to OnLevelWasLoaded coming from Unity can safely be ignored.
+[Debug  :XUnity.AutoTranslator] SceneManager is supported in this version of Unity.
+[Debug  :XUnity.AutoTranslator] Loaded resize command text files.
+[Debug  :XUnity.AutoTranslator] --- Loading Global Translations ---
+[Debug  :XUnity.AutoTranslator] Loaded translation text files (took 3.34 seconds)
+[Debug  :XUnity.AutoTranslator] Created variation translations (took 0 seconds)
+[Debug  :XUnity.AutoTranslator] Created token translations (took 0 seconds)
+[Debug  :XUnity.AutoTranslator] Loaded texture files (took 1.56 seconds)
+[Info   :XUnity.AutoTranslator] Loaded XUnity.AutoTranslator into Unity [5.6.2f1] game.
+[Info   :   BepInEx] Loading [Text Resource Redirector 1.4.2.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\TranslationTools\KK_TextResourceRedirector.dll (this message is harmless)
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.ExcelDataHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.ScenarioDataHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.Common] Hooked UnityEngine.TextAsset.get_bytes through forced MonoMod hooks. (native)
+[Debug  :XUnity.Common] Hooked UnityEngine.TextAsset.get_text through forced MonoMod hooks. (native)
+[Info   :Text Resource Redirector] IllusionMods.TextAssetTableHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.ChaListDataHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.NickNameHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.MapInfoHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.EventInfoHandler enabled
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] Registered new callback for ResourceLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for ResourceLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleResource
+[Info   :Text Resource Redirector] IllusionMods.MakerCustomDataHandler enabled
+[Info   :   BepInEx] Loading [Skin Overlay Mod 5.2.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_OverlayMods.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Uncensor Selector 3.10]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Plugins\KK_UncensorSelector.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Dress for Success 1.1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\GeBo_Plugins\KK_GameDressForSuccess.dll (this message is harmless)
+[Info   :   BepInEx] Loading [GeBo Modding API 1.0.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\GeBo_Plugins\KK_GeBoCommon.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Translation Cache Cleaner 0.5.3]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\GeBo_Plugins\KK_TranslationCacheCleaner.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Translation Helper 0.9.4]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\GeBo_Plugins\KK_TranslationHelper.dll (this message is harmless)
+[Debug  :Translation Helper] TranslationHelperPlugin.Translation.Configuration.Setup
+[Debug  :Translation Helper] TranslationHelperPlugin.Chara.Configuration.Setup
+[Debug  :Translation Helper] TranslationHelperPlugin.MainGame.Configuration.Setup
+[Debug  :Translation Helper] TranslationHelperPlugin.Maker.Configuration.Setup
+[Info   :   BepInEx] Loading [Plugin List Tool 20.8.5.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\jim60105\KK_PluginListTool.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KKUS 1.9.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\KKUS.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Mod Bone Implantor 0.2.4]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\ModBoneImplantor.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Dynamic Bones Fix 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_DynamicBones.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Hair Shadows Fix 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_HairShadows.dll (this message is harmless)
+[Info   :   BepInEx] Loading [HeightBarX 3.3]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_HeightBar.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Character Replacer 1.6.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_CharacterReplacer.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Clothes Overlay Mod 5.2.1]
+[Info   :   BepInEx] Loading [Clothes Overlay Mod GUI 5.2.1]
+[Info   :   BepInEx] Loading [Anime Ass Assistant 1.0.0.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\AnimeAssAssistant.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [CameraFrameMask 1.0.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\CameraFrameMask.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [DefaultStudioScene 1.0.0.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\DefaultStudioScene.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Drag & Drop 1.2.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\DragAndDrop.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Graphics Settings 1.2.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\GraphicsSettings.dll (this message is harmless)
+[Info   :   BepInEx] Loading [HideAllUI 2.2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\HideAllUI.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [LockOnPlugin 2.6.0.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\LockOnPlugin.Koikatu.dll (this message is harmless)
+[Debug  :LockOnPlugin] Loading default target data.
+[Info   :   BepInEx] Loading [MakerBridge 1.0.1.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\MakerBridge.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [RealPOV 1.0.2.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\RealPOV.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Title shortcuts 1.1.2.148]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\TitleShortcuts.Koikatu.dll (this message is harmless)
+[Info   :   BepInEx] Loading [UnlockHPositions 1.1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\UnlockHPositions.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_Ahegao 1.8]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\KK_Ahegao.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_ClothesLoadOption 0.2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\KK_ClothesLoadOption.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Configuration Manager wrapper for Koikatsu 16.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BepisPlugins\ConfigurationManagerKK.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Centered HScene Cursor 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_CenteredHSceneCursor.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Character List Optimizations 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_CharacterListOptimizations.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Game and Studio Data Corruption Fixes 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_DataCorruptionFixes.dll (this message is harmless)
+Non platform assembly: data-000000001DED53A0 (this message is harmless)
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/data-000000001DED53A0.dll
+[Info   :   BepInEx] Loading [Fix Shader Dropdown Menu 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_ExpandShaderDropdown.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_Fix_GarbageTruck 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_GarbageTruck.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Character Maker Heterochromia Fix 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_Heterochromia.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Main Game Optimizations 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_MainGameOptimizations.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Maker Optimizations 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_MakerOptimizations.dll (this message is harmless)
+patching moreaccs
+[Info   :   BepInEx] Loading [Manifest Corrector 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_ManifestCorrector.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Head Fix 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_ModdedHeadEyeliner.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Null Checks 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_NullChecks.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Party Card Compatibility 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_PartyCardCompatibility.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Personality Corrector 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_PersonalityCorrector.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Resource Unload Optimizations 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_ResourceUnloadOptimizations.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Restore missing functions 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_RestoreMissingFunctions.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Settings Fix 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_SettingsVerifier.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Shower Accessories Fix 14.3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\IllusionFixes\KK_Fix_ShowerAccessories.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_HLightControl 1.2.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\2155X\KK_HLightControl.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_MakerAdditions 1.0.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\2155X\KK_MakerAdditions.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_MakerSearch 1.4.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\2155X\KK_MakerSearch.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Moan softly when I H you 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_MoanSoftly.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Add mobs to roam mode 3.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_MobAdder\KK_MobAdder.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KKABMX (BonemodX) 4.3.3]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KKABMX.dll (this message is harmless)
+[Info   :   BepInEx] Loading [KK_Pregnancy 2.1.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_Pregnancy.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Chase Me 0.9.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\ChaseMe.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Expand Male Maker 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_ExpandMaleMaker.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Skin Overlay Mod GUI 5.2.1]
+[Info   :   BepInEx] Loading [FPS Counter 3.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\FPSCounter.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Card Author Data 1.13.3]
+[Info   :   BepInEx] Loading [Koikatsu: Become Trap 2.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\KK_BecomeTrap.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Better Color Picker 2.0.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BetterColorPicker.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Maker/Studio Browser Folders 2.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BrowserFolders.dll (this message is harmless)
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_BrowserFolders_Hooks_KK.dll (this message is harmless)
+[Debug  :Modding API] Save method found for patching MakerCardSave - <Start>m__8
+[Info   :   BepInEx] Loading [Image Series Recorder 1.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\KKImageSeriesRecorder.dll (this message is harmless)
+[Info   :   BepInEx] Loading [More Accessory Parents 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_MoreAccessoryParents.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Remove Cards To Recycle Bin 1.1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_RemoveToRecycleBin.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Additional Skin Effects 1.7.2]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_SkinEffects.dll (this message is harmless)
+[Info   :   BepInEx] Loading [Random Name Provider 1.0.0.0]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\RandomNameProvider.dll (this message is harmless)
+[Info   :   BepInEx] Loading [WarpToCharacters 1.1]
+Non platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\BepInEx\plugins\KK_WarpToCharacters.dll (this message is harmless)
+[Message:   BepInEx] Chainloader startup complete
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c07'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c11'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c14'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c15'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c16'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c17'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c18'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c23'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c25'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c26'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c27'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c28'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\c29'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\00.unity3d\player'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\14.unity3d\c30'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\15.unity3d\c31'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\16.unity3d\c32'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\17.unity3d\c33'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\20.unity3d\c34'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\20.unity3d\c35'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\20.unity3d\c36'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\etcetra\list\nickname\20.unity3d\c37'.
+Platform assembly: F:\[ScrewThisNoise] Koikatsu BetterRepack RX7\Koikatu_Data\Managed\System.Runtime.Serialization.dll (this message is harmless)
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_arm_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_body_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_face_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_hair_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_hand_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_head_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_kokan_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_leg_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_neck_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_none_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\ao_waist_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bo_hair_b_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bo_hair_f_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bo_hair_o_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bo_hair_s_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bo_head_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\bodypaint_layout_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cha_eyeset_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cha_sample_voice_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_bot_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_bra_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_gloves_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_panst_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_shoes_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_shorts_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_socks_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\co_top_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_jacket_a_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_jacket_b_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_jacket_c_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_sailor_a_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_sailor_b_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\cpo_sailor_c_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\facepaint_layout_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mole_layout_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_body_detail_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_body_paint_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_cheek_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_emblem_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eye_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eye_gradation_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eye_hi_down_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eye_hi_up_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eye_white_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eyebrow_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eyeline_down_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eyeline_up_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_eyeshadow_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_face_detail_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_face_paint_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_hairgloss_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_lip_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_lipline_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_mole_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_nip_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_nose_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_pattern_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_ramp_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_sunburn_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\00.unity3d\mt_underhair_00'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\ao_hand_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\ao_head_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\ao_leg_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\co_shoes_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\co_socks_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\01.unity3d\co_top_01'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\ao_hand_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\ao_head_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\co_bot_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\co_gloves_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\co_shoes_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\co_socks_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\02.unity3d\co_top_02'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\03.unity3d\ao_head_03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\03.unity3d\ao_neck_03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\03.unity3d\ao_waist_03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\03.unity3d\co_bot_03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\03.unity3d\co_top_03'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\ao_head_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\ao_neck_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\ao_waist_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\co_bot_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\co_gloves_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\co_panst_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\co_shoes_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\04.unity3d\co_top_04'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\05.unity3d\ao_head_05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\05.unity3d\co_bot_05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\05.unity3d\co_gloves_05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\05.unity3d\co_shoes_05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\05.unity3d\co_top_05'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_arm_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_face_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_hand_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_head_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_neck_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\ao_waist_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\bo_hair_b_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\bo_hair_f_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\co_bot_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\co_gloves_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\co_shoes_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\co_socks_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\co_top_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\cpo_jacket_a_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\cpo_jacket_b_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\cpo_jacket_c_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_body_paint_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_cheek_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_emblem_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_eyeshadow_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_face_paint_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_hairgloss_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\06.unity3d\mt_lip_06'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\ao_arm_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\ao_hair_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\ao_head_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\ao_neck_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\ao_waist_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\bo_hair_b_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\bo_hair_f_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\co_bra_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\co_gloves_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\co_socks_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\mt_body_paint_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\mt_emblem_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\mt_face_paint_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\08.unity3d\mt_sunburn_08'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_arm_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_body_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_hand_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_head_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_neck_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\ao_waist_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\bo_hair_b_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\bo_hair_f_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\co_bot_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\co_gloves_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\co_shoes_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\co_socks_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\09.unity3d\co_top_09'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\ao_hand_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\ao_head_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\ao_leg_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\bo_hair_b_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\bo_hair_f_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\co_bra_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\co_gloves_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\co_shoes_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\co_top_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\cpo_jacket_a_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\10.unity3d\cpo_jacket_b_10'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\100.unity3d\ao_waist_100'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\100.unity3d\co_bra_100'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\100.unity3d\co_shorts_100'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\11.unity3d\bo_hair_b_11'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\11.unity3d\bo_hair_f_11'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\ao_arm_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\ao_face_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\ao_head_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\ao_neck_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\bo_hair_b_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\bo_hair_f_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\co_shoes_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\12.unity3d\co_top_12'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\ao_hair_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\bo_hair_b_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\bo_hair_f_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\co_bot_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\co_shoes_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\co_top_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\13.unity3d\mt_pattern_13'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\14.unity3d\cha_sample_voice_14'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\15.unity3d\cha_sample_voice_15'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\17.unity3d\cha_sample_voice_17'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\18.unity3d\co_bra_18'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\ao_hand_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\ao_head_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\ao_neck_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\co_bot_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\co_shoes_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\co_socks_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\19.unity3d\co_top_19'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\ao_face_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\ao_hand_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\ao_head_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\ao_neck_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\ao_waist_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\bo_hair_b_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\bo_hair_f_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\cha_sample_voice_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_bot_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_gloves_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_panst_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_shoes_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_shorts_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_socks_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\20.unity3d\co_top_20'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\21.unity3d\ao_hair_21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\21.unity3d\ao_head_21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\21.unity3d\co_bot_21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\21.unity3d\co_shoes_21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\21.unity3d\co_top_21'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\22.unity3d\ao_head_22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\22.unity3d\ao_neck_22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\22.unity3d\co_bot_22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\22.unity3d\co_shoes_22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\22.unity3d\co_top_22'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\23.unity3d\co_top_23'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\ao_hair_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\ao_hand_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\ao_head_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\ao_neck_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\co_bot_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\co_gloves_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\co_shoes_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\co_socks_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\24.unity3d\co_top_24'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\ao_arm_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\ao_hair_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\ao_hand_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\ao_head_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\ao_neck_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\bo_hair_b_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\bo_hair_f_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\bo_hair_o_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\bo_head_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\cha_sample_voice_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_bot_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_bra_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_gloves_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_panst_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_shoes_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_shorts_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_socks_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\co_top_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\cpo_jacket_b_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\cpo_sailor_a_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\cpo_sailor_c_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\face_preset_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_body_paint_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_emblem_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_eye_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_eye_hi_down_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_eye_hi_up_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_eyebrow_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_eyeline_up_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_face_paint_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_nose_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\50.unity3d\mt_pattern_50'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\ao_face_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\ao_hand_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\co_gloves_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\co_shoes_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\co_socks_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\co_top_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\53.unity3d\mt_pattern_53'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\co_panst_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\co_top_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\ex_bo_body_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\ex_bo_hair_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\ex_bo_head_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\ex_co_clothes_54'.
+[Debug  :XUnity.AutoTranslator] Replaced or updated resource file: 'abdata\list\characustom\54.unity3d\ex_co_shoes_54'.
+[Debug  :IllusionFixes] Starting unused asset cleanup
+Unloading 5 Unused Serialized files (Serialized files now loaded: 61)
+[Debug  :List Override] [KK_ListOverride] Loaded 4 overrides
+Replacing Names
+[Debug  :Modding API] SceneManager.activeSceneChanged - from  to Init
+[Debug  :Modding API] SceneManager.sceneLoaded - Init in 2 mode
+
+Unloading 755 unused Assets to reduce memory usage. Loaded Objects now: 3479.
+Total: 217.644608 ms (FindLiveObjects: 0.088200 ms CreateObjectMapping: 0.097300 ms MarkObjects: 217.152405 ms  DeleteObjects: 0.305800 ms)
+
+[Warning:   Harmony] System.Boolean SliderUnlocker.VoicePitchUnlocker.voicePitchHook(ChaFileParameter, System.Single&) - MethodType.Getter and MethodType.Setter should be used instead adding get_ and set_ to property names
+[Debug  :XUnity.ResourceRedirector] Registered new callback for AssetLoaded (OneCallbackPerResourceLoaded).
+[Debug  :XUnity.ResourceRedirector] New callback order for AssetLoaded (OneCallbackPerResourceLoaded):
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] MaterialEditorPlugin.AssetLoadedHook
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :XUnity.ResourceRedirector] [0] AssetLoadedHandlerBaseV2`1.HandleAsset
+[Debug  :Translation Helper] UpdateCurrentCardTranslationMode: Disabled => CacheOnly
+[Debug  :Plugin List Tool] --Start listing loaded plugin infos--
+[Debug  :Plugin List Tool] >>Try load IPA plugin infos
+[Debug  :Plugin List Tool] >>No IPALoader found.
+[Debug  :Plugin List Tool] >>Get 113 BepInEx Plugins.
+[Debug  :Plugin List Tool] Rim Remover v1.1
+[Debug  :Plugin List Tool] Enable Full Screen Toggle v1.0
+[Debug  :Plugin List Tool] Enable Resize v1.5
+[Debug  :Plugin List Tool] Input Hotkey Block v1.3
+[Debug  :Plugin List Tool] Mute In Background v1.1
+[Debug  :Plugin List Tool] Optimize IMGUI GC allocations v1.0
+[Debug  :Plugin List Tool] Runtime Unity Editor v2.2.1
+[Debug  :Plugin List Tool] Cheat Tools v2.8
+[Debug  :Plugin List Tool] Extended Save v16.0
+[Debug  :Plugin List Tool] XUnity Resource Redirector v1.1.2
+[Debug  :Plugin List Tool] Sideloader v16.0
+[Debug  :Plugin List Tool] MoreAccessories v1.1.0
+[Debug  :Plugin List Tool] Modding API v1.13.3
+[Debug  :Plugin List Tool] Clothing State Menu v3.0.1
+[Debug  :Plugin List Tool] Color Filter Remover v16.0
+[Debug  :Plugin List Tool] Configuration Manager v16.0
+[Debug  :Plugin List Tool] Input Length Unlocker v16.0
+[Debug  :Plugin List Tool] Screenshot Manager v16.0
+[Debug  :Plugin List Tool] Slider Unlocker v16.0
+[Debug  :Plugin List Tool] BGM Loader v16.0
+[Debug  :Plugin List Tool] Message Center v1.1.1
+[Debug  :Plugin List Tool] KK Uniform Uniforms v1.1
+[Debug  :Plugin List Tool] Character Export v1.0
+[Debug  :Plugin List Tool] Character Maker Loaded Sound v1.0
+[Debug  :Plugin List Tool] Clothing Unlocker v2.0.1
+[Debug  :Plugin List Tool] Colliders v1.1.1
+[Debug  :Plugin List Tool] Demosaic v1.1
+[Debug  :Plugin List Tool] Eye Shaking v1.1
+[Debug  :Plugin List Tool] Fade Adjuster v1.0
+[Debug  :Plugin List Tool] Free H Random v1.2
+[Debug  :Plugin List Tool] Hair Accessory Customizer v1.1.5
+[Debug  :Plugin List Tool] H Character Adjustment v2.0
+[Debug  :Plugin List Tool] Invisible Body v1.3.2
+[Debug  :Plugin List Tool] Item Blacklist v1.1
+[Debug  :Plugin List Tool] List Override v1.0
+[Debug  :Plugin List Tool] Maker Defaults v1.0
+[Debug  :Plugin List Tool] Male Juice v1.2.2
+[Debug  :Plugin List Tool] Material Editor v2.1.4
+[Debug  :Plugin List Tool] Material Editor Maker v2.1.4
+[Debug  :Plugin List Tool] Pose Folders v1.0
+[Debug  :Plugin List Tool] Pushup v1.2
+[Debug  :Plugin List Tool] Random Character Generator v2.0
+[Debug  :Plugin List Tool] Reload Character List On Change v1.5.1
+[Debug  :Plugin List Tool] Subtitles v2.0
+[Debug  :Plugin List Tool] XUnity Auto Translator v4.12.1
+[Debug  :Plugin List Tool] Text Resource Redirector v1.4.2.1
+[Debug  :Plugin List Tool] Skin Overlay Mod v5.2.1
+[Debug  :Plugin List Tool] Uncensor Selector v3.10
+[Debug  :Plugin List Tool] Dress for Success v1.1.1
+[Debug  :Plugin List Tool] GeBo Modding API v1.0.1
+[Debug  :Plugin List Tool] Translation Cache Cleaner v0.5.3
+[Debug  :Plugin List Tool] Translation Helper v0.9.4
+[Debug  :Plugin List Tool] Plugin List Tool v20.8.5.0
+[Debug  :Plugin List Tool] KKUS v1.9.0
+[Debug  :Plugin List Tool] Mod Bone Implantor v0.2.4
+[Debug  :Plugin List Tool] Dynamic Bones Fix v1.0
+[Debug  :Plugin List Tool] Hair Shadows Fix v1.0
+[Debug  :Plugin List Tool] HeightBarX v3.3
+[Debug  :Plugin List Tool] Character Replacer v1.6.2
+[Debug  :Plugin List Tool] Clothes Overlay Mod v5.2.1
+[Debug  :Plugin List Tool] Clothes Overlay Mod GUI v5.2.1
+[Debug  :Plugin List Tool] Anime Ass Assistant v1.0.0.148
+[Debug  :Plugin List Tool] CameraFrameMask v1.0.148
+[Debug  :Plugin List Tool] DefaultStudioScene v1.0.0.148
+[Debug  :Plugin List Tool] Drag & Drop v1.2.1
+[Debug  :Plugin List Tool] Graphics Settings v1.2.1
+[Debug  :Plugin List Tool] HideAllUI v2.2.0
+[Debug  :Plugin List Tool] LockOnPlugin v2.6.0.148
+[Debug  :Plugin List Tool] MakerBridge v1.0.1.148
+[Debug  :Plugin List Tool] RealPOV v1.0.2.148
+[Debug  :Plugin List Tool] Title shortcuts v1.1.2.148
+[Debug  :Plugin List Tool] UnlockHPositions v1.1.0
+[Debug  :Plugin List Tool] KK_Ahegao v1.8
+[Debug  :Plugin List Tool] KK_ClothesLoadOption v0.2.0
+[Debug  :Plugin List Tool] Configuration Manager wrapper for Koikatsu v16.0
+[Debug  :Plugin List Tool] Centered HScene Cursor v14.3.1
+[Debug  :Plugin List Tool] Character List Optimizations v14.3.1
+[Debug  :Plugin List Tool] Game and Studio Data Corruption Fixes v14.3.1
+[Debug  :Plugin List Tool] Fix Shader Dropdown Menu v14.3.1
+[Debug  :Plugin List Tool] KK_Fix_GarbageTruck v14.3.1
+[Debug  :Plugin List Tool] Character Maker Heterochromia Fix v14.3.1
+[Debug  :Plugin List Tool] Main Game Optimizations v14.3.1
+[Debug  :Plugin List Tool] Maker Optimizations v14.3.1
+[Debug  :Plugin List Tool] Manifest Corrector v14.3.1
+[Debug  :Plugin List Tool] Head Fix v14.3.1
+[Debug  :Plugin List Tool] Null Checks v14.3.1
+[Debug  :Plugin List Tool] Party Card Compatibility v14.3.1
+[Debug  :Plugin List Tool] Personality Corrector v14.3.1
+[Debug  :Plugin List Tool] Resource Unload Optimizations v14.3.1
+[Debug  :Plugin List Tool] Restore missing functions v14.3.1
+[Debug  :Plugin List Tool] Settings Fix v14.3.1
+[Debug  :Plugin List Tool] Shower Accessories Fix v14.3.1
+[Debug  :Plugin List Tool] KK_HLightControl v1.2.2
+[Debug  :Plugin List Tool] KK_MakerAdditions v1.0.0
+[Debug  :Plugin List Tool] KK_MakerSearch v1.4.0
+[Debug  :Plugin List Tool] Moan softly when I H you v1.0
+[Debug  :Plugin List Tool] Add mobs to roam mode v3.0
+[Debug  :Plugin List Tool] KKABMX (BonemodX) v4.3.3
+[Debug  :Plugin List Tool] KK_Pregnancy v2.1.2
+[Debug  :Plugin List Tool] Chase Me v0.9.0
+[Debug  :Plugin List Tool] Expand Male Maker v1.0
+[Debug  :Plugin List Tool] Skin Overlay Mod GUI v5.2.1
+[Debug  :Plugin List Tool] FPS Counter v3.1
+[Debug  :Plugin List Tool] Card Author Data v1.13.3
+[Debug  :Plugin List Tool] Koikatsu: Become Trap v2.0
+[Debug  :Plugin List Tool] Better Color Picker v2.0.1
+[Debug  :Plugin List Tool] Maker/Studio Browser Folders v2.2
+[Debug  :Plugin List Tool] Image Series Recorder v1.0
+[Debug  :Plugin List Tool] More Accessory Parents v1.1
+[Debug  :Plugin List Tool] Remove Cards To Recycle Bin v1.1.1
+[Debug  :Plugin List Tool] Additional Skin Effects v1.7.2
+[Debug  :Plugin List Tool] Random Name Provider v1.0.0.0
+[Debug  :Plugin List Tool] WarpToCharacters v1.1
+[Debug  :Plugin List Tool] --List Finish--
+Setting up 6 worker threads for Enlighten.
+  Thread -> id: 28ec -> priority: 1 
+  Thread -> id: 34d0 -> priority: 1 
+  Thread -> id: 2ea4 -> priority: 1 
+  Thread -> id: 71c -> priority: 1 
+  Thread -> id: 2db8 -> priority: 1 
+  Thread -> id: 2048 -> priority: 1 
+Shader 'IBL_Shader_cutoff': fallback shader 'Transparent/Cutout/Diffuse' not found
+Shader 'IBL_Shader_alpha': fallback shader 'Transparent/Diffuse' not found
+[Info   :XUnity.AutoTranslator] Skipping plugin scan because no plugin-specific translations has been registered.
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/libc
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/.\libc
+Fallback handler could not load library F:/[ScrewThisNoise] Koikatsu BetterRepack RX7/Koikatu_Data/Mono/libc
+Unloading 4 Unused Serialized files (Serialized files now loaded: 112)
+[Debug  :Modding API] SceneManager.sceneUnloaded - Init
+UnloadTime: 0.802400 ms
+[Debug  :Modding API] SceneManager.activeSceneChanged - from  to Logo
+[Debug  :Translation Helper] UpdateCurrentCardTranslationMode: CacheOnly => CacheOnly
+[Debug  :Modding API] SceneManager.sceneLoaded - Logo in Single mode
+
+Unloading 98 unused Assets to reduce memory usage. Loaded Objects now: 3656.
+Total: 220.750412 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.065800 ms MarkObjects: 220.211594 ms  DeleteObjects: 0.304500 ms)
+
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 8080MB available in PF)
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 8042MB available in PF)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 112)
+[Debug  :Modding API] SceneManager.sceneUnloaded - Logo
+UnloadTime: 0.574000 ms
+[Debug  :Modding API] SceneManager.activeSceneChanged - from  to Title
+[Debug  :Translation Helper] UpdateCurrentCardTranslationMode: CacheOnly => CacheOnly
+[Debug  :Modding API] SceneManager.sceneLoaded - Title in Single mode
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3920.
+Total: 223.555511 ms (FindLiveObjects: 0.089000 ms CreateObjectMapping: 0.066700 ms MarkObjects: 223.368088 ms  DeleteObjects: 0.031100 ms)
+
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 8037MB available in PF)
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 8037MB available in PF)
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 8037MB available in PF)
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 7957MB available in PF)
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 7936MB available in PF)
+[Debug  :Modding API] SceneManager.sceneLoaded - Exit in Additive mode
+[Debug  :IllusionFixes] Skipping cleanup because of low memory load (55% RAM, 65% Page file, 7938MB available in PF)
