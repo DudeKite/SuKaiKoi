@@ -1,0 +1,75 @@
+Boop
+	What: Makes boobs and hair jiggle when the mouse hovers over them
+	
+Sideloader Modpack Compitability Pack
+	What: Read included readme
+
+FashionSense
+	What: See https://github.com/FairBear/AYCABTM
+
+FloorCollider
+	What: adds additional floor collision for hair.
+
+Keelhauled Plugin
+	This one includes several plugins:
+	--------------------
+	CharaEditTool:
+		What: See https://github.com/Keelhauled/KoikatuPlugins#charaedittool
+	DefaultParamEditor:
+		What: See https://github.com/Keelhauled/KoikatuPlugins#defaultparameditor
+	GraphicsSettings:
+		What: See https://github.com/Keelhauled/KoikatuPlugins#graphicssettings
+	LockOnPluginKK:
+		What: See https://github.com/Keelhauled/KoikatuPlugins#lockonpluginkk
+	TitleShortcuts:
+		What: See https://github.com/Keelhauled/KoikatuPlugins#titleshortcuts
+
+KK_ANIMATIONOVERDRIVE
+	What: https://github.com/DeathWeasel1337/KK_Plugins#kk_animationoverdrive
+
+KK_Archetypes
+	What: See https://github.com/cptgrey/KK_Archetypes
+
+KK_BodyShaders
+	What: See https://github.com/DeathWeasel1337/KK_Plugins#kk_bodyshaders
+
+KK_Colliders
+	What: See https://github.com/DeathWeasel1337/KK_Plugins#kk_colliders
+
+KK_CrossEye v1.5
+	What: See https://www.patreon.com/posts/kk-crosseye-v1-5-28270400
+
+KK_ExperienceLogic
+	What: See https://github.com/Fulmene/KK_ExperienceLogic
+
+KK_ForceHighPoly
+	What: See https://github.com/DeathWeasel1337/KK_Plugins#kk_forcehighpoly
+
+KK_NightDarkener
+	What: See https://www.patreon.com/posts/24611009
+	
+KK_OrthographicCamera
+	What: See https://www.patreon.com/posts/27848583
+
+KK_StudioAllGirlsPlugin
+	What: See https://github.com/jim60105/KK#studio%E5%85%A8%E6%98%AF%E5%A6%B9%E5%AD%90%E6%8F%92%E4%BB%B6-studio-all-girls-plugin
+	
+	Basically makes it so that all characters loaded in studio are loaded as females.
+	
+KK_SubCam2
+	What: https://github.com/DatMechanicalBoi/KK_SubCam2
+
+KK_ToesControl
+	What: See https://github.com/mango123321a/KK_toesControl-solesTexture
+
+Koikatu Gameplay Mod
+	What: See https://github.com/ManlyMarco/Koikatu-Gameplay-Mod
+
+kPlug
+	What: a lot... it has its own manual, so take a look at that if you're curious
+
+Stilleto
+	What: HighHeels Plugin
+
+VideoExport
+	What: https://www.patreon.com/posts/32172852

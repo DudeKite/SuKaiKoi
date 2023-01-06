@@ -1,0 +1,213 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1049{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Courier New;}}
+{\colortbl ;\red0\green0\blue128;\red0\green0\blue0;\red128\green128\blue128;\red0\green0\blue255;\red0\green128\blue0;\red255\green255\blue255;}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sl240\slmult1\b\f0\fs28\lang9 Documentation for VNSceneScript\b0\fs22\par
+------\par
+here for v 1.0\par
+------\par
+\b\fs28 Basics\fs22\par
+\b0\par
+VNSceneScript allows you to set a script inside folder names in scenes.\par
+So, your code for scene will be saved, because folders (with names) are saved at scenes too.\par
+\par
+Code inside folder names we will name \b commands\b0 .\par
+All commands must starts with :\par
+All other folder names will be ignored.\par
+\par
+So, our script (because it based only on folder names) must be very compact.\par
+So, we define these - all your scripts must be called at \b states\b0 .\par
+Usually, you run scene from 0 to End state (defined in header)\par
+States, where nothing happened, ignores.\par
+\par
+\b\fs28 States Range\b0\fs22\par
+\par
+In most cases you will must define range of states - when you show objects, run actions etc.\par
+It have this format:\par
+1 - for state 1\par
+1-3 - for states 1,2,3\par
+1,3 - for states 1,3\par
+1-3,5-7 - for states 1,2,3,5,6,7\par
+i - for state -1 (initialize state)\par
+\par
+\b\fs28 Commands\b0\fs22\par
+\par
+Types of commands:\par
+\b\par
+:vnscenescript\par
+\b0 unique command. Setup and indicates the start of VNSceneScript file\par
+Syntax\par
+:vnscenescript:<version>:<maxstate>\par
+Example\par
+:vnscenescript:v10:110\par
+\par
+\b :a\b0\par
+Action\par
+Most usable type of command.\par
+Syntax (see States Range article)>:\par
+:a:<state_range>:<action_name>:<actions_params>\par
+Example\par
+:a:0:txts:Our story begins...\par
+\par
+All detailed action_names and params see at Actions article\par
+\par
+\b :show\par
+\b0 Show folder and it's content on selected states, and hides on other\par
+Syntax (see States Range article)>:\par
+:show:<state_range>\par
+Example\par
+:show:10-19\par
+\par
+\b :showch\par
+\b0 The same as show, but applies show/hide for it's parent.parent.parent.\par
+Needed for characters (so, ch postfix) - we add this command as child of head, for example, and it works on chara itself.\par
+Mostly useful for NEO users, not so needed for CharaStudio (NEO can't add charas to folders)\par
+\par
+\b :useext\par
+\b0 Use additional user-extension for handling additional actions.\par
+Needed for users, who want to implement it's own original actions like manipulating characters pos, FK, IK etc.\par
+Syntax:\par
+:useext:<ext_name>\par
+Example\par
+:useext:keitaro10\par
+\par
+See Extension article\par
+\par
+\par
+\b\fs32 Extension\par
+\b0\fs22\par
+See example of Extensions in \par
+- demo of Extension\par
+- file vnscenescriptext_keitaro10.py\par
+\par
+If you have <ext_name>, it must be in vnscenescriptext_<ext_name>.py file\par
+\par
+It also must contain 2 functions:\par
+
+\pard\box\brdrdash\brdrw0 \cbpat6\sl240\slmult1\cf1\b\f1\fs17 def \cf2\b0 custom_action(game,act):\par
+
+\pard\sl240\slmult1\cf0\f0\fs22 - here you processed the original actions\par
+\par
+and \par
+
+\pard\box\brdrdash\brdrw0 \cbpat6\sl240\slmult1\cf1\b\f1\fs17 def \cf2\b0 debug_buttons(\cf3 game\cf2 ,\cf3 state\cf2 ):\par
+
+\pard\sl240\slmult1\cf0\f0\fs22 here you can return additional buttons for debug mode\par
+\par
+\b\fs32 Actions\par
+\b0\fs22\par
+Please, see demos - here you find only short desc\par
+\par
+\b Text actions\par
+\ul\b0 :txt\ulnone\par
+show text from char\par
+Syntax :txt:<charid>:<text>\par
+example: :a:0:txt:g:Hi!\par
+\par
+\ul :txts\ulnone\par
+show system text\par
+example: :a:0:txts:System text\par
+\par
+\ul :regchar\par
+\ulnone register charid\par
+Syntax: :regchar:<charid>:<charcolor>:<charshowname>\par
+charcolor is RRGGBB\par
+Example: :a:i:regchar:izumi:ee99ee:Izumi\par
+\par
+\b Cameras\par
+\ul\b0 :cam\ulnone\par
+move to camera by number\par
+example: :a:2:cam:2\par
+\par
+\ul :camanim\ulnone\par
+animated move to camera by number\par
+example: :a:2:camanim:2\par
+\par
+\ul :camanim2\ulnone\par
+animated move to camera by number, but also with zoom-out-zoom-in feature\par
+Second param is Z-distance in meters (power of effect)\par
+example: :a:2:camanim2:2:20 (20 meters of effect)\par
+\par
+\ul :camcur\ulnone  and \ul :camcuranim\par
+\ulnone Same actions for change camera current location.\par
+:camcur for instant, :camcuranim - for animated\par
+1 param - rotx,roty,rotz or disz\par
+2 param - number\par
+example: \par
+a:1:camcuranim:disz:-0.5 \par
+(slightly zoom-out from cur position)\par
+\par
+\ul :camo \ulnone and \ul :camoanim\ulnone  and \ul :camoanim2\ulnone\par
+Move camera to arbitrary location\par
+1 param - location (can be seen using dump camera feature - it's a 10 numbers, separated by ,)\par
+:camo - instant move\par
+:camoanim - animated move\par
+:camoanim2 - animated move with zoom-out feature (see :camanim2 example)\par
+\par
+Example:\par
+a:2:camo:-0.3,2.0,1.0,0.0,0.0,-2.9,12.0,352.4,0.0,23.0\par
+\par
+\b Manipulating states\par
+\b0\par
+\ul :nextstate:<nextstatenum>\ulnone\par
+Allows you to move after click not to next state, but move forward or backward\par
+Example:\par
+a:9:nextstate:200\par
+\par
+So, you can show some states outside your usual content, and then return back\par
+\par
+\ul :addbtn:<btntext>:<btntostate>\par
+\ulnone Game can define it's own buttons, replacing original.\par
+Use several addbtn to add choices to game\par
+Example\par
+:a:3:addbtn:Move to next >:4\par
+:a:3:addbtn:Skip intro >:60\par
+\par
+\ul timernext:<duration>\par
+\ulnone run next state after duration (in seconds, can be float)\par
+examples:\par
+:a:0:timernext:5\par
+(run state after 0 after 5 seconds)\par
+:a:0-3:timernext:4\par
+(run states from 0 to 4 with 4-seconds interval)\par
+\par
+\b Utils\b0\par
+\par
+\ul :util:<utilname>\par
+\ulnone Run a set of useful utils.\par
+\par
+Available utilnames:\par
+\ul cam110\ulnone  - set a actions like :a:10:cam:1, :a:2:cam:20 for all 10 cameras\par
+
+\pard\box\brdrdash\brdrw0 \cbpat6\sl240\slmult1\cf1\b\f1\fs17 for \cf2\b0 i \cf1\b in \cf2\b0 range(\cf4 10\cf2 ):\line     atxt = \cf5\b ":a:%s:cam:%s"\cf2\b0 %(str((i+\cf4 1\cf2 )*\cf4 10\cf2 ),str(i+\cf4 1\cf2 ))\line     util_action_append(game,atxt)\par
+
+\pard\sl240\slmult1\cf0\f0\fs22\par
+\ul charsg4b4\ulnone  - set a set of characters id (g,b,gs,bs etc.):\par
+
+\pard\box\brdrdash\brdrw0 \cbpat6\sl240\slmult1\cf2\f1\fs17 gcolor = \cf5\b "ee99ee"\line\cf2\b0 gcolor3 = \cf5\b "99ee99"\line\cf2\b0 bcolor = \cf5\b "9999ee"\line\cf2\b0 game.register_char(\cf5\b "q"\cf2\b0 , \cf5\b "aaaaaa"\cf2\b0 , \cf5\b "? ? ?"\cf2\b0 )\par
+game.register_char(\cf5\b "g"\cf2\b0 ,gcolor,\cf5\b "Girl"\cf2\b0 )\line game.register_char(\cf5\b "gs"\cf2\b0 , gcolor, \cf5\b "Girls"\cf2\b0 )\line game.register_char(\cf5\b "g1"\cf2\b0 , gcolor, \cf5\b "Girl 1"\cf2\b0 )\line game.register_char(\cf5\b "g2"\cf2\b0 , gcolor, \cf5\b "Girl 2"\cf2\b0 )\line game.register_char(\cf5\b "g3"\cf2\b0 , gcolor3, \cf5\b "Girl 3"\cf2\b0 )\line game.register_char(\cf5\b "b"\cf2\b0 , bcolor, \cf5\b "Boy"\cf2\b0 )\line game.register_char(\cf5\b "bs"\cf2\b0 , bcolor, \cf5\b "Boys"\cf2\b0 )\line game.register_char(\cf5\b "b1"\cf2\b0 , bcolor, \cf5\b "Boy 1"\cf2\b0 )\line game.register_char(\cf5\b "b2"\cf2\b0 , bcolor, \cf5\b "Boy 2"\cf2\b0 )\par
+
+\pard\sl240\slmult1\cf0\f0\fs22\par
+\ul defpack\par
+\ulnone run utils cam110 and charsg4b4\par
+\par
+Example:\par
+:a:i:util:defpack\par
+\par
+\ul\par
+\ulnone\b\fs32 New commands since 3.0\ul\b0\fs22\par
+\par
+\ulnone - new commands: \b showui\b0 , \b hideui\b0 , \b hideui:<timerforhide>\b0\par
+- "addbtnrnd" action to move to state randomly. Syntax: \b addbtnrnd:<btntext>:<states separated by ",">  \b0 Example: addbtnrnd:Random action:200,300,400\par
+- Ministate button run cmd - \b addbtnms:<text>:<ministatename>\b0\par
+- Adv cam function - \b camoanim3:<camstr>:<duration>:<style>:<effZoomOut>:<effRotX>:<effRotZ>\b0  (use 0.0 if you don't want effects)\par
+- Ministate immediately run cmd - \b runms:<ministatename>\b0\par
+- commands for control buttons in UI - \b lockui, lockui:timeout, unlockui\par
+\b0\par
+Also support new params in existed cmds:\par
+- timernext support syntax: \b timernext:<time>:<nextstate>\b0\par
+- support scene params "next" in addbtn calls (like addbtn:Go further:next)\par
+- support scene params "end" in addbtn calls (like addbtn:To end:end)\par
+\par
+\ul\par
+}
+ 

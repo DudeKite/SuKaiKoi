@@ -1,0 +1,59 @@
+"""
+VN Scene Script Ext - vnframe12
+Provide functions to call VNFrame acts and anime functions
+
+f_stinit, f_acts, f_actm, f_act, f_anime
+
+1.2 - added f_actm_j for call with JSON serialized str
+
+Examples:
+(init)
+:useext:vnframe10
+:a:i:f_stinit
+(actual actions)
+:a:0:f_acts:main:anim:(0,0,0)
+:a:2:f_actm:main::{'anim':(7, 20, 2)}
+:a:0:f_act:::{'desk': {'move_to': (1.043, 0.000, -0.810)}}
+:a:3:f_act:::{'main': {'anim': (0, 4, 0), 'rotate_to': (0.000, 10.000, 0.000), 'anim_spd': 0.000}}
+:a:4:f_act:::{'main': {'anim_spd': 1.000}}
+:a:5:f_anime:::(({ 'desk': {'move_to': ((1.043, 0.000, -0.810), (1.043, 0.000, -0.362))},}, 1.00, 'linear'),)
+:a:0:f_acts:sys:text:('s', 'Start pos!')
+"""
+
+import vnframe
+
+
+def custom_action(game,act):
+    """:type game: vngameengine.VNNeoController"""
+
+    # ------- texts --------
+    if act["action"] == "f_actm_j":
+
+        try:
+            import libjsoncoder
+            obj1 = libjsoncoder.json_decode(act["actionparam3"])
+        except Exception, e:
+            print "f_actm_j error, can't parse JSON param %s"%act["actionparam3"]
+            return True
+        script = {act["actionparam"]: obj1}
+        vnframe.act(game, script)
+
+        #print "f_acts: ", script
+
+        return True
+
+    import vnscenescriptext_vnframe11
+    return vnscenescriptext_vnframe11.custom_action(game,act)
+
+
+# -----
+
+def debug_buttons(game,state):
+    return [] # if we want no additional buttons
+
+    # return in format of set_buttons_alt
+    #return ["Demo btn (keitaro10)", demo1]
+
+def demo1(game):
+    """:type game: vngameengine.VNNeoController"""
+    game.show_blocking_message_time("Some demo message")

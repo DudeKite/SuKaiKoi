@@ -1,0 +1,27 @@
+next
+txtf:me::Hi! It's me. So, as you can see, I do nothing in the college.
+next
+txtf:me::Hey, what's going on?....
+next
+txtf:teacher::Is everybody here?\nI want to introduce our new transfer student...
+cam:2
+next
+txtf:teacher::...Kawashima Morito
+next
+txtf:teacher::Please, Morito, tell something to everyone.
+camanim:3
+next
+txtf:main::Hi! My name is Morito, I'm a new transfer student from Tokyo.
+next
+txtf:main::...m-m...I like cats...
+next
+txtf:main::...m-m...Glad to see everyone!
+next
+txtf:me::So, we have new cute transfer student. It may be interested... May be spy on she on break?
+cam:5
+next
+txtf:me::..wait until break, and then...
+next
+txtf:me::..investigate the female toilet >
+
+

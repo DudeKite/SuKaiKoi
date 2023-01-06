@@ -1,0 +1,589 @@
+VNGE Changelog:
+2.0 
+- added NEO support, some refactor
+2.1 
+- for Studio - added change_female_num_animation and change_male_num_animation
+3.0 
+- added CharaStudio support (Koikatsu game)
+- added updFunc param for call on latest update
+- due to updFunc feature also added "Loading scene..." feature during scene loading for all engines. See "load_scene" function for example
+3.1
+- Studio: self.isDevDumpButtons removed, for dump camera use Ctrl+F4, dump scene - Ctrl + F5
+- All: set_timer function available. Example in maingameunstablefeatures
+- All: functions anim_sim_zoom_in and anim_sim_zoom_out available. Example in maingamedemo
+- All: return to main screen using Ctrl+F2
+- Studio: anim_to_camera_num and anim_to_camera funcs available. They are for animation move between cameras. 
+Latest param is animation style - linear,slow-fast,fast-slow,slow-fast3,fast-slow3,slow-fast4,fast-slow4
+- Studio: added high quality demo for manipulating chars - Ruris Dream by Kningets
+4.0
+- NEO,CharaStudio: dump camera using Ctrl+F4, move_camera func available
+- NEO,CharaStudio: anim_to_camera, anim_to_camera_num funcs available
+- NEO,CharaStudio: changed to_camera function to more correct code
+- NEO,CharaStudio: internal changes - common code moved to VNNeoController
+- All: game.isHideWindowDuringCameraAnimation option for hide game window during camera animation
+- All: function on end camera movement can be defined
+- All: funcs show_blocking_message, show_blocking_message_time, hide_blocking_message available. Used during dump camera or scene
+- All: return to main screen switched to Ctrl+F3
+- All: params can be passed in Buttons actions - if it is tuple.
+Example: game.set_buttons(["Simple examples", "Advanced examples"], [simple_tests, (adv_tests, "Advanced examples as param")])
+def adv_tests(game, param):
+- Studio: specific code moved to vngameenginestudio.py
+- NEO,CharaStudio: manipulating characters functions + dumping scene (Ctrl+F5):
+-- save position, rotation, scale for chars
+-- save animation state for chars
+- NEO,CharaStudio: new advanced cool camera moves:
+-- try game.anim_to_camera_num(3, param, {'style':"linear",'zooming_in_target_camera':6}) # cool camera move with zoom-out - zoom-in   
+-- try game.anim_to_camera_num(5, 0, {'style':"linear",'add_distance_target_camera':-0.2}) # this is example of slow zoom out - 5 seconds, -0.2 camera distance from 0 - current camera
+- All: menus features - see examples in techdemo
+- All: use Ctrl+F6 to print list of scene chars in Console
+5.0
+- NEO,CharaStudio: buttons works with mouse clicking
+- All: function to set background to arbitrary PNG-file - use game.scene_set_bg_png(filepng) (filepng must be in all scenes game folder)
+- All: unified code for camera animation and targeting
+- All: techdemo - new cool options and demos for camera movement
+- All: set_buttons_alt function - example:
+game.set_buttons_alt([ # set_buttons_alt receive 1 array intermediately placed Text and Functions
+    "Text test", toText,
+    "Timer test(15 seconds)", toTimer,
+    "System message", toSysMsg
+])
+- All: game autoprocess large number of buttons, splitting it by pages by game.maxBtnsBeforeSeparator items.
+By default game.maxBtnsBeforeSeparator = 5, so max 5 buttons on page.
+See example in techdemo / Simple examples - how 10 buttons in a row processed.
+So, you don't need to manually split buttons/actions by pages - game do it by itself
+- All: automaking list of available games
+first line of your game must be
+#vngame;<engine_name>;<game_name>
+Engine names are: studio, neo, charastudio (also "all" in case of your game is engine-independent - like in examples)
+As an example:
+#vngame;studio;Ruri Adventure
+- All: autoreloading game during the next run (after Ctrl+F3) - so, you can change it and reload without reloading Studio
+- All: autochoose the correct engine (no switch between Studio/NEO/Chara) using vngame_window_autogames_uni() call in Console.ini
+Also, no annoying windows in games itself
+- All: support for AutoTranslation of game texts using XUnity.AutoTranslator. So, you can see the game texts on your own language!
+Detailed desc in AutoTranslation_desc.txt
+- All: some options - keys for buttons, show/hide, reset and auto-translations are located in vngameengine.ini file. Edit it carefully!
+6.0
+- All: INI can be configured to run games by hotkeys
+Hint for developers: game code will be reloaded by hotkey run, so it extremely useful for debugging
+- All: INI key shortcut for hot reload of full vngameengine.py
+- All: INI option for start at hidden mode
+- All: Developer console instead of direct dump calls. Enabled by Ctrl+F4 (config in INI)
+- Chara: known BUG: temporary return to_camera function to simulating key presses.
+Due to unknown reason we are not always setting camera at correct position by num by classic code.
+- All: INI option to disable keyboard shortcuts for buttons
+- NEO, CharaStudio: VNSceneScript engine released!!!
+VN Scene Script is a framework/script for running stories, written in folder names just in scene files.
+So, in simplest cases you don't need PY scripts at all - just scene.png file
+- NEO, Chara: added functions to run VNSceneScript scenes as intro with returning to main game
+function: vnscenescript_run_filescene(file,onEnd)
+see example in techdemo
+- CharaStudio: functions to get and set frames for scene
+scene_set_framefile and scene_get_framefile (see in techdemo)
+- All: optimization: autogames feature scan only .py files
+6.5
+- Neo,Char: fixed bug in HSNeoOCIChar.animate function
+- Neo,Chara: HSNeoOCI has property visible_treenode to manipulate treenode
+- also set_parent function
+- All: set_timer allows you to pass tuple as onTimerEnd function
+- Neo,Chara: HSNeoOCIFolder class available, added to techdemo
+- Neo,Chara: lots of properties for HSNeoOCIChar - look eyes etc.
+- All: set_buttons(_,_,"compact") for place buttons compact (up to 8) on screen
+- Neo,Chara: HSNeoOCIFolder has static functions add, find_all, find_single, find_all_startswith, find_single_startswith
+- Neo,Chara: Added dummyneoclasses.py file to get dummy classes for Studio internals.
+- Neo,Chara: HSNeoOCIChar contains much new functions
+- VNSceneScript updated to 1.1:
+-- Added Developer utils - button to add typical header
+-- Devutil: save action with current camera in debug mode
+-- Devutil: can add dummy texts on default cameras
+-- Devutil: sync with file vnscene_sync.txt (you can load commands from external text file, not write it in Studio!)
+7.0
+!! ready for PlayHome - engine, demos etc.
+!! (Main was tagged set of NEO-engines - NEO, PlayHomeStudio, CharaStudio)
+- All: error handling for incorrect menu calls
+- Main: functions for manipualate backgrounds - see techdemo
+- All: param game.isHideGameButtons - for temporarily hiding the buttons
+- All: adapted set_timer and clear_timer functions (thanks @countd360)
+- All: auto stop camera animation during set new camera animation (thanks @countd360)
+- All: added game.onSetTextCallback param - if you want to made some auto-actions during set_text call (needed for framework authors)
+- Studio: fixed a bug with camera animation and reset
+- Main: game.onDumpSceneOverride param - set it for your own dump scene script
+7.0.1
+- bug fixed: disabled keyboard buttons during game.isHideGameButtons = true
+7.5
+- Main: HSNeoOCIItem added to manipulate items
+- Main: functions scene_get_all_items, scene_get_all_folders
+- Main: functions HSNeoOCIChar.add_female(path), HSNeoOCIItem.add_item(no)
+- Main: functions HSNeoOCIFolder - rot, pos set/get
+- Main: global functions dump_selected_item_tree() and load_item_tree(obj,parentItemTreeObj) for saving item tree and load it
+- Main: dev console - ability to dump selected item tree
+- All: define your own custom buttons interface when you need - colorize, labels, etc - all Unity abilities
+use game.set_buttons_alt([],("function", custFunctionGUI)) for this - example in techdemo
+- Main: HSNeoOCIChar.as_actor property - return Actor from @countd360 framework
+- Main: include vnactor.py - Actor class from @countd360 (thanks!)
+Actor allows to manipulate chara in different ways. It was developed for CharaStudio, but usable in NEO too.
+- All: try to clearing game data after returning to main screen
+(Please, save your game information in game.gdata property - it will be cleared automatically)
+- Main: integrated Actor and Props framework. New functions available:
+scenef_register_actorsprops (for registering actors and properties)
+scenef_get_all_props, scenef_get_all_actors, scenef_get_prop, scenef_get_actor
+- Main: integrated fake lip sync (thanks @countd360). Example can be found in all demos - it's modified Simple game demo
+7.6
+- All: call_game_func achieved calls like [func] and ([func] param). This calls don't pass game params to func
+- All: key shortcut for restart current game - F10 (INI)
+- All: key shortcut for run VNFrame developer console - Ctrl+F5 (INI)
+- Main: dump camera bug fixed
+- Main: dump scene bug fixed (on non-latin chars) (i hope)
+- Main: lip sync moved to vngelipsync,
+- Main: lip sync - you can define engine for lip sync! set self.fAutoLipSyncVer = "v10" or self.fAutoLipSyncVer = "v11"
+- Main: VNActor updated to 1.1
+7.7
+- All: get_engine_id() function return name of engine
+- VNActor and VNFrame v1.2.1 - more powerful functions, more simple code, script_helper to made an animations
+(script_helper mostly support only CharaStudio at now) (great thanks to @countd360)
+- VNSceneScript 1.5:
+-- Dev: some useful buttons
+-- A action: return no more than 3 params. Third param can contain : symbols (needed for vnframe ext)
+- VNSceneScript: vnframe10 extension. This extension provide a way to use VNFrame functions inside VNSceneScript!
+-- So, you can change almost whatever from VNSceneScript - blush, movement, cloth, juice etc. and also animate some props!
+8.0
+(sorry, no tutorials for new features, please, wait for next versions)
+- Main: dev console button "VNFrame scene dump"
+- Main: functions scenef_clean_actorsprops, scenef_get_propf (return Prop)
+- All: event system - allows your code "listen" to some events in system
+-- functions event_dispatch, event_reg_listener, event_unreg_listener
+-- example is in techdemo
+-- available system events:
+set_text - on set_text call
+update - on every update (please, use it wisely, it calls frequently)
+before_scene_load (calls only during system load_scene call)
+before_scene_unload (calls only during system load_scene or reset calls)
+- listeners auto-clean during return to main screen (end game and cleaning functions)
+- All: game.scenedata var
+Please, use this var for save scene-specific data - links for objects etc.
+game.scenedata autocleans during scene unload
+- VNFrame and VNActor updated to 1.2.3 - support for NEO and PlayHome, but on limited properties
+limitations for NEO, PlayHome: no FK/IK support, no cloth/accessory changes, no juice handling.
+almost all other supported (pos, rotate, scale, visible, face and neck states)
+aditional limitation for PlayHome: not all face states
+VNFrame contains hack for run VNSceneScript_helper
+- VNSceneScript 2.0
+!! acode construction
+- dev utils for new version
+- version is saved in game.scenedata.scVer
+- internal vars moved to game.scenedata to correct cleaning
+!! "nul" action - do nothing
+- in text actions - "\n" replaces to \n
+!! "txtf" action - show text as third param, can contain ":" symbols;
+example :a:1:txtf:s::Some text with : symbol
+- flipsync10 extension to start engine fake lip sync
+-- VNSceneScript_helper for VNFrame (file vnframe_vnscenescripthelper)
+- provides a fast way for making states in Studio interface
+- support NEO, PlayHome, CharaStudio
+8.1
+- VNActor and VNFrame v2.0 - full support for NEO and PlayHome (thanks to @countd360)
+(and also a lot of other features in them, waiting for tutorials)
+- Mains: changed scenef_register_actorsprops, scenef_get_propf for correct work with Actor 2.0
+- HSNeoOCIChar: changed as_actor for correct work with Actor2.0
+8.2
+- NEO: removed unused reference clr.AddReference('UnityEngine.UI.Translation') from console.ini
+- VNFrame docs added (see folder VNFrame docs)
+- VNFrame_VNSceneScript: added option "EXCLUDE FK&IK&Voice". Option allow remove this options from full/diff dump (if you want minify it).
+- techdemo: added example for using VNActor
+- VNFrame and VNActor updated to 2.1
+- VNSceneScript 2.1
+-- Devutil: sync with files acode, sync
+-- Devutil: template for v20
+-- Devutil: colorizing
+8.5
+- Main: added VNFrame Tutorial for all engines! (thanks @countd360)
+- All: INI - up to 10 games run using keyboard shortcuts
+- Main: sync_h function for syncronizing female and male animation
+- VNSceneScript updated to 2.2
+-- Devutil: vnframe11
+-- Devutil: gagency01
+- VNFrame and VNActor updated to 2.2
+- Chara: finally included Laboratory Girl high-quality demo (thanks @countd360)
+8.6
+- All: gpersdata set of functions. Allows you to auto save/load game data.
+gpersdata_load(), gpersdata_save(), gpersdata_set(param,val), gpersdata_get(param)
+Examples are in techdemo / Simple Examples
+- All: checkpoints set of functions. Allows you to make galleries, game checkpoints etc.
+Examples in All Demos / Main Demo with checkpoints
+- VNActor and VNFrame updated to 2.3
+- Mains: fixed small bug in scenef_register_actorsprops()
+8.7
+- VNActor and VNFrame updated to 2.3.2
+# - allow call "game_func" to run game functions
+# example: {'game_func': [(sup_print, "1"), (sup_print, "2")]} or {'game_func': (sup_print, "test1")}
+- dump_camera - added , to vnframe code
+- folders in prepare_auto_games() list (thanks to @Kningets)
+Examples: #vngame;neo;Demos/Subdemos/Demo game 1, #vngame;neo;Demos/Demo2
+Also rules: please, use from now folder Demos for demos, Utilities for utilities.
+- rule for lip sync - if text started with "!", no fake lip sync starts (see simplegamedemoadv2 for examples)
+- vnlibfaceexpressions.py - face expressions lib. Allows you to change face in standart script.
+example of use: game.texts_next([
+    ["me//angry_whatyousay", "What are YOU say??"],
+]...)
+examples in simplegamedemoadv2 (for NEO - simple game demo - lip sync in All demos)
+8.9 (9.0 beta)
+- All: skin system!!
+-- there are three skin in package: skin_default, skin_renpy, skin_customwindow
+-- for VN skin_renpy is best (see Simple game demo)
+-- for utils like ScriptHelper you can use skin_customwindow
+-- you can dev your own skins, see skin_renpy or skin_customwindow as reference
+- Main: VNActor and VNFrame 2.3.5 - updated for FK items and skin system (thanks to @countd360)
+- Main: Dev console has VNActor select dump allows you to dump state of selected chara in tree (even without id)
+- Main: libfaceexpressions 1.1 - added lot of NEO male faces (thanks to @cochese42)
+- All: markupreplacer lib - some text processing if you want (thanks to @cochese42)
+- Main: vnscenescript - you can set default skin for your VNSceneScript (INI)
+8.10 (9.0 beta 2)
+- Main: HSNeoOCIProp class. This allows you to convert object to correct Prop class from VNActor.
+- Main: global params HSNeoOCIChar.globalActorClass and HSNeoOCIProp.globalPropClass
+this uses for overriding actor and prop classes due to concrete using
+(for example, if you detect a plugin and want to share additional properties)
+it's not good to use them, but it's necessary for some cases
+- VNFrame 2.3.8 - allows you to pass object as 'act' function params.
+9.0
+- All: show version, start text adjust to it
+- All: Console window hidden at startup, to see it change showAtStartup=1 in Console.ini
+- Mains: integrated Simple Novel Manager 1.1 - now available from main screen
+- VNActor 2.3.9
+-- contains import_status for Prop and Actor
+- skin_renpy 1.1 - reduced window height, set up max buttons
+- All: skin system allows you set max number of buttons in params
+- All: simplegamedemo uses skin_renpy by default
+9.1
+- Mains: Added HSNeoOCILight, HSNeoOCI now supports OCILight (thanks to @chickenman)
+- VNFrame 2.3.10 - chickenman, Keitaro (thanks to @chickenman)
+# - added support for OCILight as Prop
+# - import_status_optimized_diff for Actor
+- VNFrame (register_autoprops) supports -propchild: property (needed for Light handling)
+- extplugins.py 1.1 added - for extended plugins handling (thanks to @chickenman)
+9.1.1
+- All: fixed bug in CustomGUI calls in skins: default and renpy. Now "game" param is sent as first param.
+10.0
+- CharaStudio, PlayHome: UTF-8 support! (some libraries added to X_Data/Managed)
+- All: functions file_get_firstline_utf8, file_get_content_utf8
+- Main: VNFrame 2.4 - (thanks to @countd360)
+# vnactor:
+# - support IK&FK mode, need extplugins.py.
+# to use IK&FK, need HSStudioNEOAddon.dll for NEO, PHSAddon.dll for Playhome.
+# - Support for light extends to Playhome and KoiKatsu.
+# Though the light support is not good in playhome and koikatsu, these function still work.
+# (To add a light in playhome you need PHIBL.dll. And light in koikatsu can not effect character.)
+# vnframe:
+# - support UTF-8! 
+# - [Create TAG] button in ScriptHelper can create -propchild: tag for lights now.
+- PlayHome: extplugins support PHSAddon.dll (thanks to @countd360) 
+- Main: Simple Novel Manager v1.2
+# - UTF-8 support in config and text files
+# - support "skin" param in config. Example: "skin": "skin_renpy"
+- Main: VN Scene Script v2.3 - UTF-8 support during sync with text files
+- All: added libjsoncoder lib (thanks to @chickenman)
+- HSNeoOCILight: fixed bug with pos and rot properties
+11.0
+- All: Ctrl+F3 doesn't reset current scene - so, back to menu freely )
+- extplugins: 
+-- NEO: support HSStudioNEOExtSave, 
+-- CharaStudio: pre-support KKPE
+- Main: VNFrame 3.0 (3.1.3)! (by @countd360)
+vnactor 3.0:
+- import_status_diff_optimized() function for Prop
+vnframe 3.0:
+- A new feature: "key frame clips" added!
+- Create and manage key frame based animation clips in Script Helper!
+- A clip can animate tagged actors and props, camera and system, and sync which another clip.
+- Several clips can be run in the same time. So you can create one clip for one actor, or
+even several clips for one actor, and then run them at same time to make an animation.
+- Clip can be controlled in act script like a game build-in anime. 
+Clip status can be dumped by script helper.
+- In script builder can choose which actor/prop/clip you want to dump now.
+- Auto script template update:
+- Support key frame clips
+- Support skin selection
+- Choice to show a "restart" button the end of game
+- Choice to use quick reload, which restart game without reload the scene file.
+- (act function) call import_status_diff_optimized for Prop and Actor instead of direct processing.
+- [Create Tag] button in scene helper will register the new tagged object to actor/prop automatically.
+vnanime 1.0:
+- The new key frame animation clip engine.
+Also:
+- vnframe 3.1.3 - add IK&FK mode for KK 
+-- NEO, PH, CharaStudio: VN Frame Tutorial 2 (in Demos section) to understand new features!
+11.5
+- vngame_window_autogames_uni_1init(), studio_wait_for_load() - for solve problem with loading timeout on start
+- changed Console.ini to adequate load on start
+# extplugins 2.2 by @countd360
+# - NEO: HSStudioNEOAddon - Add some function to support play MMD
+# - KK: KKVMDPlayPlugin - a plugin to support play MMD
+# vnactor v3.2 (beta) (Keitaro)
+# - Support for add data from external plugins to export_full using options from vnactor.ini
+# - NEO: support save/load HSNeoExtSave (HSStudioNEOAddon.dll) plugin data in "sys"
+# vnactor v3.2.1 (Keitaro)
+# - Error wrapping in face_to_full call
+11.6
+- warning if you have problems with UTF-8
+- added testutf8.py file
+- small changes in vnframe v3.2.1 - removed UTF-8 header to increase compatibility
+11.7
+- fix some bugs in startup - removed incorrect CameraControl import, added debug info in vngame_window_autogames_uni
+- vnanime 1.1.3 - removed utf-8 dependence
+- extplugins 2.3 - HSPENeo plugin support
+- vnactor 3.3 - HSPENeo plugin support
+(to save actor's HSPE data during making VN or using SSS set ExportChara_HSPENeo=1 in vnactor.ini)
+11.7.1
+- CharaStudio, PH: fixed bug with loading - set console ShowAtStartup=1
+11.8
+- new demo - demovnscenescriptbased.py - how to make a game based on VNSceneScript files
+!! vnframe v3.2.2 (Keitaro) - fix for correct work with VNSceneScript
+# - fix for using act function without game.gdata.kfaManagedClips
+- pre-support of KKPE (works on internal version, don't use it for now):
+extplugins 2.4, vnactor 3.4
+12.0
+- VNActor v3.5 (Keitaro)
+# - support functions - bytearray_to_str64 and str64_to_bytearray
+# - CharaStudio: save neck params when position Fixed - 'face_to_full2' param (optimized version to use str64)
+# - NEO: save neck params to str when position Fixed - 'face_to_full2' param (optimized version to use str64)
+# - CharaStudio: ready for KKPE 1.2.0+, use ExportChara_KKPE=1 in vnactor.ini
+# - CharaStudio: error handling for FK set
+# - CharaStudio, NEO: export cur clothes, use ExportChara_CurClothesCoord=1 in vnactor.ini (for NEO may be buggy)
+- extplugins 2.5 
+# - CharaStudio: Screencap plugin support
+12.5
+- All: HSNeoOCI.create_from return None if None as input. Useful for create_from_selected error handling.
+- All: fix bug in random_randint and random_choice functions
+- All: VNScenePlayer (F8) use renpy skin. You can change it back by INI param VNSceneScriptRunSkin=skin_default
+- VNSceneScript 2.5:
+-- show custom buttons in compact way
+-- support scene params "end" in nextstate and addbtn calls
+-- optimized blank states processing - no recursion, while cycle now
+-- added emergency out if state is over 1000000
+-- "addbtnrnd" action to move to state randomly. Syntax: addbtnrnd:<btntext>:<states separated by ",">  Example: addbtnrnd:Random action:200,300,400 
+-- v25 by default - changed menu items to handle it
+- VN Scene Script Ext - vnframe12
+-- added function f_actm_j for call with JSON serialized str
+- extplugins 2.6 (VNGE 12.5)
+-- All: has_plugin support function added
+- libjsoncoder 1.1
+-- added wrapper for code/encode
+12.6
+- All: timers increased to 8
+- Dump VNFrame also dump sys and cam
+- vnscenescript call can be run from arbit state
+- VNSceneScript 2.6: allow to run from arbitrary state
+13.0
+- processing FOV
+- processing FOV while animating cam
+vnscenescript 3.0
+- timernext support syntax: timernext:<time>:<nextstate>
+- new commands: showui, hideui, hideui:<timerforhide>
+- Ministate button run cmd - addbtnms:<text>:<ministatename>
+- upgrade to run v30
+- Adv cam function - camoanim3:<camstr>:<duration>:<style>:<effZoomOut>:<effRotX>:<effRotZ> (use 0.0 on effects if you don't want effects)
+- Ministate immediately run cmd - runms:<ministatename>
+- game is not hide UI during animation by default - you can do it manually in wizard
+- support scene params "next" in addbtn calls
+- commands for control buttons in UI - lockui/lockui:timeout/unlockui
+vnanime 1.2
+- When you click 'Export Clips' button in script helper, you can choice export to scene or to txt/py file
+- Auto and manual load in-scene clips.
+- Stop update clip after last keyframe played. So if the last keyframe is not the last frame, clip will not lock to last keyframe state any more when we passed it.
+vnanime 1.3:
+- A new clip optimization UI, provide more save and controllable optimize.
+- Clips sorted by priority first and then by clip's name, more easy to find.
+- Status list of actor/prop/system can be sorted/translated/colored by setting in vnactor.ini, more easy to understand and handle.
+- Adjust of curve data applied automatically, no 'update' button click needed.
+vnactor 3.6:
+- A little fix that match char_anime()'s param with vnactor.animate(). So you can pass the fifth param as 'force reload' to char_anime() now.
+- fix light color support for CharaStudio
+- load status translate strings for vnactor.ini, (support function for vnanime update)
+a updated vnactor.ini included, merge the [translation] section to your owns.
+vnframe 3.2.3:
+- add a "reset" button in scene helper tab to reset vnanime (maybe temporary, not necessary in most case...)
+vnscenescriptext_vnanime10.py
+An new ext for vnscenescript to support vnanime clips.
+Use f_clipinit to init clip manager and load in-scene clips.
+Use f_clipplay, f_clippause, f_clipstop, f_clipseek to control the play back of clips.
+Read comment in vnscenescriptext_vnanime10.py for detail.
+vnscenescriptext_flipsync10.py
+- Add a "read speed" param to initflipsync function, so you can set reading speed now.
+libministates.py
+- lib for run and manage ministates
+skin_renpy.py
+- optional additional button in top-right corner
+
+13.1
+- NEO: vnanime patched for correct use with VideoExport plugin (thanks Joan)
+# vnactor v3.6.1 (Keitaro)
+# - CharaStudio: export normalizedTime if anime speed == 0.0
+# Allow save characters in middle of animation
+
+13.9 (beta)
+- support for AI-Shoujo (Neov2)
+- changes in some file - removed "box1" incorrect call. Increased performance
+- VNActor 3.7 - support for AI-Shoujo
+13.9.1 (beta)
+- AI-Shoujo - fix to correct use VNFrame console (added scene_get_framefile function)
+- AI-Shoujo - fixed loading for patch3110.
+14.0
+- AI-Shoujo, CharaStudio: autocalc PY path for correct work with Bep5 and Bep4 anyway
+- option HideConsoleAfterStart=1 - to hide console after start
+- VNActor 3.7.1 (by countd360) - fixes for AIShoujo
+- AIShoujo - AIPE handle
+- AIShoujo - allow save clothes (using vnactor.ini param)
+- VNActor 3.7.2 (by Keitaro) - support for save shoes (in/outdoor) in actor states (CharaStudio).
+14.1
+- Extplugins 2.8 - correct check additional plugins in Bepinex4 and Bepinex5 installation
+- VNActor 3.8 - support for saving Body Shapes (CharaStudio, NEO, AIShoujo)
+- small fix to start even if no HideConsoleAfterStart prop in INI file
+15.0
+- Skin "skin_renpymini" - even mini skin for VN. Now default to VNScenes!
+- ..some other small bugfixes
+VNActor v3.10 (Countd360)
+- support for body and face shapes (all engines)
+- support char light (or camera light) in system export (all engines)
+- support export anime aux param, set it in ini file (all engines)
+- new property "animeLength", to get length of actor's anime (all engines)
+- add some function to support change export setting in runtime
+- fix skin wet import bug (AIShoujo)
+- support for Nodes Constraints plugin (Neo,KK) (Keitaro)
+VNAnime v1.4 (countd360)
+- fix anime speed save bug
+- fix seek bar time display bug
+- work with vnactor v3.9
+Extplugins 2.9
+- Support for NodeConstraints plugin
+15.1 (countd360)
+- add a new class HSNeoOCIRoute to support Route object in KK and AI
+- add a new tag "-propgrandpa:" to tag route object
+16.0
+- VNActor 3.1.1 - support for set_curcloth_coordinate_no_accessory (KK) - load clothes without accs
+# VNActor v4.0.1 (Countd360)
+# - support almost all properties for item in KK and AI
+# - support route object for KK and AI
+# - KK, AI: add function for object camera
+# - AI: support DHH external plugin setting
+# - AI: bug fix for color and char_eyes_look 
+# - KK: bug fix for clothes handling
+# Extplugins 3.0 
+# - Support AIVMDPlugin
+# - Support DHH_AI
+vnscenescriptext_blackrain10 (by blackrain) - VNSS ext for work with Vars using VN
+
+16.8 (beta) (countd360)
+vngameengine.py
+ - fix a bug throw index exception when more buttons than shortcut keys (line 1029)
+ - new param for event_reg_listener/event_unreg_listener function. User can set a ID for listener function, and unreg listener by id. Should be compatible with old version.
+ - new param for gpersdata_save/gpersdata_load function. User can set filename to save, with is useful for VNSS. Should be compatible with old version.
+ - add change_map_to(-1) before load new scene in StudioNeoV2. Or map may not load. Maybe the same reason as CharaStudio.
+extplugins.py
+v3.2
+ - Update AIVMDPlugin to support AIVMDPlayer too
+ - Support AI_FKIK
+ - Add: CallPrivateStatic function
+skin_btnonly.py
+v1.0
+ - VNSS button only skin. No message window, only buttons.
+vnactor.py
+v4.1
+ - add get_anime_info_text/height.setter/breast.setter function for very engine
+ - (AI) when set kinematic to 3, use AI_FKIK.dll first if exist
+ - add set_camera_data/get_camera_data function
+ - delete unnecessary ;
+vnanime.py
+v1.5
+ - update to new event_reg_listener/event_unreg_listener function
+ - fix copy/parse keyframe when playing bug
+vnframe.py
+v3.5 (countd360)
+ - add util "VNText Editor" and "Anime Info" in scenehelper tag
+vnscenescriptext_vnframe11.py
+v1.2 
+ - add "f_height" and "f_breast" function to set char's height and breast
+vnscenescriptext_gameutil10.py
+v1.0
+ - gskin/gskin_var: set VNSS skin, and adjust skin attribute in runtime.
+ - gpersdata_save/gpersdata_load/gpersdata_clear: save/load/clear gpersdata to/from disk
+ - gpersdata_to_brvars/brvars_to_gpersdata: copy variables between gpersdata and brvars(blackrain varibles)
+vntext.py (with vntext.assetbundle)
+vnscenescriptext_vntext10.py
+v1.0
+ - new text plugin for VNSS, create textmesh and put into scene.
+
+16.9 (beta) (Keitaro)
+- event_reg_listener/unreg_listener - fix BUG for id
+- event_reg_listener/unreg_listener - added Persistent param. If True, event_handling not del after reset to main screen
+- self.isSceneEventsSupported var - for detect Studio scene load/save events
+- new events: scene_loaded, scene_loaded_after, scene_imported, scene_imported_after, scene_saved
+-- supported: HS, KK, AI
+- autorun mods support - files started with "autorun_" will be autorun on VNGE startup
+   
+17.0 
+countd360:
+- autorun_kernel: support vnanime clip's auto reload and auto start
+- vntext: auto set a new id when vntext id duplicate detected on scene import.
+# vnanime v1.6 (countd360)
+# - support auto run when scene loaded/imported
+# - merge clips into one "-keyframeclips" folder when imported
+# - optimized setting export to scene
+
+Keitaro:
+- New VNGE basic menu 
+- SSS check loads scene and autoload
+- VN Scenes manager to fast start and distribute interesting scenes
+!!- SSS is now part of VNGE!
+- autorun_kernel: add exception handling
+- autorun_kernel: check VNGE data in scene. If exists - show menu with available actions.
+
+17.5
+- PoseLibrary 3.0: Status and Hands libraries added
+- SceneUtils 3.3: AI: allow DHH save in-scene
+- game.isSceneAutorunAnimDisabled param for disable VNAnime run on scene load (to compatibility)
+- new events: scene_loaded_after2, scene_imported_after2 (happens after "after" events)
+
+17.6
+(all by @countd360)
+- first release support HS2 (the same as AI)
+- Fix for AI DLC and HS2 ('map' is removed from scene_info)
+- AI_ExtensibleSaveFormat also load HS2_ExtensibleSaveFormat if in HS2 (changed extplugins.py)
+
+17.6.1
+- fixed a bug: error on auto-processing when scene loads
+
+17.7
+- HS2PE support for HS2
+
+18.0
+- VNGE button in toolbar
+- VNGE follow BepInEx console status
+- vngameengine.ini commented to easy use
+- KK: moved to BepInEx 5
+- extplugins 3.7: supports HS2PE, HS2VmdPlayPlugin, KKAPI (ILLAPI)
+
+18.1
+- replaced Unity.Console.BepInEx.dll to new one, compiled for Bep5. So, no annoying warning!
+- sources for DLL is on Mega
+
+18.2
+- NodesConstraints 1.2.0-1.2.1+ support for HS, KK, HS2, AI (toggle it in vnactor.ini)
+
+19.0
+- SSS version synced with VNGE version
+- KK, AI, HS2: SSS support in-scene save/load data (in beta)
+- ExtPlugins 3.9
+# - refactored ExtensibleSaveFormat to one class
+# - support HS2_FKIK (not sure)
+- game.isSceneDataSaveSupported property supported
+
+20.0
+- VNGE window is now draggable! (thanks to @countd360)
+- Better support for NodeConstraints (in case if you add/delete some folders with it) (thanks to @countd360)
+- game.dataPNG_save(id,strdata,strversion) and dataPNG_load(id) functions for abstract save/load data from scene PNG
+- SSS refactored to use new dataPNG functions
+- HS: support dataPNG save/load with HSExtSave
+- PH: default installation package is now BepInEx (due to BetterRepack). PH studio fixed for that
+
+20.1
+- HS: fix bug (old scenes not loading)
+- KK: fix bug (during run KK main game or KKVR Console always show, doesn't follow BepInEx Console settings)

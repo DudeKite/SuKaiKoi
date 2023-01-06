@@ -1,0 +1,53 @@
+@调试用部分
+#调试模式 0 关闭 1打开，开启后会在 Zod-ChinesePatch\Debug\Debug.txt 中输出调试信息。
+Debug=0
+#游戏中储存文本 0 关闭 1打开, 开启后，会将游戏已显示的文本，保存在 ExtractFile\Text.txt 中。
+SaveText=0
+
+@开关部分
+#图片汉化 0 关闭 1打开
+Image=1
+#工作室汉化 0 关闭 1打开
+Studio=1
+#开启汉化地图彩蛋部分 0 关闭 1打开
+Map=1
+
+@导出文本部分，导出的文本表格会在 Zod-ChinesePatch\ExtractFile 文件夹中
+#开启导出
+Extract=0
+#导出前删除原有导出文件
+Extract_RunDelete=1
+#比对原有译文, 如果原来翻译过，就插入到新文件中
+Extract_Difference=1
+#导出剧情部分
+Extract_Scenario=1
+#导出随机、公用、选项部分
+Extract_Communication=1
+#导出音频部分
+Extract_Audio=1
+
+
+@字幕部分，以下数值基于 1280x720 分辨率, 在不同的分辨率下会自动适配.
+#字幕字体大小
+Subtitle_FontSize=21
+#字体居中显示, 设置 0 默认居左, 设置 1 居中.
+Subtitle_Center=0
+#字体粗体, 设置
+Subtitle_Bold=1
+#字幕横向 X 位置
+Subtitle_X=331
+#字幕纵向 Y 位置
+Subtitle_Y=590
+#字幕宽度, 注: 与换行有关
+Subtitle_Width=617
+#字幕高度, 注: 与换行有关
+Subtitle_Height=100
+#字幕颜色（RGB颜色）默认 255 192 203
+Subtitle_Color_R=255
+Subtitle_Color_G=192
+Subtitle_Color_B=203
+
+
+@机翻部分
+MachineTranslation=0
+

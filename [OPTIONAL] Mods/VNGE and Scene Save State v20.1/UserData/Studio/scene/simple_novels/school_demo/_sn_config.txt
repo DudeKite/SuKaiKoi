@@ -1,0 +1,9 @@
+{
+    "name": "Base school demo",
+	"description": "Simple example game novel by @keitaro1978",
+    "characters": [
+            ["me", "aa5555", "John-kun"],
+            ["main", "55aa55", "Morito-chan"],
+            ["teacher", "5555aa", "Teacher"],
+        ],
+}
